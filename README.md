@@ -354,46 +354,66 @@ Third Party Survey Data- https://docs.google.com/spreadsheets/d/1hmD5QQAennbsQCi
 
 ## Table of Contents
 
-[1. Refresh Snowflake Data Streams	](#2-refresh-snowflake-data-streams)
+[1. Refresh Snowflake Data Streams	](#1-refresh-snowflake-data-streams)
 
-[2. Run Identity Resolution Ruleset	](#3-run-identity-resolution-ruleset)
+[2. Run Identity Resolution Ruleset	](#2-run-identity-resolution-ruleset)
 
-[3. Run Calculated Insights	](#4-run-calculated-insights)
+[3. Run Calculated Insights	](#3-run-calculated-insights)
 
-[4. Activate Messaging Setting	](#5-activate-messaging-setting)
+[4. Activate Messaging Setting	](#4-activate-messaging-setting)
 
-[5. Update Einstein Search Retriever	](#6-update-einstein-search-retriever)
+[5. Update Einstein Search Retriever](#5-update-einstein-search-retriever)
 
-[6. Configure Digital Experience.	](#7-configure-digital-experience)
+[6. Configure Digital Experience.	](#6-configure-digital-experience)
 
-[7. Enable Login Access.	](#8-enable-login-access)
+[7. Enable Login Access.](#7-enable-login-access)
 
-[8. Change the layout of the Login page.	](#9-change-the-layout-of-the-login-page)
+[8. Change the layout of the Login page.](#8-change-the-layout-of-the-login-page)
 
-[9. Change the layout of the Register page.	](#10-change-the-layout-of-the-register-page)
+[9. Change the layout of the forget password page.	](#9-change-the-layout-of-the-forget-password-page)
 
-[10. Change the email Address.	](#11-change-the-email-address)
+[10. Change the layout of the Register page.	](#10-change-the-layout-of-the-register-page)
 
-[11. Run CRM Analytics Recipes	](#12-run-crm-analytics-recipes)
+[11. Change the email Address.	](#11-change-the-email-address)
 
-[12. Add Agent User into Agent force Service Agent and Activate	](#13-add-agent-user-into-agent-force-service-agent-and-activate)
+[12. Run CRM Analytics Recipes	](#12-run-crm-analytics-recipes)
 
-[13. Activate Einstein Copilot	](#14-activate-einstein-copilot)
+[13. Add Agent User into Agent force Service Agent and Activate	](#13-add-agent-user-into-agent-force-service-agent-and-activate)
 
-[14. Create Trusted URLS	](#15-create-trusted-urls)
+[14. Add site logo	](#14-add-site-logo)
 
-[15. Create CORS	](#16-create-cors)
+[15. Activate Einstein Copilot	](#15-activate-einstein-copilot)
 
-[16. Assign Contact Record Page as Org Default.](#17-assign-contact-record-page-as-org-default)
+[16. Create Trusted URLS	](#16-create-trusted-urls)
 
-[17. Create a New Version of Omni-Channel Flow.](#18-create-a-new-version-of-omni-channel-flow)
+[17. Create CORS	](#17-create-cors)
 
-[18. Create Tableau Einstein Dashboards.](#18-create-tableau-einstein-dashboards)
+[18. Assign Contact,vehicle and opportunity Record Page as Org Default.](#18-assign-contact-vehicle-opportunity-record-page-as-org-default)
+
+[19. Create a New Version of Omni-Channel Flow.](#19-create-a-new-version-of-omni-channel-flow)
+
+[20. Create Tableau Einstein Dashboards.](#20-create-tableau-einstein-dashboards)
+
+[21. Add External Id into Contact as well snowflake after Self Registration contact creation.](#21-Add-External-Id-into-Contact-as-well-snowflake-after-Self-Registration-contact-creation)
+
+[22.Create warranty contract document for vehicle record created via Self Registration form and upload into S3.](#22-Create-warranty-contract-document-for-vehicle-record-created-via-Self-Registration-form-and-upload-into-S3)
+
+[23.Publish Calculated Insights After Self Registration.](#23-Publish-Calculated-Insights-After-Self-Registration)
+
+[24.Connected App Configuration.](#24-Connected-App-Configuration)
+
+[25.Named Credentials.](#25-Named-Credentials)
+
+[26.Enable Oauth and OpenID Connect Settings](#26-Enable-Oauth-and-OpenID-Connect-Settings)
+
+[27.Assign Buyer Group For Self Registration ](#27-Assign-Buyer-Group-For-Self-Registration)
+
+[28.Configure Segment  ](#28-Configure-Segment)
 
 ### 1. Refresh Snowflake Data Streams
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-|  Refresh Snowflake Data Streams | - Navigate to Data Cloud app and the Data Streams tab </br>- Query for IOT\_Transaction data stream</br>- Using drop down control on the right against the data stream initiate refresh for the IOT\_Transaction data stream</br>- Repeat steps b & c for POS\_Transaction data stream</br>- Once the data stream is refreshed validate the Total Records counts for each Data Stream</br>- IOT\_Transaction \- 8</br>- POS\_Transaction – 75  |  |
+|  Refresh Snowflake Data Streams | - Navigate to Data Cloud app and the Data Streams tab </br>- Query for **Third Party Survey data** stream</br>- Using drop down control on the right against the data stream initiate update status for the **Third Party Survey data** stream </br>- Third Party Survey -8 |   |
 
 ### 2. Run Identity Resolution Ruleset
 | Step  | Action and Details  |  Images |
@@ -403,7 +423,7 @@ Third Party Survey Data- https://docs.google.com/spreadsheets/d/1hmD5QQAennbsQCi
 ### 3. Run Calculated Insights
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-|  Run Calculated Insights | - Navigate to Data Cloud app and the Calculated Insights tab</br>- Query for Customer Lifetime Value calculated insight</br>- Using drops down control on the right against the data stream initiates refresh for the Guest Stay Metrics calculated insight.</br>- When the Calculated Insight is refreshed successfully, the Last Run Status will show as Success.</br>- Repeat steps b & c for the below Calculated Insights. Ensure all Insights are refreshed successfully.</br>- Customer Interest from Survey Data </br>- Customer Satisfaction Score</br>-   | |
+|  Run Calculated Insights | - Navigate to Data Cloud app and the Calculated Insights tab</br>- Query for Customer Lifetime Value calculated insight</br>- Using drops down control on the right against the data stream initiates refresh for the Guest Stay Metrics calculated insight.</br>- When the Calculated Insight is refreshed successfully, the Last Run Status will show as Success.</br>- Repeat steps b & c for the below Calculated Insights. Ensure all Insights are refreshed successfully.</br>- Customer Satisfaction Score   </br>- Customer Interest from Survey Data  </br>-   | |
 
 ### 4. Activate Messaging Setting
 | Step  | Action and Details  |  Images |
@@ -413,72 +433,123 @@ Third Party Survey Data- https://docs.google.com/spreadsheets/d/1hmD5QQAennbsQCi
 ### 5. Update Einstein Search Retriever
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| Update Einstein Search Retriever |- Click on **Setup**, in the Quick Find Box, enter Prompt Builder, and then select **Prompt Builder**</br>- Search for the Prompt Template named **Generate FAQ From Automotive Industry ** and click on the hyperlink</br>- Hover the cursor on text the next to ‘Question : ‘, click on Resource à click on Einstein Search à click on 'Automotive_FAQ’ à click on ‘‘Default_Automotive_FAQ’ Retriever</br>- On the right side click on default ‘Default_Automotive_FAQ Retriver click on Search Parameter click on Free Text Click on Question</br>- Hover over cursor on next text on ‘Use this information to answer the question:’, click on Resource à click on Einstein Search à click on Automotive_FAQ Retriver\_V2</br>- Click on Save As New Version click **Activate**.</br>-	Go back to Prompt Builder.</br>- Search for Prompt template names as Return Warranty Info and click on the hyperlink.</br>- Hover the cursor on text the next to ‘Input:VIN with the‘, click on Resource à click on Einstein Search à click on ‘Automotive_Warranty_Info’ click on ‘Default_Automotive_Warranty_Info Retriver.</br>- Below this line ‘You are a Warranty Expert in Autofolio, here are some documents about Warranty Information’ click on Resource à click on Einstein Search à click on ‘Automotive_Warranty_Info’ click on ‘Default_Automotive_Warranty_Info Retriver.</br>- On the right side click on default Automotive_Warranty_Info click on Search Parameter click on Free Text Click on VIN. </br>- Click on Save As New Version click Activate   | |
+| Update Einstein Search Retriever |- Click on **Setup**, in the Quick Find Box, enter Prompt Builder, and then select **Prompt Builder**</br>- Search for the Prompt Template named **Generate FAQ From Automotive Industry** and click on the hyperlink</br>- Hover the cursor on text the next to ‘Question : ‘, click on Resource à click on Einstein Search à click on 'Automotive_FAQ’ à click on ‘‘Default_Automotive_FAQ’ Retriever</br>- On the right side click on default ‘Default_Automotive_FAQ Retriver click on Search Parameter click on Free Text Click on Question</br>- Hover over cursor on next text on ‘Use this information to answer the question:’, click on Resource à click on Einstein Search à click on Automotive_FAQ Retriver\_V2</br>- Click on Save As New Version click **Activate**.</br>-	Go back to Prompt Builder.</br>- Search for Prompt template names as Return Warranty Info and click on the hyperlink.</br>- Hover the cursor on text the next to ‘Input:VIN with the‘, click on Resource à click on Einstein Search à click on ‘Automotive_Warranty_Info’ click on ‘Default_Automotive_Warranty_Info Retriver.</br>- Below this line ‘You are a Warranty Expert in Autofolio, here are some documents about Warranty Information’ click on Resource à click on Einstein Search à click on ‘Automotive_Warranty_Info’ click on ‘Default_Automotive_Warranty_Info Retriver.</br>- On the right side click on default Automotive_Warranty_Info click on Search Parameter click on Free Text Click on VIN. </br>- Click on Save As New Version click Activate   |   |
 
 ### 6. Configure Digital Experience
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| Configure Digital Experience. |- Click on **Setup**, in the Quick Find Box, enter Digital Experiences, and then select **All Sites**</br> -  Click on builder against the Site ***‘Autofolio’*** </br> - Click on ‘Banner’  in the right-hand panel, under Image Settings, click ‘Clear Image’</br> - Click on ‘Select Image from CMS’ \-\> Click on ‘BackgroundImnageCar’ </br> - Click on ‘Embedded Messaging ‘and update as per screenshot below </br> - Click on ‘Multilevel Navigation Menu ‘, in the right-hand panel under Default Menu select ‘Default Navigation’ |  |
+| Configure Digital Experience. |- Click on **Setup**, in the Quick Find Box, enter Digital Experiences, and then select **All Sites**</br> -  Click on builder against the Site ***‘Autofolio’*** </br> - Click on ‘Banner’  in the right-hand panel, under Image Settings, click ‘Clear Image’</br> - Click on ‘Select Image from CMS’ \-\> Click on ‘BackgroundImnageCar’ </br> - Click on ‘Embedded Messaging ‘and update as per screenshot below </br> - Click on ‘Multilevel Navigation Menu ‘, in the right-hand panel under Default Menu select ‘Default Navigation’ |   |
 
 ### 7. Enable Login Access
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| Enable Login Access. | - Go to Setup, in the Quick Find Box, enter Digital Experiences, and then select All Sites</br>- Against the site ‘AutoFolio’, click on Workspaces</br>- Under My Workspaces, click on Administration</br>- Click on Login & Registration menu item</br>- Under Login Page Setup, change Login Page Type to Experience Builder Page</br>- For URL, choose Login</br>- Under Password Pages, change Forgot Password to Experience Builder Page</br>- Choose Forgot Password</br>- Under Registration Page Configuration enable "Allow customers and partners to self-register"</br>- Choose Registration Page Type as Experience Builder Page</br>- Choose Register</br>- Assign users to a profile and account,choose AutoFolio Community User</br>- Assign Permission Set Group as "Commerse_Shopper"  | |
+| Enable Login Access. | - Go to Setup, in the Quick Find Box, enter Digital Experiences, and then select All Sites</br>- Against the site ‘AutoFolio’, click on Workspaces</br>- Under My Workspaces, click on Administration</br>- Click on Login & Registration menu item</br>- Under Login Page Setup, change Login Page Type to Experience Builder Page</br>- For URL, choose Login</br>- Under Password Pages, change Forgot Password to Experience Builder Page</br>- Choose Forgot Password</br>- Under Registration Page Configuration enable "Allow customers and partners to self-register"</br>- Choose Registration Page Type as Experience Builder Page</br>- Choose Register</br>- Assign users to a profile and account,choose AutoFolio Community User </br>- Assign Permission Set Group as "Commerse_Shopper"           |   |
 
 ### 8. Change the layout of the Login page
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 | Change the layout of the Login page. |- Go to Setup, in the Quick Find Box, enter Digital Experiences, and then select All Sites </br>- Against the site ‘AutoFolio’’, click on Builder</br>- From the Page dropdown, search for Login, and then select Login </br>-Remove the site logo and add a Text Box component. Enter the text as "AutoFolio’", make it bold and center</br>- Publish the changes  |  |
 
-### 9. Change the layout of the Register page
+### 9. Change the layout of the Forget Password page.
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+| Change the layout of the Forget Password page.|- Go to Setup, in the Quick Find Box, enter Digital Experiences, and then select All Sites </br>- Against the site ‘AutoFolio’, click on Builder </br>-From the Page dropdown, search for Login, and then select Forget Password </br>- Remove the site logo and add a Text Box component. Enter the text as "AUTOFOLIO", make it bold and center </br>-Publish the changes |  |
+
+### 10. Change the layout of the Register page
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 | Change the layout of the Register page. |- Go to Setup, in the Quick Find Box, enter Digital Experiences, and then select All Sites</br>- Against the site ‘AutoFolio’’, click on Builder</br>- From the Page dropdown, search for Register, and then select Register</br>- Remove the site logo and add a Text Box component. Enter the text as "AutoFolio’", make it bold and center</br>- Publish the changes  |  |
 
-### 10. Change the email Address
+### 11. Change the email Address
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 | Change the email Address. |- Go to Setup \-\> Open All Sites</br>- Click on Workspaces (the configured Sites) \-\> Click Administrator</br>- Click on Emails</br>- Change Sender email to system admin email</br>- Click on save |  |
 
-### 11. Run CRM Analytics Recipes
+### 12. Run CRM Analytics Recipes
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 | Run CRM Analytics Recipes |- Click on App launcher, click on Analytics Studio</br>- Click on Data Manager</br>-  Click on Recipes </br>- Click on ‘Run Now’ On Analytics for Automotive Automotive Analytics RDR’ and ‘Analytics for Automotive Automotive Analytics’ Recipes.</br>- It will take some time to complete. Once It Runs Successfully, status should change to Succeed.   |  |
 
-### 12. Add Agent User into Agent force Service Agent and Activate
+### 13. Add Agent User into Agent force Service Agent and Activate
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 | Add Agent User into Agent force Service Agent & Activate |- Click on setup, search for agent</br>- Click on ‘Agentforce Service Agent’</br>- Click on Open Builder</br>-  click on setting</br>- Select Agent User to Service Agent User</br>-   Activate  | |
 
-### 13. Activate Einstein Copilot
+### 14. Add site logo
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| Activate Einstein Copilot |- Click on setup, search for agent</br>- Click on ‘Einstein Copilot’</br>- Click on Open Builder click on Activate  |   |
+|Add Site Logo |-Go to Setup>> Enter All sites in quick find box click on builder of "AutoFolio" site  Search for the logo of "alpine group' >> click on it Under setting>> click on Select Image from CMS> Select Content space>> select image "image name" click on Save.|   |
 
-### 14. Create Trusted URLS
+### 15. Activate Einstein Copilot
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| Create Trusted URLS |- In the Quick Find\>Type Trusted URLs</br>- Click on New\>In API Name \>Type ‘TrustedSite2’</br>- In URL\>Type\> https://DOMAINNAME.my.site.co</br>- Replace DOMAINNAME with actual org Domain Name.</br></br> **To find the Domain name please follow the following steps:** </br>- search for Domain in Quick find → Please add https://DOMAIN from the below path</br>- Click on Save</br></br> **Add Trusted URL to Agent Sites** </br>- Click on Setup</br>-  Click on Site \-\> Click on ‘ESW\_ESA\_Web\_Deployment\_1733127495782’</br>- Click on Add Domain</br>- Add DOMAINNAME with actual org Domain Name.</br></br> **To find the Domain name please follow the following steps:** </br>- Search for Domain in Quick find → Please add https://DOMAIN from the below path |  |
+| Activate Einstein Copilot |- Click on setup, search for agent</br>- Click on ‘Einstein Copilot’</br>- Click on Open Builder click on Activate                |     |
 
-### 15. Create CORS
+### 16. Create Trusted URLS
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+| Create Trusted URLS |- In the Quick Find\>Type Trusted URLs</br>- Click on New\>In API Name \>Type ‘‘Trusted’ </br>- In URL\>Type\> [https://DOMAINNAME.my.site.co](https://*.tile.openstreetmap.org )</br>- Under CSP Directives>>check below checkbox for.</br>1. connect-src(scripts)  </br>2. frame-src (iframe content)  </br>3-img-src (images)  </br>- Save it </br>- Click on New.</br>- In API Name, type ‘TrustedSite2’. </br>- In URL, type: https://DOMAINNAME.my.site.com. </br>Replace DOMAINNAME.my.site.com with your actual org Domain Name. </br>- **To find the Domain Name** follow these steps: </br>-Search for Domain in Quick Find. </br>-Copy the domain name ending with .my.site.com (e.g., epicorgfarm79.my.site.com). </br>-Select the domain related to your Experience Cloud Sites. </br>-Click on Save. </br> **Add Trusted URL to Agent Sites:** </br>-Click on Setup. </br>-Search for Site, then click on Enable Site (if it’s not enabled already). </br>-Click on **Register My Salesforce Site Domain**.</br>-Search for Site, and click on **‘ESW_ESA_Web_Deployment_1736313145513’**.</br>-Click on Add Domain. </br>-Add DOMAINNAME with your actual org Domain Name. </br>-Prefix with https://(e.g.,https://epicorgfarm79.my.site.com). <br>-To **find the Domain Name**, follow these steps: </br>-Search for Domain in Quick Find. </br>-Copy the name ending with .my.site.com (e.g., epicorgfarm79.my.site.com). </br>**To Add Trusted Sites in Digital Experience:** </br>-Click on All Sites under Digital Experience. </br>-Click on Builder for your site (e.g., Autofolio). </br>-Click on Security & Privacy. </br>-Click on the Add Trusted Sites button. </br>-Name it ‘TrustedSite1’. </br>-Add the copied Domain URL And Click on **Publish**.</br> **Configure CORS Settings:** </br>-In Quick Find, type CORS. </br>-Click on New </br>-In Origin URL Pattern, type: [](https://DOMAINNAME.my.site.com.) </br>-Replace DOMAINNAME with your actual org Domain Name. </br>-Click save. </br>-Click on New. </br>- Paste this into Origin URL Pattern:  [](https://*.develop.vf.force.com)</br>Click Save</br>-Click on New And Paste this into **Origin URL Pattern:** [](https://*.live-preview.salesforce-experience.com.)</br>-Click Save.</br>-Click on New. Paste this into Origin URL Pattern: [](https://*.my.site.com.) And Click Save. </br>**Steps to Publish Embedded Service:**</br>-Search for Domain in Quick Find. Copy the domain name ending with .my.site.com (e.g., epicorgfarm79.my.site.com). </br>-Click on Setup</br>-Search for Embedded Service. </br>-Click on **Embedded Service Deployment**.</br>-Click on **ESA Web Deployment.**</br>-Click on Publish and wait for the confirmation message. </br></br> **Note:** After Successfully publishing the ESA EWS deployment go to In Setup Search for Embedded Service Deployments Click on ESA_Web_Deployment In the Card Code Snippet Click on Install Code Snippet and add Below Values mentioned in the Image in the LeadFlyoutConfig  Custom metadata Open LeadFlyoutConfig Custom metadata, Click on Manage LeadFlyoutConfig, Click On New to Create new Custom Metadata record. </br></br>-Add Label à Lead Flyout Configuration **LeadFlyoutConfig Name Will auto Populate** </br>-Bootstrap Link à Boostrap Link ; Refer Image </br>-ESA Deployment Link à ESA Deployment Link ;Refer Image </br>-Org Id à Organization Id ;Refer Image </br>-Srct Url à Scrt Id ;Refer Image |   | 
+
+### 17. Create CORS
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 | Create CORS |- In the Quick Find\>Type CORS</br>- Click on New\>In Origin URL Pattern\>Type ‘https://DOMAINNAME.my.site.com’ </br>- Replace DOMAINNAME with actual org Domain Name.</br></br> **To find the Domain name please follow the following steps:**</br></br>- search for Domain in Quick find → Please add https://DOMAIN from the below path</br>- Click on Save  |  |
 
-### 16. Assign Contact Record Page as Org Default
+### 18. Assign Contact, Vehicle and Opportunity Record Page as Org Default
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| Assign Contact Record Page as Org Default. |- Click on Setup</br>- Click on Object Manager</br>- Click on Contact</br>-  Click on Lightning Record Page</br>-  Click on Contact Record Page</br>-  Click on Edit \-\> Click on Activation \-\> Click on ‘Assign Org Default’ \-\> Click on Save  |   |
+| Assign Contact Record Page as Org Default. |- Click on Setup</br>- Click on Object Manager</br>- Click on Contact</br>-  Click on Lightning Record Page</br>-  Click on Contact Record Page</br>-  Click on Edit \-\> Click on Activation \-\> Click on ‘Assign Org Default’ \-\> Click on Save. </br></br>-Repeat above steps for Vehicle_Record_Page1 on Vehicle object. </br>-Repeat above steps for Opportunity_Record_Page on opportunity object. </br>-Create a new workspace and name it Auto folio.</br>-Create New semantics for the 4 Dashboards. |   |
 
-### 17. Create a New Version of Omni-Channel Flow
+### 19. Create a New Version of Omni-Channel Flow
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| Create a New Version of Omni-Channel Flow  |- Click on Setup</br>- Search for flow on Quick Button</br>- Click on Flow</br>- Click on the Flow</br>- Click on **Route To ESA** </br>- Deactivate the flow and click on the **Route To ESA** at the end</br>- Remove the Service channel and add it back (Same component)</br>- Go to the Fallback Queue🡪 Remove the Messaging Queue and add it back (Same Queue)</br>- Save as new version and activate the flow by clicking on the **Activate** button.  |  |
+| Create a New Version of Omni-Channel Flow  |- Click on Setup</br>- Search for flow on Quick Button</br>- Click on Flow</br>- Click on the Flow</br>- Click on **Route To ESA** </br>- Deactivate the flow and click on the **Route To ESA** at the end</br>- Remove the Service channel and add it back (Same component)</br>- Go to the Fallback Queue🡪 Remove the Messaging Queue and add it back (Same Queue)</br>- Save as new version and activate the flow by clicking on the **Activate** button. </br>-Click on setup, search for agent </br>-Click on ‘Agentforce Service Agent’ </br>-Check under the connection tab “Route To ASA” is added or not. If not added repeat the above steps  |  |
 
-### 18. Tableau Einstein Dashboards
+### 20. Tableau Einstein Dashboards
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 |Tableau Einstein Dashboards | - Create a new workspace and name it Auto folio</br> - Create a new workspace and name it Auto folio.</br> -	Create New semantics for the 4 Dashboards.</br> -	After semantics are created, create Calculated fields.</br> - Build visualization.</br> - Build Dashboards.</br> - Embed the Dashboards by creating Lightning app builder and related tabs.</br> - Go to setup, select Custom Tab, select Lightning page tab and create a new tab.</br> -	Embed the dashboard on Vehicle related tabs and Data cloud Home page.
+
+### 21. Add External Id into Contact as well snowflake after Self Registration contact creation 
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+**Scenario 1: When Existing Ext Id value present in snowflake and user want to use it**
+|Add External Id into Contact as well snowflake after Self Registration contact creation |-Go to App launcher>> Search for Data Explorer >> Select object type as data model>> Select Survey Response </br>-Now Result will show under Submitter column>> copy any of any of the value(eg: 48291735) </br>-Go to contact tab>> open recently created record via self registration form paste the value in EXT Id field.</br>-click on save</br>-Wait for 10 to 15 min so that data stream will refresh then refresh the page then ask the question to copilot.</br> **Scenario 2: When new Ext Id mentioned in contact , so new snowflake record need to create** </br>-Go to contact tab>> open recently created record via self registration form And Enter new EXT Id field value And click on save</br>-Same Ext id need to present in snow flake : Download the below file, use the same format to create data entries, under Response_Submitter__c column you can mention the Ext Id field new value from Contact object. [Snowflake data file](https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html?url=https%3A%2F%2Finfosystechnologies-my.sharepoint.com%2F%3Ax%3A%2Fg%2Fpersonal%2Fsreeram_v01_ad_infosys_com%2FEZxoswyXBY5MlMlbd06UCFgBA3r8d-znvoXpCsnnIQR3kA%3Femail%3Dsnehal.salve01%2540infosys.com%26wdOrigin%3DTEAMS-MAGLEV.p2p_ns.rwc%26wdExp%3DTEAMS-TREATMENT%26wdhostclicktime%3D1743764137679%26web%3D1&locale=en-us&dest=https%3A%2F%2Fteams.microsoft.com%2Fapi%2Fmt%2Fpart%2Fapac-02%2Fbeta%2Fatpsafelinks%2Fgeturlreputationsitev2%2F&pc=6mxxgiHqn5vFNzsJ49cbVOCy1cwIWqGNW19a3A5O3dxCTHgQzQ0HIwMoGae63N5PcXQTCfy5qZ4nN9TpwSqHxIHARArUCqVOs1RYNTHrkBdKvf%252f5JnZRoREKjOReGS4vZ8dBid7oTFH0p%252b%252feojMHzx%252bxF90iCfJSbDxrpHYJCjJqRoIMOOWbzu4wuh2upaIR304oOwMCrd9oWeQkR%252flP2NVqZKPgqJCiaHhrr2tfwDm8k%252b3o9PynByaMCefP03tvUp9AyZOCbRfzzwwFpFDC9ybNXCWzYMwhbKhoHmgNNyAB7n8RUPKK66uysAteT3sd6uRvRQIYNuOv%252f8xgsQQCu16f2CoCc%252bUscuisB9HVfndpiG7HPUFzGWGc1mzjZmx%252f8jSVPzOi2hcdBvbckZuGYpP7P9pOIe%252fi%252bsaDd6I9ncNF1Zdfdwuk6uxVnBVfKzYTwpuNjSh30gK45Hb%252fL6xwVtJJGYirDvK4zaTA0Lr5enOnGxkTtyM8PFvh%252bpBPN%252b%252fcFSy%252b87bvAecLS84DGrLTn92vskDbcHghkuk5%252fngazkRQn1%252fEkVc2SR5%252fCzsWTnwk9PCdI5BvaObGiU8wajAh3E7H3oo4XyVIRGvnVYRQWqI65dhgnKQFUFKfMXgJOIgBbgcOuep3uuKdDwo2d2r1n1jN7qK6n5%252fk%252boCD%252fc8mzMMmvdxIiQNvzJ6wQ6qt53OQgeuMsrQjrUaFd0NemweLYtcyJzue1IyGFuIPPqkso5pYqMEjjlfH7FWVZua5zCQ%252bLi%252fJYoh3qraDl3INGJiQsNlObnq2O0MjGPHWyR4ElN%252b8Z8QYwQm5rvh8T4LdUTR%252bqc2HtG4bOMGKkzpAjpHBNT%252fONl1uzu%252fK4W0auPmV7LoBdUAAgvkAG1MLNa9lWaYEJDWmEOKcGk5wqsQWElvPJgR269EZt5Dk0KNWGfGcCZhWDfCZ95APTSFeVVlpo48jHBUCdGmkbeMOEp6gVNh%252fAJaHVqtw2DmdSGolnqveK%252fx4GfjR8aRSCujx979N9Ly9NhdLOOhr7wX0UcqsxB6DOGu7VGDWs%252f04%252bhFbWWOziGqPiTxYsfH3NF3HpRAvsmk%252fqjq2nJZzTCF2%252fEbr0QyUEbFpk58Fk73DUDdLVGQiZDVXaeHqzQXiNLKyqv5fCGgGxjvNjl1uVBgZ8RBwb2d%252bjMrUDiEDRzX7%252f4X1GNOKU5c%252f5MXzAQPv4ULgwFIkcwUPQPuT8bgqUjggCEUSvkfL1CGD5C%252bWqKqMGgReqVugYK5MJs06tTwYmWCTdw4phDn4BmUX7Qk%252f%252fgO7dG%252bn5VQqjcq8C05XDv4xvvjdWZL9%252b7R11jI6x7C7kf6p0WyhuzPV57h8lRr8xCJp5QsMo5iqNZ2y5wnorh0q9e%252f4X4ntxUakKP1l425a57GBqymKj%252fHX%3B%20expires%3DSat%2C%2005%20Apr%202025%2006%3A22%3A10%20GMT%3B%20path%3D%2F%3B%20SameSite%3DNone%3B%20secure%3B%20httponly&wau=https%3A%2F%2FAPC01.safelinks.protection.outlook.com%2FGetUrlReputation&si=undefined%3B1743675503279%3B19%3A4d6eb542-b0b7-41d5-a449-3f580e45842c_8d2d1e57-78a0-4125-87ef-e815e6b324f3%40unq.gbl.spaces&sd=%7BconvId%3A%2019%3A4d6eb542-b0b7-41d5-a449-3f580e45842c_8d2d1e57-78a0-4125-87ef-e815e6b324f3%40unq.gbl.spaces%2C%20messageId%3A%201743675503279%7D&ce=prod&cv=49%2F25030201010&ssid=a7b8e959-be73-42b8-8409-3d99e7242a63&ring=general&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNTAzMDIwMTAxMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ==&bg=%23f0f0f0&fg=%23242424&fg2=%239092c1) </br>Go to Snowflake>> under table THIRD_PARTY_SURVEY ,upload the file Wait for 15 to 20 min to refresh the data stream named as Third Party Survey. </br>-Go to App launcher>> Search for Data Explorer >> Select object type as data model>> Select Survey Response>> Result will pop up , verify your new data entry </br>-At the end you will refresh the contact page and ask your copilot scenario. </br></br>**Note: Before asking any questions to agentforce and copilot please wait 15 to 30 min for all data stream to be refresh so that you will see the data under contact 360, vehicle 360.** </br>**2. You can only create 26 self register users.** |   |
+
+### 22. Create warranty contract document for vehicle record created via Self Registration form and upload into S3  
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+|Create warranty contract document for vehicle record created via Self Registration form and upload into S3 |-Go to Contact>> Open the recently created record via self registration form>> </br>-Go to Related tab>> go to asset>> Open the record>> click on Vehicle field value </br>-It will redirect to vehicle record>> Go to details>> Copy the VIN </br>-Download below file , you can replace the details as per your requirement such as VIN ,warranty start date, end date but make sure your VIN should be correct.[Warranty Contract](https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html) </br>- Create a PDF and upload into amazon S3. </br>**Note: Before asking any questions to agentforce and copilot please wait 15 to 30 min for all data stream to be refresh so that you will see the data under contact 360, vehicle 360.**</br>**2. You can only create 26 self register users.**|      |
+
+### 23. Publish Calculated Insights After Self Registration
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+|Publish Calculated Insights After Self Registration |- Go to App launcher>> Go to Data cloud>> Go to Calculated Insights>> open Customer Satisfaction Score >> click on publish now. </br>-Go to Calculated Insights>> open Customer Lifetime Value >> click on publish now.  |    |
+
+### 24. Connected App Configuration 
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+|Connected App Configuration |-Go to setup</br>-Change the Email Address Of Orgfram Epic User to your Email Id </br>-Wait for 5-10 minutes till your Email is Verified </br>-Then, Search for ‘GuestUserCometD’ Connected App in App manager, Click on Manage Consumer Details </br>-Copy the Consumer Key and Consumer Secret and Keep it in Notepad, we will be using them in below steps. </br>-Perform the below script from anonymous window to get the Secret key and then store in Secret_Key__mdt -->Secret_Key__c Field ‘String secretKey = EncodingUtil.base64Encode(Crypto.generateAesKey(256)); System.debug('Generated Key: ' + secretKey);’ </br>-3.Metadata record name must be Label=HMAC_Secret, Client_Id__c = Cunsumer Key Client_Secret__c= Consumer Secret. </br></br>-Search for the connected app again **‘GuestUserCometD’** </br>-Click on Manage Scroll down to **‘Client Credentials Flow’ and Select Admin User for E.g( Org Farm Epic)** </br></br>-Go to Auth Provider Search for ‘GuestUserAuth’ Click on Edit and Paste the Consumer Secret and Consumer key that you have in your notepad, also If you are performing this in Sandbox change the Authorization Endpoint as [](https://test.salesforce.com/services/oauth2/authorize) and Authorization Token[](https://test.salesforce.com/services/oauth2/token ), f Performing in Production add the Authorization Endpoint as [](https://login.salesforce.com/services/oauth2/authorize) and Authorization Token[]( https://login.salesforce.com/services/oauth2/token ).</br>-Save the Auth Provider, and Copy the **Callback URL in in Salesforce Configuration Section and Paste the same URL to The ‘GuestUserCometD’ Connected App Callback URL** and Save the App</br>-Search for Named Credentials In Named Credentials search for GuestCometD</br>-click on edit</br>-Update the URL to current org domain URL (Go to setup>>search>>MyDomain ) </br>-Save the Named Credentials and you will Get authenticated </br>-Got to setup</br>-Change the Email Address or Orgfram Epic User to your Email Id </br>-Then, Search for ‘Data Cloud API’ Connected App in App manager Click on Manage Consumer Details </br>-Copy the Consumer Key, Consumer Secret and Keep it in Notepad, we will be using them in below steps. </br>-Go to Auth Provider Search for ‘Data_Cloud_Auth ‘Click on Edit and Paste the Consumer Secret and Consumer key that you have in your notepad, If you are performing this in Sandbox change the Authorization Endpoint as https://test.salesforce.com/services/oauth2/authorize and Authorization Token []( https://test.salesforce.com/services/oauth2/token),if Performing in Production add the Authorization Endpoint as https://login.salesforce.com/services/oauth2/authorize and Authorization Token[]( https://login.salesforce.com/services/oauth2/token) </br>-And add default scopes as ‘api cdp_query_api cdp_profile_api refresh_token’ </br>-Save the Auth Provider, and Scroll down in Auth provider Copy the Callback URL in Salesforce Configuration Section and Paste the same URL to The Data Cloud API Connected App Callback URL and Save the App.  |     |
+
+### 25. Named Credentials
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+|Named Credentials|-Search for Named Credentials </br>-In Named Credentials search for **‘DataCloudNew’** </br>-click on edit</br>-Update the URL to current org domain URL (Go to setup>>search>>MyDomain ) </br>-Save the Named Credentials and you will Get authenticated. |   |
+
+### 26. Enable Oauth and OpenID Connect Settings
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+|Save the Named Credentials and you will Get authenticated |-Go to Setup </br>- Search for Enable OAuth and OpenId Connect Settings </br>-Enable **Allow OAuth Username-Password Flows and Allow OAuth User-Agent Flows** |    |
+
+### 27.Assign Buyer Group For Self Registration 
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- | 
+|Assign Buyer Group For Self Registration |-Scroll down to self-registration section </br>-Select Profile as ‘Autofolio community user’ </br>-Account record type as ‘Business Type’ </br>-Permission group set ‘Commerce_shopper’ </br>-Default buyer as ‘Autofolio Buyer Group’ </br>-Click Save|     |
+
+### 28.Configure Segment
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+|Configure Segment|-Go to data cloud </br>-Search for Segments And Click on hyperlink of each segment one by one </br>-click on save</br>-The segment count should be greater than 0. </br>-click on done</br>-Click on the Publish now button. |    |
 
 </details>
 <details><summary>
