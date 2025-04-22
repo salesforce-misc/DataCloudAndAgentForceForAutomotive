@@ -283,7 +283,7 @@ the org, follow the steps below to create data streams.
 ### 8. Enable as a Buyer Group
   | Step  | Action and Details  |  Images |
   | ----- | ----- | ----- |
-|Enable as a Buyer Group |-Go to App launcher>>Enter Account and click on it>> Open TMZ Dealership account record </br>-click on Enable as Buyer>> click on enable. |  ![Enable as a Buyer Group1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/d45b538c-592b-4923-8c84-a6479c146bf7)|
+|Enable as a Buyer Group |-Go to App launcher>>Enter Account and click on it>> Open TMZ Dealership account record </br>-Click on Enable as Buyer Button>> Click on Enable As Buyer. | ![Enable as a Buyer Group1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/d45b538c-592b-4923-8c84-a6479c146bf7)|
 
 ### 9. Enable Guest access
   | Step  | Action and Details  |  Images |
@@ -300,7 +300,6 @@ the org, follow the steps below to create data streams.
   | ----- | ----- | ----- |
 |Create Order and OrderItems Data |-Click on App Launcher, search for Automotive Setup and click on Automotive Setup app </br>-Click on the **Create Order and OrderItems** button (highlighted in the screenshot below) and wait for a confirmation message before proceeding further. | <img width="226" alt="Create Order and OrderItems Data1" src="https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/abfc8670-07b8-414a-af18-049ab8ffe8f8">|
 </details>
-
 <details><summary>
 
  ## 5. Configure Amazon and Snowflake Connections
@@ -504,7 +503,7 @@ Third Party Survey Data- https://docs.google.com/spreadsheets/d/1hmD5QQAennbsQCi
 ### 19. Create a New Version of Omni-Channel Flow
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| Create a New Version of Omni-Channel Flow  |- Click on Setup</br>- Search for flow on Quick Button</br>- Click on Flow</br>- Click on the Flow</br>- Click on **Route To ESA** </br>- Deactivate the flow and click on the **Route To ESA** at the end</br>- Remove the Service channel and add it back (Same component)</br>- Go to the Fallback Queue🡪 Remove the Messaging Queue and add it back (Same Queue)</br>- Save as new version and activate the flow by clicking on the **Activate** button. </br>-Click on setup, search for agent </br>-Click on ‘Agentforce Service Agent’ </br>-Check under the connection tab “Route To ASA” is added or not. If not added repeat the above steps  | ![Create a New Version of Omni-Channel Flow1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/f28c5cd4-794b-4b93-b1e6-7062a0494c95)![Create a New Version of Omni-Channel Flow2](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/38e185c2-6a19-4640-91fa-d8a7dc1c6696)![Create a New Version of Omni-Channel Flow3](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/86b67fbe-529b-4169-9143-205511e60a3d)![Create a New Version of Omni-Channel Flow4](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/3b02b32c-42de-4e2f-8908-711f418b0ff5) |
+| Create a New Version of Omni-Channel Flow  |- Click on Setup</br>- Search for flow on Quick Button</br>- Click on Flow</br>- Click on the Flow</br>- Click on **Route To ASA** </br>- Deactivate the flow and click on the **Route To ESA** at the end</br>- Remove the Service channel and add it back (Same component)</br>- Go to the Fallback Queue🡪 Remove the Messaging Queue and add it back (Same Queue)</br>- Save as new version and activate the flow by clicking on the **Activate** button. </br>-Click on setup, search for agent </br>-Click on ‘Agentforce Service Agent’ </br>-Check under the connection tab “Route To ASA” is added or not. If not added repeat the above steps  | ![Create a New Version of Omni-Channel Flow1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/f28c5cd4-794b-4b93-b1e6-7062a0494c95)![Create a New Version of Omni-Channel Flow2](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/38e185c2-6a19-4640-91fa-d8a7dc1c6696)![Create a New Version of Omni-Channel Flow3](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/86b67fbe-529b-4169-9143-205511e60a3d)![Create a New Version of Omni-Channel Flow4](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/3b02b32c-42de-4e2f-8908-711f418b0ff5) |
 
 ### 20. Tableau Einstein Dashboards
 | Step  | Action and Details  |  Images |
@@ -562,6 +561,12 @@ Third Party Survey Data- https://docs.google.com/spreadsheets/d/1hmD5QQAennbsQCi
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 |Configure Segment|-Go to data cloud </br>-Search for Segments And Click on hyperlink of each segment one by one </br>-click on save</br>-The segment count should be greater than 0. </br>-click on done</br>-Click on the Publish now button. |  ![Segment](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/3b9bce22-463a-46bc-9f54-f240855ea8d2) |
+
+### 31.If Strikethrough price is not populating on UI for any of the products then perform below steps
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+|If Strikethrough price is not populating on UI for any of the products then perform below steps|-Go to App launcher>> Enter Commerce and click on it>>Select AutoFolio >>  </br>-click on the product where strikethrough price is not present on UI (eg: Electra Model 3.2 - 2025)>> Scroll down </br>-Click on Go to Global product Record>> Once you landed on Product record page then click on Related tab </br>-Search for Pricebook>> click on edit button of Standard Pricebook (do not change any values)>> click on save.</br>-Go back to Store again>> on the left hand side >> click on Website Design>>Select product from dropdown>> click on publish button </br>- Once its successfully published then>> Go back to Store again>> on the left hand side >> Scroll down >> Expand Setting </br>-click on search >>click on update button>> Select full update>> then click on Update button. </br>-Refresh the page after 10 to 15 min and see Automatic update status mark as completed or not , if not then wait to complete it.</br>-Go back to Site url>>hard refresh it >> click on product tab>>see the price is coming or not </br>-if price is still not coming then>> Go to setup>> enter all sites under quick find box>> click on All sites </br>- Click on Builder for AutoFolio Site, click on publish button>> wait for 10 to 15 min for successful publishing the site</br>- Go back to Site url>> hard refresh it >>click on product tab>> see the price is coming or not. |    |
+| |-**To proceed for testing kindly change below fields manually**</br>-We are using John Smith contact for testing purpose whose email id ends with dataclouddemo.com And Address, Email </br>-phone number, please add phone extension as well don't add plus sign please see eg(eg: 19045737373, 1 is here as usa phone number extension), |  |
 
 </details>
 <details><summary>
