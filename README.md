@@ -542,16 +542,26 @@ Third Party Survey Data- https://docs.google.com/spreadsheets/d/1hmD5QQAennbsQCi
 | ----- | ----- | ----- |
 |Save the Named Credentials and you will Get authenticated |-Go to Setup </br>- Search for Enable OAuth and OpenId Connect Settings </br>-Enable **Allow OAuth Username-Password Flows and Allow OAuth User-Agent Flows** | ![Enable Oauth and OpenID Connect Settings1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/b8f3c82a-ad7e-46cb-8bf4-44e74bd3b81b)|
 
-### 27.Assign Buyer Group For Self Registration 
+### 27. Assign AutoFolio Guest Buyer Profile.
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+|Assign AutoFolio Guest Buyer Profile |-Click on App Launcher on the left side.  </br>- Search Commerce and click on it.  </br>-Select Store name as “AutoFolio” if not selected on the left side </br>-Click on settings on left side and expand it </br>-Click on “Buyer Access” tab on the menu. </br>-Scroll down under Enable Guest Access and Click on AutoFolio guest buyer profile And click on related tab. </br>-click on Assign buyer group and select **AutoFolio buyer group**. |    |
+
+### 28. Assign AutoFolio Buyer Group
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+|Assign AutoFolio Buyer Group |-Select Store name as “AutoFolio” if not selected on the left side  </br>- Click on settings on left side and expand it .  </br>-Click on “Buyer Access” tab on the menu. </br>-Click on settings on left side and expand it </br>-Under store access go to buyer group section and click on AutoFolio Buyer group. </br>-Go to related tab and click on assign on buyer group member.   </br>-select **TMZ Dealership and AutoFolio Guest Buyer Profile** and save.  |    |
+
+
+### 29.Assign Buyer Group For Self Registration 
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- | 
 |Assign Buyer Group For Self Registration |-Scroll down to self-registration section </br>-Select Profile as ‘Autofolio community user’ </br>-Account record type as ‘Business Type’ </br>-Permission group set ‘Commerce_shopper’ </br>-Default buyer as ‘Autofolio Buyer Group’ </br>-Click Save|   <img width="239" alt="Assign Buyer Group For Self Registration1" src="https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/7ca8ff36-79a8-452d-8f70-6db898150d70">|
 
-### 28.Configure Segment
+### 30.Configure Segment
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-|Configure Segment|-Go to data cloud </br>-Search for Segments And Click on hyperlink of each segment one by one </br>-click on save</br>-The segment count should be greater than 0. </br>-click on done</br>-Click on the Publish now button. |  ![Segment](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/3b9bce22-463a-46bc-9f54-f240855ea8d2)
-  |
+|Configure Segment|-Go to data cloud </br>-Search for Segments And Click on hyperlink of each segment one by one </br>-click on save</br>-The segment count should be greater than 0. </br>-click on done</br>-Click on the Publish now button. |  ![Segment](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/3b9bce22-463a-46bc-9f54-f240855ea8d2) |
 
 </details>
 <details><summary>
