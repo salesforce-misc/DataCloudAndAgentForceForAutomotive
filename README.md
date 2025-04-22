@@ -413,8 +413,7 @@ Third Party Survey Data- https://docs.google.com/spreadsheets/d/1hmD5QQAennbsQCi
 ### 1. Refresh Snowflake Data Streams
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-|  Refresh Snowflake Data Streams | - Navigate to Data Cloud app and the Data Streams tab </br>- Query for **Third Party Survey data** stream</br>- Using drop down control on the right against the data stream initiate update status for the **Third Party Survey data** stream </br>- Third Party Survey -8 | ![Refresh Snowflake Data Streams1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/c5c4553f-91be-4725-ad4c-e8e8303022e9)
-  |
+|  Refresh Snowflake Data Streams | - Navigate to Data Cloud app and the Data Streams tab </br>- Query for **Third Party Survey data** stream</br>- Using drop down control on the right against the data stream initiate update status for the **Third Party Survey data** stream </br>- Third Party Survey -8 | ![Refresh Snowflake Data Streams1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/c5c4553f-91be-4725-ad4c-e8e8303022e9) |
 
 ### 2. Run Identity Resolution Ruleset
 | Step  | Action and Details  |  Images |
@@ -455,20 +454,17 @@ Third Party Survey Data- https://docs.google.com/spreadsheets/d/1hmD5QQAennbsQCi
 ### 9. Change the layout of the Forget Password page.
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| Change the layout of the Forget Password page.|- Go to Setup, in the Quick Find Box, enter Digital Experiences, and then select All Sites </br>- Against the site ‘AutoFolio’, click on Builder </br>-From the Page dropdown, search for Login, and then select Forget Password </br>- Remove the site logo and add a Text Box component. Enter the text as "AUTOFOLIO", make it bold and center </br>-Publish the changes | <img width="232" alt="Change the layout of the Forget Password page1" src="https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/4a318e7f-439d-460c-b94d-73bdd21b09d8">
- |
+| Change the layout of the Forget Password page.|- Go to Setup, in the Quick Find Box, enter Digital Experiences, and then select All Sites </br>- Against the site ‘AutoFolio’, click on Builder </br>-From the Page dropdown, search for Login, and then select Forget Password </br>- Remove the site logo and add a Text Box component. Enter the text as "AUTOFOLIO", make it bold and center </br>-Publish the changes | <img width="232" alt="Change the layout of the Forget Password page1" src="https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/4a318e7f-439d-460c-b94d-73bdd21b09d8">|
 
 ### 10. Change the layout of the Register page
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| Change the layout of the Register page. |- Go to Setup, in the Quick Find Box, enter Digital Experiences, and then select All Sites</br>- Against the site ‘AutoFolio’’, click on Builder</br>- From the Page dropdown, search for Register, and then select Register</br>- Remove the site logo and add a Text Box component. Enter the text as "AutoFolio’", make it bold and center</br>- Publish the changes  | <img width="222" alt="Change the layout of the Register page1" src="https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/f22ab956-01b0-49e9-9c7d-3517ed5bc602">
- |
+| Change the layout of the Register page. |- Go to Setup, in the Quick Find Box, enter Digital Experiences, and then select All Sites</br>- Against the site ‘AutoFolio’’, click on Builder</br>- From the Page dropdown, search for Register, and then select Register</br>- Remove the site logo and add a Text Box component. Enter the text as "AutoFolio’", make it bold and center</br>- Publish the changes  | <img width="222" alt="Change the layout of the Register page1" src="https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/f22ab956-01b0-49e9-9c7d-3517ed5bc602"> |
 
 ### 11. Change the email Address
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| Change the email Address. |- Go to Setup \-\> Open All Sites</br>- Click on Workspaces (the configured Sites) \-\> Click Administrator</br>- Click on Emails</br>- Change Sender email to system admin email</br>- Click on save | <img width="234" alt="Change the email Address1" src="https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/014afbc7-2973-48ff-af8e-83a3c2829b0c">
- |
+| Change the email Address. |- Go to Setup \-\> Open All Sites</br>- Click on Workspaces (the configured Sites) \-\> Click Administrator</br>- Click on Emails</br>- Change Sender email to system admin email</br>- Click on save | <img width="234" alt="Change the email Address1" src="https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/014afbc7-2973-48ff-af8e-83a3c2829b0c">|
 
 ### 12. Run CRM Analytics Recipes
 | Step  | Action and Details  |  Images |
