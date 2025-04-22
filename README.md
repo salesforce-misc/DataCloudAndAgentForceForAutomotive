@@ -594,14 +594,12 @@ Third Party Survey Data- https://docs.google.com/spreadsheets/d/1hmD5QQAennbsQCi
 ### 2. Upload the schema file(used ‘Order’ in the yaml file format.
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-|  |-Upload the schema file(used ‘Order’ in the yaml file format |  ![MuleSoft configuration For Real-Time Telematics Data2](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/ab6f3f23-376c-477a-9771-b8a04d14079a)
-  |
+|  |-Upload the schema file(used ‘Order’ in the yaml file format |  ![MuleSoft configuration For Real-Time Telematics Data2](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/ab6f3f23-376c-477a-9771-b8a04d14079a)|
 
 ### 3. Create a Data Stream for Ingestion API with Selected Schema Object that going to use.
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| |-Create a Data Stream for Ingestion API with Selected Schema Object that going to use. |  ![MuleSoft configuration For Real-Time Telematics Data3](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/3ce0010a-1f51-40a6-b558-12f343e6081d)
-  |
+| |-Create a Data Stream for Ingestion API with Selected Schema Object that going to use. |  ![MuleSoft configuration For Real-Time Telematics Data3](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/3ce0010a-1f51-40a6-b558-12f343e6081d)|
 
 ### 4. Configure the mapping with Primary key. 
 | Step  | Action and Details  |  Images |
