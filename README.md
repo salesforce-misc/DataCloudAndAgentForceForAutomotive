@@ -534,7 +534,7 @@ Third Party Survey Data- https://docs.google.com/spreadsheets/d/1hmD5QQAennbsQCi
 ### 25. Named Credentials
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-|Named Credentials|-Search for Named Credentials </br>-In Named Credentials search for **‘DataCloudNew’** </br>-click on edit</br>-Update the URL to current org domain URL (Go to setup>>search>>MyDomain ) </br>-Save the Named Credentials and you will Get authenticated. |  ![Named Credentials1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/5a53741a-f135-4267-86f3-5dadafdbfd8a)![Named Credentials2](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/d8a3dd1d-042d-4fda-b695-dee431eec2fe)![Named Credentials3](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/beccec26-f441-47ce-a35e-23502b76fdb4)|
+|Named Credentials|-Search for Named Credentials </br>-In Named Credentials search for **‘DataCloudNew’** </br>-click on edit</br>-Update the URL to current org domain URL (Go to setup>>search>>MyDomain ) </br>-Save the Named Credentials and you will Get authenticated.</br>-If you get an Error Wait for 10 minutes and Save the Named Credentials again. |  ![Named Credentials1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/5a53741a-f135-4267-86f3-5dadafdbfd8a)![Named Credentials2](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/d8a3dd1d-042d-4fda-b695-dee431eec2fe)![Named Credentials3](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/beccec26-f441-47ce-a35e-23502b76fdb4)|
 
 ### 26. Enable Oauth and OpenID Connect Settings
 | Step  | Action and Details  |  Images |
