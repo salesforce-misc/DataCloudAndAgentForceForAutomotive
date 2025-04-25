@@ -405,9 +405,18 @@ Third Party Survey Data- https://docs.google.com/spreadsheets/d/1hmD5QQAennbsQCi
 
 [26.Enable Oauth and OpenID Connect Settings](#26-Enable-Oauth-and-OpenID-Connect-Settings)
 
-[27.Assign Buyer Group For Self Registration ](#27-Assign-Buyer-Group-For-Self-Registration)
+[27.Assign AutoFolio Guest Buyer Profile.  ](#27-Assign-AutoFolio-Guest-Buyer-Profile)
 
-[28.Configure Segment  ](#28-Configure-Segment)
+[28.Assign AutoFolio Buyer Group ](#28-Assign-AutoFolio-Buyer-Group)
+
+[29.Assign Buyer Group For Self Registration ](#29-Assign-Buyer-Group-For-Self-Registration)
+
+[30.If Strikethrough price is not populating on UI for any of the products then perform below steps ](#30-If-Strikethrough-price-is-not-populating-on-UI-for-any-of-the-products-then-perform-below-steps)
+
+[31.Experience Site Product UI Configuration](#31-Experience-Site-Product-UI-Configuration)
+
+[32.Experience Site Product Price as Display 1 Price Configuration  ](#32-Experience-Site-Product-Price-as-Display-1-Price-Configuration)
+
 
 ### 1. Refresh Snowflake Data Streams
 | Step  | Action and Details  |  Images |
