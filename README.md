@@ -521,53 +521,67 @@ Third Party Survey Data- https://docs.google.com/spreadsheets/d/1hmD5QQAennbsQCi
 | ----- | ----- | ----- |
 |Create warranty contract document for vehicle record created via Self Registration form and upload into S3 |-Go to Contact>> Open the recently created record via self registration form>> </br>-Go to Related tab>> go to asset>> Open the record>> click on Vehicle field value </br>-It will redirect to vehicle record>> Go to details>> Copy the VIN </br>-Download below file , you can replace the details as per your requirement such as VIN ,warranty start date, end date but make sure your VIN should be correct.[Warranty Contract](https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html) </br>- Create a PDF and upload into amazon S3. </br>**Note: Before asking any questions to agentforce and copilot please wait 15 to 30 min for all data stream to be refresh so that you will see the data under contact 360, vehicle 360.**</br>**2. You can only create 26 self register users.**|      |
 
-### 23. Publish Calculated Insights After Self Registration
+### 23. To enable real time for the new contact on Self Registration 
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+|To enable real time for the new contact on Self Registration |-Go to App launcher>> Go to Data Cloud>> Go to Identity Resolution  </br>-Click on Guest Profile>>click on Run Ruleset button((once Status Succeeded then process with next step )  </br>-Go to App launcher>> Enter Data Graphs>>Click on it  </br>-Scroll to right of Automotive Real Time data graph>> click on arrow >> click on update status and wait for Status Active  </br>- Scroll to right of Web Engagement RT Profile  data graph>> click on arrow >> click on update status and wait for Status Active  </br>Go to Experience site>> login with newly created user from self registration form </br>Click on product tab>>select any product </br>-Go back to salesforce org and open Contact Record page to see the Real Time Product Details. |      |
+
+### 24. Publish Calculated Insights After Self Registration
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 |Publish Calculated Insights After Self Registration |- Go to App launcher>> Go to Data cloud>> Go to Calculated Insights>> open Customer Satisfaction Score >> click on publish now. </br>-Go to Calculated Insights>> open Customer Lifetime Value >> click on publish now.  |    |
 
-### 24. Connected App Configuration 
+### 25. Connected App Configuration 
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 |Connected App Configuration |-In the Top Right, Click on the Profile Icon then Click on the Name of the profile(for e.g OrgFarm Epic), then click on User Details, after you land on User Detail Page, click Edit </br>-Change the Email Address Of Orgfram Epic User to your Email Id </br>-Wait for 5-10 minutes till your Email is Verified  </br>-Go to Setup, search App Manager, Click on App Manager Then, search for ‘GuestUserCometD’ Connected App, scroll to the Right, click on drop-down arrow button, click on View, once you are on Connected App Page, click on ‘Manage Consumer Details’ </br>-Copy the Consumer Key and Consumer Secret and Keep it in Notepad, we will be using them in the steps below. </br>-Perform the below script from anonymous window to get the Secret key and then store in Secret_Key__mdt -->Secret_Key__c Field **‘String secretKey = EncodingUtil.base64Encode(Crypto.generateAesKey(256)); System.debug('Generated Key: ' + secretKey);’** Metadata record name must be Label=HMAC_Secret, Client_Id__c = Consumer Key Client_Secret__c= Consumer Secret </br></br>-Search for the connected app again **‘GuestUserCometD’** </br>-From Setup Go to the connected app again ‘GuestUserCometD’ Scroll to the Right, click on drop-down arrow button, click on View, once you are on Connected App Page, click on ‘Manage’, Scroll down to **‘Client Credentials Flow’ and Select Admin User for E.g( Org Farm Epic),** and Save  </br></br>-Go to Auth Provider Search for ‘GuestUserAuth’ Click on Edit and Paste the Consumer Secret and Consumer key that you have in your notepad, also If you are performing this in Sandbox change the Authorization Endpoint as [](https://test.salesforce.com/services/oauth2/authorize) and Authorization Token[](https://test.salesforce.com/services/oauth2/token ), if Performing in Production add the Authorization Endpoint as [](https://login.salesforce.com/services/oauth2/authorize) and Authorization Token[]( https://login.salesforce.com/services/oauth2/token ).</br>-Save the Auth Provider, from the same Auth Provider Scroll down to Salesforce Configuration Section, Copy the Callback URL  and Paste It in Notepad. </br>Go To Setup , Search App manager, Search for ‘GuestUserCometD’, Scroll to right Click on dropdown arrow and view, once you are in connected app, Click on Edit  Paste the callback URL you copied inThe Callback URL Field and Save the App </br>-Go to Setup Search for Named Credentials </br>-Search for GuestCometD And Click on Edit </br>-Update the URL to current org domain URL (Go to setup>>search>>MyDomain ) </br>-Save the Named Credentials and you will Get authenticated </br>-If you get an Error Wait for 10 minutes and Save the Named Credentials again. </br></br>-**Connected App Configuration 2** </br>-Go to Setup, search App Manager, Click on App Manager Then, search for ‘Data Cloud API’ Connected App Click on Manage Consumer Details </br>-Copy the Consumer Key, Consumer Secret and Keep it in Notepad, we will be using them in below steps. </br>-Go to Setup, search for Auth. Provider Auth Search for ‘Data_Cloud_Auth ‘Click on Edit and Paste the Consumer Secret and Consumer key that you have in your notepad, If you are performing this in Sandbox change the Authorization Endpoint as https://test.salesforce.com/services/oauth2/authorize and Authorization Token [](https://test.salesforce.com/services/oauth2/token ) </br>-if Performing in Production add the Authorization Endpoint as https://login.salesforce.com/services/oauth2/authorize and Authorization Token [](https://login.salesforce.com/services/oauth2/token) </br>-Save the Auth Provider, from the same Auth Provider Scroll down to Salesforce Configuration Section, Copy the Callback URL  and Paste It in Notepad. </br>-Go To Setup , Search App manager, Search for Data Cloud API, Scroll to right Click on dropdown arrow and view, once you are in connected app, Click on Edit  Paste the callback URL you copied inThe Callback URL Field and Save the App.   |     |
 
-### 25. Named Credentials
+### 26. Named Credentials
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 |Named Credentials|-Search for Named Credentials </br>-In Named Credentials search for **‘DataCloudNew’** </br>-click on edit</br>-Update the URL to current org domain URL (Go to setup>>search>>MyDomain ) </br>-Save the Named Credentials and you will Get authenticated.</br>-If you get an Error Wait for 10 minutes and Save the Named Credentials again. |  ![Named Credentials1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/5a53741a-f135-4267-86f3-5dadafdbfd8a)![Named Credentials2](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/d8a3dd1d-042d-4fda-b695-dee431eec2fe)![Named Credentials3](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/beccec26-f441-47ce-a35e-23502b76fdb4)|
 
-### 26. Enable Oauth and OpenID Connect Settings
+### 27. Enable Oauth and OpenID Connect Settings
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 |Save the Named Credentials and you will Get authenticated |-Go to Setup </br>- Search for Enable OAuth and OpenId Connect Settings </br>-Enable **Allow OAuth Username-Password Flows and Allow OAuth User-Agent Flows** | ![Enable Oauth and OpenID Connect Settings1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/b8f3c82a-ad7e-46cb-8bf4-44e74bd3b81b)|
 
-### 27. Assign AutoFolio Guest Buyer Profile.
+### 28. Assign AutoFolio Guest Buyer Profile.
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 |Assign AutoFolio Guest Buyer Profile |-Click on App Launcher on the left side.  </br>- Search Commerce and click on it.  </br>-Select Store name as “AutoFolio” if not selected on the left side </br>-Click on settings on left side and expand it </br>-Click on “Buyer Access” tab on the menu. </br>-Scroll down under Enable Guest Access and Click on AutoFolio guest buyer profile And click on related tab. </br>-click on Assign buyer group and select **AutoFolio buyer group**. |    |
 
-### 28. Assign AutoFolio Buyer Group
+### 29. Assign AutoFolio Buyer Group
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 |Assign AutoFolio Buyer Group |-Select Store name as “AutoFolio” if not selected on the left side  </br>- Click on settings on left side and expand it .  </br>-Click on “Buyer Access” tab on the menu. </br>-Click on settings on left side and expand it </br>-Under store access go to buyer group section and click on AutoFolio Buyer group. </br>-Go to related tab and click on assign on buyer group member.   </br>-select **TMZ Dealership and AutoFolio Guest Buyer Profile** and save.  |    |
 
 
-### 29.Assign Buyer Group For Self Registration 
+### 30.Assign Buyer Group For Self Registration 
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- | 
 |Assign Buyer Group For Self Registration |-Scroll down to self-registration section </br>-Select Profile as ‘Autofolio community user’ </br>-Account record type as ‘Business Type’ </br>-Permission group set ‘Commerce_shopper’ </br>-Default buyer as ‘Autofolio Buyer Group’ </br>-Click Save|   <img width="239" alt="Assign Buyer Group For Self Registration1" src="https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/7ca8ff36-79a8-452d-8f70-6db898150d70">|
 
-### 30.Configure Segment
+### 31.Configure Segment
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 |Configure Segment|-Go to data cloud </br>-Search for Segments And Click on hyperlink of each segment one by one </br>-click on save</br>-The segment count should be greater than 0. </br>-click on done</br>-Click on the Publish now button. |  ![Segment](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/3b9bce22-463a-46bc-9f54-f240855ea8d2) |
 
-### 31.If Strikethrough price is not populating on UI for any of the products then perform below steps
+### 32.If Strikethrough price is not populating on UI for any of the products then perform below steps
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 |If Strikethrough price is not populating on UI for any of the products then perform below steps|-Go to App launcher>> Enter Commerce and click on it>>Select AutoFolio >>  </br>-click on the product where strikethrough price is not present on UI (eg: Electra Model 3.2 - 2025)>> Scroll down </br>-Click on Go to Global product Record>> Once you landed on Product record page then click on Related tab </br>-Search for Pricebook>> click on edit button of Standard Pricebook (do not change any values)>> click on save.</br>-Go back to Store again>> on the left hand side >> click on Website Design>>Select product from dropdown>> click on publish button </br>- Once its successfully published then>> Go back to Store again>> on the left hand side >> Scroll down >> Expand Setting </br>-click on search >>click on update button>> Select full update>> then click on Update button. </br>-Refresh the page after 10 to 15 min and see Automatic update status mark as completed or not , if not then wait to complete it.</br>-Go back to Site url>>hard refresh it >> click on product tab>>see the price is coming or not </br>-if price is still not coming then>> Go to setup>> enter all sites under quick find box>> click on All sites </br>- Click on Builder for AutoFolio Site, click on publish button>> wait for 10 to 15 min for successful publishing the site</br>- Go back to Site url>> hard refresh it >>click on product tab>> see the price is coming or not. |    |
 | |-**To proceed for testing kindly change below fields manually**</br>-We are using John Smith contact for testing purpose whose email id ends with dataclouddemo.com And Address, Email </br>-phone number, please add phone extension as well don't add plus sign please see eg(eg: 19045737373, 1 is here as usa phone number extension), |  |
 
+### 33.Experience Site Product UI Configuration
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+|Experience Site Product UI Configuration |-Go to App Launcher>>Enter All Sites and click on it. </br>-For  Autofolio site click on builder </br>-click on preview>>click product>>click on back to builder again </br>-search for product images then click on it( result grid) </br>-Under Grid layout there is Number of Columns on Desktop – Select More Column Spacing – Select None Row Spacing- Select None.</br>-Publish the Site  |   |
+
+### 34.Experience Site Product Price as Display 1 Price Configuration
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+| Experience Site Product Price as Display 1 Price Configuration |-Go to App Launcher>>Enter All sites in quick find box>> click on it </br>-For  Autofolio site click on builder</br>-click on preview>>click product>>Click on any of Electra product </br>-click on back to builder again>>There are some pricing details present click on it </br>-Under Setting scroll down >> Pricing type as Display 1 Price </br>-Click on Publish button. |   |
 </details>
 <details><summary>
   
