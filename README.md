@@ -223,21 +223,23 @@ the org, follow the steps below to create data streams.
 
 [3. Create Sample Data 	](#3-create-sample-data)
 
-[4. Create Commerce Data 	](#3-create-commerce-data)
+[4. Create Commerce Data 	](#4-create-commerce-data)
 
-[5. Search Update	](#4-turnon-search-update)
+[5. Search Update	](#5-turnon-search-update)
 
-[6. Upload CMS Images into the Store And verify workspace	](#5-upload-cms-images-into-the-store-and-verify-workspace)
+[6. Upload CMS Images into the Store And verify workspace	](#6-upload-cms-images-into-the-store-and-verify-workspace)
 
-[7. Add CMS Product Image	](#6-add-image-to-a-product-in-cms)
+[7. Add CMS Product Image	](#7-add-image-to-a-product-in-cms)
 
-[8. Enable as buyer group	](#6-Enable-as-buyer-group)
+[8. Enable as buyer group	](#8-Enable-as-buyer-group)
 
-[9. Enable as guest access	](#6-Enable-as-guest-access)
+[9. Enable as guest access	](#9-Enable-as-guest-access)
 
-[10. Create community user and assign buyer account to buyer group	](#6-create-community-user-and-assign-buyer-account-to-buyer-group)
+[10. Create community user and assign buyer account to buyer group	](#10-create-community-user-and-assign-buyer-account-to-buyer-group)
 
-[11. Create order and orderItem Data	](#6-create-order-and-orderitem-data)
+[11. Create order and orderItem Data	](#11-create-order-and-orderitem-data)  
+
+[12. Create Opportunity ML Data](#12-Create-Opportunity-ML-Data)
 
 ### 1. Verify Organization Wide Address
   | Step  | Action and Details  |  Images |
@@ -299,6 +301,11 @@ the org, follow the steps below to create data streams.
   | Step  | Action and Details  |  Images |
   | ----- | ----- | ----- |
 |Create Order and OrderItems Data |-Click on App Launcher, search for Automotive Setup and click on Automotive Setup app </br>-Click on the **Create Order and OrderItems** button (highlighted in the screenshot below) and wait for a confirmation message before proceeding further. | <img width="226" alt="Create Order and OrderItems Data1" src="https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/abfc8670-07b8-414a-af18-049ab8ffe8f8">|
+
+### 12. Create Opportunity ML Data
+  | Step  | Action and Details  |  Images |
+  | ----- | ----- | ----- |
+|Create Opportunity ML Data |-Click on App Launcher, search for Automotive Setup and click on Automotive Setup app  </br>-Click on the **Create Opportunity Data For ML** button (highlighted in the screenshot below) and wait for a confirmation message before proceeding further. |  |
 </details>
 <details><summary>
 
@@ -309,11 +316,15 @@ the org, follow the steps below to create data streams.
 
 [1. Enable Account as Buyer Account	](#1-enable-account-as-buyer-account)
 
-[2. Setup Data in Amazon S3	](#4-setup-data-in-amazon-s3)
+[2. Setup Data in Amazon S3	](#2-setup-data-in-amazon-s3)
 
-[3. Setup Data in Snowflake	](#5-setup-data-in-snowflake)
+[3. Setup Data in Snowflake	](#3-setup-data-in-snowflake)
 
+[4. Create ML Model	](#4-Create-ML-Model)
 
+[5. Add ML Model Into Flow](#5-Add-ML-Model-Into-flow)
+
+ 
 ### 1. Enable Account as Buyer Account 
 | Step | Action and Details  |  Images |
 | ----- | ----- | ----- |
@@ -344,6 +355,16 @@ create or replace TABLE <<database_name>>.<<schema_name>>.THIRD_PARTY_SURVEY (
 Load data in the below csv file into Third_Party_Survey_Data table:
 Third Party Survey Data- https://docs.google.com/spreadsheets/d/1hmD5QQAennbsQCi0H--BlSY2gfB4Lpj-ei_Z5uhVMxg/edit?usp=sharing
 ```
+### 4. Create ML Model  
+| Step | Action and Details  |  Images |
+| ----- | ----- | ----- |
+| Create ML Model | - Click on App launcher and search for Einstein Studio.</br>-Click on Add Predictive Model button </br>-Select create a model from scratch </br>-click on next</br>-Select data space as Default and select Opportunity DMO for data option </br>-Click on Next </br>-For training select Filter Set of Records option </br>-Specify the condition to filter the records and select field as Closed and select operator as IN and select values like true </br>-Click on Apply Changes </br>-For Set goal option select field name as Won and Select Maximize option Select true</br>-Click on next</br>-For Prepare Variable select disable Autopilot and select the follow fields like **Total Amount, Test Drive Date, Close Date, Number of Past Interactions, Car Model, Recency of Interactions, After Completing a Test Drive Status** </br>-Click on next</br>-For select Algorithm option Enable Automatic Selection. </br>-Click on next</br>-Review all the things and Click on Save and Train and specify ML Model name as Predicted Likelihood of Purchase </br>-Lets wait the model to train it successfully </br>-click on Activate button. |   |
+
+### 5. Add ML Model into Flow 
+| Step | Action and Details  |  Images |
+| ----- | ----- | ----- |
+| Add ML Model into flow | - Click on Setup >> Enter Flows in quick find box>> click on flows </br>-Search for Data Cloud Likelihood of purchase on opportunity and open the flow  </br>-Connect path from Get Records to Decision(check Contact) and now change the layout from Free-Form to Auto Layout>> Pop up occurs then click on Lose Positions  </br>-Below Get Records from Opportunity Contact there is plus sign>> click on plus sign </br>-Select Action >>Enter Predicted and  select the action " Predicted Likelihood of Purchase" </br>-Enter label as "Predict Likelihood" , and map the fields  :  </br>1. click on Triggering ssot_Opportunity__dlm >>Select  After Completing a Test Drive Status </br>2. click on Triggering ssot_Opportunity__dlm >>Select Car Model  </br>3. click on Triggering ssot_Opportunity__dlm >>Select Number of Past Interactions </br>4. click on Triggering ssot_Opportunity__dlm >>Select  Recency of Interactions </br>5. click on Triggering ssot_Opportunity__dlm >>Select  Test Drive Date </br>6. click on Triggering ssot_Opportunity__dlm >>Select Total Amount </br>-Then Go to Update record >> click on it >> for Likelihood_of_Purchas__c  field value as select Outputs from Predict_Likeihood>> Select prediction </br>-Click on Save As New  Version button>> click on save</br>-Click Activate button</br>-Go to applauncher>> enter opportunity>> click on it >> Open any 4 to 5 records >> click on edit button and do some change and save it(like description..)  </br>-Go to John Smith contact>> See Likelihood purchase value.  |   |
+
 </details>
 
 <details><summary>
