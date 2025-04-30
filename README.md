@@ -165,7 +165,7 @@ the org, follow the steps below to create data streams.
 ### 5. Create Identity Resolution Ruleset from Data Kit
   | Step | Action and Details | Images |
   | ----- | ----- | ----- |
-  |  | -Go to Data Cloud app</br> - Click on the Identity Resolutions tab </br> - Click New</br> - Select Installed from Data Kit</b>- Choose "SFAutomotivePackage"</br>-Choose "SFAutomotivePackage" </br>- Click on Next</br>- Click on Save | ![Create Identity Resolution Ruleset from Data Kit1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/9ce9805a-d010-4aa6-a924-65484a0380ec)![Create Identity Resolution Ruleset from Data Kit2](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/c63c1bdd-ff59-4217-bfa4-81ed2d8a3955)![Create Identity Resolution Ruleset from Data Kit3](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/39565f64-cc56-4239-81d8-d1c1e9bbf73f)|
+  |  | -Go to Data Cloud app</br> - Click on the Identity Resolutions tab </br> - Click New</br> - Select Installed from Data Kit</b>- Choose "SFAutomotivePackage"</br>-Choose "Guest Profile" </br>- Click on Next</br>- Click on Save | ![Create Identity Resolution Ruleset from Data Kit1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/9ce9805a-d010-4aa6-a924-65484a0380ec)![Create Identity Resolution Ruleset from Data Kit2](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/c63c1bdd-ff59-4217-bfa4-81ed2d8a3955)![Create Identity Resolution Ruleset from Data Kit3](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/39565f64-cc56-4239-81d8-d1c1e9bbf73f)|
 
 ### 6. Create Calculated Insights
 | Step | Action and Details | Images |
