@@ -615,6 +615,7 @@ Third Party Survey Data- https://docs.google.com/spreadsheets/d/1hmD5QQAennbsQCi
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 | Experience Site Product Price as Display 1 Price Configuration |-Go to App Launcher>>Enter All sites in quick find box>> click on it </br>-For  Autofolio site click on builder</br>-click on preview>>click product>>Click on any of Electra product </br>-click on back to builder again>>There are some pricing details present click on it </br>-Under Setting scroll down >> Pricing type as Display 1 Price </br>-Click on Publish button. |   |
+|Enable Email Deliverability |-go to setup</br>-search for deliverability</br>-**Access to Send Email (All Email Services) -->Select All Email**  |   |
 </details>
 <details><summary>
   
