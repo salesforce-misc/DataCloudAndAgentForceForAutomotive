@@ -259,7 +259,7 @@ the org, follow the steps below to create data streams.
 ### 3. Create Sample Data
   | Step  | Action and Details  |  Images |
   | ----- | ----- | ----- |
-  | Create Sample Data  | - Click on App Launcher, search for Automotive Setup and click on Automotive Setup app </br>- Click on the **Create Test Data** button (highlighted in the screenshot below) and wait for a confirmation message before proceeding further. | <img width="225" alt="Create Sample Data1" src="https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/159ba519-6327-4003-b148-ffde3e3f3aa0">|
+  | Create Sample Data  | - Click on App Launcher, search for Automotive Setup and click on Automotive Setup app </br>- Click on the **Create Test Data** button (highlighted in the screenshot below) and wait for a confirmation message before proceeding further. </br>-**Note:** If an error comes up after clicking on Create Test Data Button then follow the below steps, else skip it. </br> 1. Go to Setup>> Enter Duplicate>> Click on Duplicate Rules  </br>2. Click on "Standard Account Duplicate Rule">>once it get open>> click on Deactivate Button  </br>3. again go back to Duplicate rules list view>> click on " Standard Contact Duplicate Rule"  </br>4. once it gets open >> click on Deactivate button.| <img width="225" alt="Create Sample Data1" src="https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/159ba519-6327-4003-b148-ffde3e3f3aa0">|
 
 ### 4. Create Commerce Data
   | Step  | Action and Details  |  Images |
