@@ -616,6 +616,8 @@ Third Party Survey Data- https://docs.google.com/spreadsheets/d/1hmD5QQAennbsQCi
 | ----- | ----- | ----- |
 | Experience Site Product Price as Display 1 Price Configuration |-Go to App Launcher>>Enter All sites in quick find box>> click on it </br>-For  Autofolio site click on builder</br>-click on preview>>click product>>Click on any of Electra product </br>-click on back to builder again>>There are some pricing details present click on it </br>-Under Setting scroll down >> Pricing type as Display 1 Price </br>-Click on Publish button. |   |
 |Enable Email Deliverability |-go to setup</br>-search for deliverability</br>-**Access to Send Email (All Email Services) -->Select All Email**  |   |
+|Assign Permission to Agent User |-Go to setup</br>-In the Top Search for 'Agent User'</br>-Click on agent user</br>-Go the Permission Set Assignment, Cilkc on Edit</br>-Select 'Automotive Service Agent' Permission set and add to the Right Side</br>-Click Save|    |
+|Assign CSS For Header|-Go to setup</br>-Search for All Site</br>-for 'Autofolio' Site Click on Builder</br>-Click on Settings Icon on Left Side </br>-Click on Advanced --> Click on Edit Head Markup </br>-Paste this CSS</br> .header { width:100%;  </br>}</br>  header{ </br>     background: black !important; </br>   }</br>  .slds-has-flexi-truncate ul li a { </br> color: #f0f0f0 !important; }</br>.slds-icon_small{ fill: white;}|   |
 </details>
 <details><summary>
   
