@@ -60,7 +60,7 @@ Table of Contents
 
   | Step | Action and Details | Images |
   | ----- | ----- | ----- |
-  | Install package | - Click on this Package Installation [Link ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tPa000000W5fh)</br>- Sign-in to the Org with your credentials.</br>- Choose Install for Admins Only option</br>- Choose “Rename conflicting components in package” and click the Install button.</br>- Wait until installation is completed, you will receive a confirmation on logged in user’s email | ![Install package1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/01ea0c61-5a63-4438-a3b8-5b5ec783ca94)|
+  | Install package | - Click on this Package Installation [Link ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tPa000000cmjZ)</br>- Sign-in to the Org with your credentials.</br>- Choose Install for Admins Only option</br>- Choose “Rename conflicting components in package” and click the Install button.</br>- Wait until installation is completed, you will receive a confirmation on logged in user’s email | ![Install package1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/01ea0c61-5a63-4438-a3b8-5b5ec783ca94)|
 | Verify Package installation | - Click Setup</br>- Search for package</br>- Search for 'Automotive Pre-Deployment Package' is installed  |![verify package install1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/9e016e2e-d92e-4abb-b4d8-1a096b14e6dd)|
 
   | Step | Action and Details | Images |
