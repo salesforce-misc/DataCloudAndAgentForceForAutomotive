@@ -621,7 +621,8 @@ Customer&apos;s Question:{!$Input:Question}
 1. Extract relevant keywords from the customer query {!$Input:Question} (e.g., “spacious,” “safety,” “comfortable”).
 2. Match the extracted keywords with the Description  fields of the vehicles.
 3. Focus on vehicles that can accommodate 5  passengers and include features tailored to family needs (e.g., child safety locks, spacious seating, entertainment systems).
-4.If Description  Not Provided do not show the Car Name
+4.Get the Products/Vehicle Name that starts with Electra
+
 Provide a concise, ranked list of matching vehicles along with their descriptions and key features..
 
 Prompt Rules:
