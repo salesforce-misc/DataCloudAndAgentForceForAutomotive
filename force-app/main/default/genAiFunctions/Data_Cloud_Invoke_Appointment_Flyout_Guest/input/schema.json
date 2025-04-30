@@ -1,0 +1,21 @@
+{
+  "required" : [ "DGRecordId", "IntrestedIn" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "DGRecordId" : {
+      "title" : "DGRecordId",
+      "description" : "Cookie Id from Messaging Session Variable",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "IntrestedIn" : {
+      "title" : "IntrestedIn",
+      "description" : "Name of the car, the customer is Looking at or car name the customer is interested in",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

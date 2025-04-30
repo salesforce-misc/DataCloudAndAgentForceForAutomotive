@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Return_No_Activties</name>
+        <label>Return No Activties</label>
+        <locationX>314</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>returnActivtiesMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>setOutdoorTrueAndRoofrackFalse</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Return_No_EXT_Id_message</name>
+        <label>Return No EXT Id message</label>
+        <locationX>1106</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>returnActivtiesMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>NoExtIdPresentMessage</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Return_Outdoor_True</name>
+        <label>Return Outdoor True</label>
+        <locationX>578</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>returnActivtiesMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>setOutdoorTrueAndRoofrackFalse</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Return_Roof_Rack_True</name>
+        <label>Return Roof Rack True</label>
+        <locationX>842</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>returnActivtiesMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>setRoofRackTrueAndOutdoorFalse</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>ReturnActivtiesTrue</name>
+        <label>ReturnActivtiesTrue</label>
+        <locationX>50</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>returnActivtiesMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>setOutdoorAndRoofrackTrue</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Verify_Activities</name>
+        <label>Verify Activities</label>
+        <locationX>710</locationX>
+        <locationY>350</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Outdoor_and_roof_rack_true</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Survey.Interested_in_Outdoor_Activities__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Survey.Interested_in_Roof_Rack__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Survey.Interested_in_Outdoor_Activities__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>true</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Survey.Interested_in_Roof_Rack__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>true</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ReturnActivtiesTrue</targetReference>
+            </connector>
+            <label>Is Outdoor and roof rack true</label>
+        </rules>
+        <rules>
+            <name>Is_Outdoor_and_roof_rack_False</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Survey.Interested_in_Outdoor_Activities__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Survey.Interested_in_Outdoor_Activities__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>false</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Survey.Interested_in_Roof_Rack__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Survey.Interested_in_Roof_Rack__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>false</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Return_No_Activties</targetReference>
+            </connector>
+            <label>Is Outdoor  and roof rack False</label>
+        </rules>
+        <rules>
+            <name>Is_Outdoor_true_roofrack_false</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Survey.Interested_in_Roof_Rack__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Survey.Interested_in_Roof_Rack__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>false</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Survey.Interested_in_Outdoor_Activities__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Survey.Interested_in_Outdoor_Activities__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>true</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Return_Outdoor_True</targetReference>
+            </connector>
+            <label>Is Outdoor true &amp; roofrack false</label>
+        </rules>
+        <rules>
+            <name>Is_roofrack_true_outdoor_false</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Survey.Interested_in_Roof_Rack__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Survey.Interested_in_Roof_Rack__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>true</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Survey.Interested_in_Outdoor_Activities__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Survey.Interested_in_Outdoor_Activities__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>false</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Return_Roof_Rack_True</targetReference>
+            </connector>
+            <label>Is roofrack true &amp; outdoor false</label>
+        </rules>
+        <rules>
+            <name>No_Ext_Id_present</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Survey</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Contact.Ext_Id__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Return_No_EXT_Id_message</targetReference>
+            </connector>
+            <label>No Ext Id present</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Data Cloud Survey Response {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Data Cloud Survey Response</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Contact</name>
+        <label>Get Contact</label>
+        <locationX>710</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Survey</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>contactId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Survey</name>
+        <label>Get Survey</label>
+        <locationX>710</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Verify_Activities</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ssot__SubmitterId__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Contact.Ext_Id__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>ssot__SurveyResponse__dlm</object>
+        <sortField>ssot__CompletionDateTime__c</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>584</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Contact</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>NoExtIdPresentMessage</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>At this time, Snowflake does not contain any entries for the specified EXT Id tied to {!Get_Contact.Name}, which prevents the retrieval of customer interest insights.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>setOutdoorAndRoofrackFalse</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Customer Interests: {!Get_Contact.Name} has indicated that they are not interested in outdoor activities (Off-roading/Camping/etc.) through the survey. Based on this, consider the following actions: 
+1. Sales Follow-Up:  Reach out to discuss other products or services related customer&apos;s interests.
+2. Targeted Marketing Campaign: Exclude {!Get_Contact.Name}  to a marketing list focused on outdoor products, such as off-roading vehicles, accessories, and camping gear. Instead, consider adding them to lists for other product categories that might be of interest based on their preferences.
+3. Customer Profile Update: Tag the customer&apos;s profile as &quot; not interested in outdoor activities&quot; to ensure future interactions are aligned with these interests.
+
+Roof Rack Interest: {!Get_Contact.Name} has indicated that they are not interested in a roof rack through the (Survey Response: Interest in Roof Rack - False).. Based on this, here are the next steps to take:
+1. Sales Team Action: Reach out to discuss other products or services related customer&apos;s interests.
+2. Targeted Marketing Campaign: Exclude  {!Get_Contact.Name} marketing campaign for vehicle accessories, specifically roof racks.  
+  Instead, consider adding them to targeted campaigns for other vehicle accessories or features they may be interested in.
+3. Customer Profile Update: Update their Salesforce profile with  “ not interested in roof racks” to ensure relevant future interactions.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>setOutdoorAndRoofrackTrue</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Customer Interests: {!Get_Contact.Name} has shown interest in outdoor activities (e.g., off-roading, camping) through a recent survey. Based on this, we can explore the following upsell opportunities:
+1. Sales Follow-Up: Reach out to discuss products related to their outdoor interests (e.g., off-roading vehicles, camping gear, outdoor accessories).
+2. Targeted Marketing Campaign: Add {!Get_Contact.Name} to a marketing list focused on outdoor products, such as off-roading vehicles, accessories, and camping gear.
+3. Customer Profile Update: Tag their profile with “interested in outdoor activities” to ensure future interactions are aligned with these interests.
+ 
+Roof Rack Interest:  {!Get_Contact.Name} has specifically expressed interest in roof racks (Survey Response: Interest in Roof Rack - True). The next steps are as follows:
+1. Sales Follow-Up: Reach out to discuss suitable roof rack options for their vehicle and provide details on available products and accessories.
+2. Targeted Marketing Campaign: Include them in a marketing campaign for vehicle accessories, specifically roof racks, and send promotional offers or detailed information.
+3. Customer Profile Update: Update their Salesforce profile with “interested in roof racks” to ensure relevant future interactions.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>setOutdoorTrueAndRoofrackFalse</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Customer Interests: {!Get_Contact.Name} has shown interest in outdoor activities (e.g., off-roading, camping) through a recent survey. Based on this, we can explore the following upsell opportunities:
+1. Sales Follow-Up: Reach out to discuss products related to their outdoor interests (e.g., off-roading vehicles, camping gear, outdoor accessories).
+2. Targeted Marketing Campaign: Add {!Get_Contact.Name} to a marketing list focused on outdoor products, such as off-roading vehicles, accessories, and camping gear.
+3. Customer Profile Update: Tag their profile with “interested in outdoor activities” to ensure future interactions are aligned with these interests.
+
+Roof Rack Interest: {!Get_Contact.Name} has indicated that they are not interested in a roof rack through the (Survey Response: Interest in Roof Rack - False).. Based on this, here are the next steps to take:
+1. Sales Team Action: Reach out to discuss other products or services related customer&apos;s interests.
+2. Targeted Marketing Campaign: Exclude  {!Get_Contact.Name} marketing campaign for vehicle accessories, specifically roof racks.  
+  Instead, consider adding them to targeted campaigns for other vehicle accessories or features they may be interested in.
+3. Customer Profile Update: Update their Salesforce profile with  “ not interested in roof racks” to ensure relevant future interactions.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>setRoofRackTrueAndOutdoorFalse</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Customer Interests: {!Get_Contact.Name} has indicated that they are not interested in outdoor activities (Off-roading/Camping/etc.) through the survey. Based on this, consider the following actions: 
+1. Sales Follow-Up:  Reach out to discuss other products or services related customer&apos;s interests.
+2. Targeted Marketing Campaign: Exclude {!Get_Contact.Name}  to a marketing list focused on outdoor products, such as off-roading vehicles, accessories, and camping gear. Instead, consider adding them to lists for other product categories that might be of interest based on their preferences.
+3. Customer Profile Update: Tag the customer&apos;s profile as &quot; not interested in outdoor activities&quot; to ensure future interactions are aligned with these interests.
+
+Roof Rack Interest:  {!Get_Contact.Name} has specifically expressed interest in roof racks (Survey Response: Interest in Roof Rack - True). The next steps are as follows:
+1. Sales Follow-Up: Reach out to discuss suitable roof rack options for their vehicle and provide details on available products and accessories.
+2. Targeted Marketing Campaign: Include them in a marketing campaign for vehicle accessories, specifically roof racks, and send promotional offers or detailed information.
+3. Customer Profile Update: Update their Salesforce profile with “interested in roof racks” to ensure relevant future interactions.</text>
+    </textTemplates>
+    <variables>
+        <name>contactId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>returnActivtiesMessage</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

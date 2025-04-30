@@ -1,0 +1,42 @@
+.toast-container{
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    z-index: 10000;
+}
+
+.slds-text-heading_medium{
+    color: white;
+}
+.custom-button{
+    background-color: black;
+     color: white; 
+     border: none;
+      padding: 10px 20px; 
+      font-size: 16px; 
+      cursor: pointer; 
+      border-radius: 5px; 
+}
+.slds-modal__container {
+    position: fixed !important; /* Fix modal container to the viewport */
+    bottom: 10%; /* Place it at the bottom */
+    left: 0; /* Place it at the left */
+    z-index: 1001; /* Ensure the modal appears on top of other elements */
+    width: auto ; /* Allow the modal to take only the necessary width */
+    height:auto;
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
+    backdrop-filter: none;
+    filter: none;
+    opacity: 1;
+    pointer-events: auto;
+    top: 30%;
+    left: 30%;
+    margin-right: -30%;
+}
+.slds-fade-in-open{
+    pointer-events: none;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .1s linear;
+}

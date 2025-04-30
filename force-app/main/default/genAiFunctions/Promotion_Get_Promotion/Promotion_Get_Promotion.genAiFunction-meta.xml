@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>this Action is Responsible to get Deals on Cars from Promotion Object</description>
+    <invocationTarget>Promotion_Get_Promotion</invocationTarget>
+    <invocationTargetType>flow</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+    <masterLabel>Promotion - Get Promotion</masterLabel>
+</GenAiFunction>

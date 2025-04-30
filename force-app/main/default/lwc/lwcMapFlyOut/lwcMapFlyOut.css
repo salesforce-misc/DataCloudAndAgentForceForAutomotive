@@ -1,0 +1,22 @@
+.slds-fade-in-open{
+    pointer-events: none;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .1s linear;
+}
+.slds-modal__container {
+    position: fixed !important; /* Fix modal container to the viewport */
+    bottom: 8%; /* Place it at the bottom */
+    left: 0; /* Place it at the left */
+    z-index: 1001; /* Ensure the modal appears on top of other elements */
+    width: 400px ; /* Allow the modal to take only the necessary width */
+    height:400px;
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
+    backdrop-filter: none;
+    filter: none;
+    opacity: 1;
+    pointer-events: auto;
+    left: 30%;
+    margin-right: -30%;
+}

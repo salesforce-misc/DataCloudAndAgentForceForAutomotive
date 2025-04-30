@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is prompt template used for FAQ related Automotive Industry</description>
+    <invocationTarget>Generate_FAQ_From_Automotive_Industry</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+    <masterLabel>Generate FAQ From Automotive Industry</masterLabel>
+</GenAiFunction>

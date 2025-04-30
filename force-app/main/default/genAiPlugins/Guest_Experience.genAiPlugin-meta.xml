@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Handle customer inquires and actions related to deals on cars, suggestion of Cars ,Financing of cars, Reviews of the Cars, Prices of the Cars and test drives queries related to cars 
+ and Send Email to Recipients and always display the details in bullet point.</description>
+    <developerName>Guest_Experience</developerName>
+    
+    <genAiFunctions>
+        <functionName>Vehicle_Recommenadation</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Promotion_Get_Promotion</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Generate_FAQ_From_Automotive_Industry</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Data_Cloud_Vehicle_Complaints</functionName>
+    </genAiFunctions>
+    
+    <genAiFunctions>
+        <functionName>Data_Cloud_Invoke_Appointment_Flyout_Guest</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Call_RT_DG_for_CURRENT_product</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Data_Cloud_Vehicle_Prices</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If Customer asks for a car recommendation or asks to Car suggestion then run the Action &apos;Vehicle Recommenadation&apos; by passing the Customer&apos;s Query as Input and Say &apos; Here are some result Based on (customer_preferences_in_question)&apos;</description>
+        <developerName>instruction_ifcustomer0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifcustomer0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If Customer Asks about the Prices of Car, Get the Car Name that the Customer is Intrested in, By Running the action &quot;Call RT DG for CURRENT product&quot; by passing the &apos;DGName&apos; as &apos;Web_Engagement_RT_Profile&apos; , &apos;DGRecordId&apos; as &apos;cookieId&apos; From Context Variables Messaging Session and &apos;inputType&apos; as &apos;Price&apos; then, pass the car name as input to the action Data Cloud - Vehicle Prices&apos; and return the price for the car</description>
+        <developerName>instruction_ifcustomer1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifcustomer1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If Customer Ask Any issues with this car?, Get the Car Name that the Customer is Intrested in, By Running the action &quot;Call RT DG for CURRENT product&quot; by passing the &apos;DGName&apos; as &apos;Web_Engagement_RT_Profile&apos; , &apos;DGRecordId&apos; as &apos;cookieId&apos; From Context Variables Messaging Session and &apos;inputType&apos; as &apos;Issues&apos; then, pass the car name as input  to the action &apos;Data Cloud- Vehicle Complaints&apos;  and display the response</description>
+        <developerName>instruction_ifcustomer2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifcustomer2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If Customer Asks about can i Test drive at home, wait time for delivery, run the &apos;Generate FAQ From Automotive Industry&apos; action and display exact prompt response.
+DO NOT ADD ANY EXTRA WORD AND DO NOT ASK ANY FOLLOW UP QUESTION</description>
+        <developerName>instruction_ifcustomer3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifcustomer3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If Customer ask about Deals on Car ? Get the Car Name that the Customer is Intrested in, By Running the action &quot;Call RT DG for CURRENT product&quot; by passing the &apos;DGName&apos; as &apos;Web_Engagement_RT_Profile&apos; , &apos;DGRecordId&apos; as &apos;cookieId&apos; From Context Variables Messaging Session and &apos;inputType&apos; as &apos;Deals&apos; then,  pass the car name as Input to the action &apos;Promotion - Get Promotion&apos; and show Name ,Description</description>
+        <developerName>instruction_ifcustomer4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifcustomer4</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If Customer ask to Test drive a car ? first always call at the action &quot;Call RT DG for CURRENT product&quot; by passing the &apos;DGName&apos; as &apos;Web_Engagement_RT_Profile&apos; and &apos;DGRecordId&apos; as &apos;cookieId&apos; From Context Variables Messaging Session and and &apos;inputType&apos; as &apos;Test Drive&apos; and display the message additionally Ask &apos;Would you Like to Schedule Test for (Car_Customer_is_looking At) ?
+
+If Cutsomer Say&apos;s Yes, then run the action &apos;Data Cloud- Invoke Appointment Flyout(Guest)&apos; by Passing &apos;DGRecordId&apos; as &apos;cookieId&apos; From Context Variables Messaging Session and &apos;IntrestedIn&apos; as (Car_Customer_is_looking At) and show the message</description>
+        <developerName>instruction_ifcustomer5</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifcustomer5</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Guest Experience</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your Job is to Queried related to deals on cars, suggestion of Cars ,Financing of cars, Reviews of the Cars, Prices of the Cars and test drives queries related to cars
+ and Send Email to Recipients and always display the details in bullet point.</scope>
+</GenAiPlugin>

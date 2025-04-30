@@ -1,0 +1,71 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 04-17-2025
+  @last modified by  : Aman Patil
+-->
+<template>
+    <template if:true={modalpopup}>
+        <section role="dialog" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <!-- Modal Header -->
+                <header style="background-color:black !important" class="slds-modal__header">
+                    <h2 class="slds-text-heading_medium">Schedule Appointment</h2>
+                    <lightning-button-icon icon-name="utility:close" alternative-text="Close"
+                        class="slds-modal__close" onclick={closeModal}></lightning-button-icon>
+                </header>
+                <!-- Modal Body -->
+                <div class="slds-modal__content slds-p-around_medium">
+                    <template if:true={hasServiceDate}>
+                        <lightning-input type="datetime"  value={ServiceDate} onchange={handleDateSelection}  ></lightning-input>
+                    </template>
+                    <template if:false={hasServiceDate}>
+                        <lightning-input type="datetime"  value={selectedDateTime}
+                        onchange={handleDateSelection} required></lightning-input>
+                    </template>
+                   
+                </div>
+                <template if:true={emptyDate}>
+                    <div class="slds-theme_error">
+                        <lightning-icon icon-name="utility:error" variant="inverse" size="small"></lightning-icon>
+                        <span class="slds-p-left_xx-small">Please Select your prefered Date/Time</span>
+                    </div>
+                </template>
+                <!-- Modal Footer -->
+                <footer class="slds-modal__footer">
+                    <button class="custom-button" onclick={handleSubmit}>Submit</button> 
+                </footer>
+                
+            </div>
+            
+        </section>
+       
+    </template>
+    
+    <!-- SUCCESS MODAL  -->
+    <div class="spinner-container">
+        <template if:true={spinner}>
+            <lightning-spinner alternative-text="Loading" variant="inverse"></lightning-spinner>
+        </template>
+    </div>
+
+    <template if:true={successModal}>
+        <section role="dialog" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <!-- Modal Header -->
+                    <header class="slds-modal__header">
+                        <h2 class="slds-text-heading_medium">Thank-You</h2>
+                        <lightning-button-icon icon-name="utility:close" alternative-text="Close"
+                            class="slds-modal__close" onclick={smallcloseModal}></lightning-button-icon>
+                    </header>
+                    <!-- Modal Body -->
+                    <div class="slds-modal__content slds-p-around_medium">
+                        <h3>Service Appointment {appointmentNumber} has been created successfully for Date <lightning-formatted-date-time value={SelectedDateTime} year="numeric" month="numeric" day="numeric" hour="2-digit"
+                            minute="2-digit" ></lightning-formatted-date-time>, and a confirmation email has been sent to you.</h3>
+                    </div>
+                </div>
+        </section>
+                    
+    </template>
+</template>

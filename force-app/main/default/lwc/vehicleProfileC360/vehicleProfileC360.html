@@ -1,0 +1,129 @@
+<template>
+    <!-- Check if the vehicle data is available -->
+    <template if:true={vehicle}>
+        <div class="slds-box slds-theme_default">
+            <!-- Primary Vehicle Title -->
+            <div class="slds-grid slds-wrap slds-p-around_small">
+                <div class="slds-col slds-size_1-of-1" style="margin-top: -14px;">
+                    <p class="slds-text-title">Primary Vehicle</p>
+                </div>
+                <div class="slds-col slds-size_1-of-1" style="margin-top: -1px;">
+                    <div class="slds-dropdown-trigger slds-dropdown-trigger_click">
+                        <button class="slds-button slds-button_reset slds-type-focus">
+                            <h1 style="color: #222020;">{vehicle.ssot__Name__c}</h1>
+                            <lightning-icon icon-name="utility:down" alternative-text="Down arrow" size="small"></lightning-icon>
+                        </button>
+                    </div> 
+                </div>
+            </div> 
+
+            <!-- Vehicle Image and Details Container -->
+            <div class="slds-grid slds-wrap slds-p-around_small">
+                <!-- Vehicle Image -->
+                <div class="slds-col slds-size_1-of-3">
+                    <img src={imageUrl} alt="Vehicle Image" style="width: 100%; max-width: 240px; height: auto;">
+                </div>
+
+                <!-- Vehicle Details -->
+                <div class="slds-col slds-size_2-of-3 slds-p-left_medium">
+                    <div class="slds-grid slds-wrap slds-m-bottom_medium">
+                        <div class="slds-col slds-size_1-of-2 slds-p-horizontal_small">
+                            <p class="slds-text-title">VIN</p>
+                            <p>{vehicle.ssot__VehicleIdentificationNumber__c}</p>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 slds-p-horizontal_small">
+                            <p class="slds-text-title">Type of use</p>
+                            <p>{asset.Type_of_use__c}</p>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-wrap slds-m-bottom_medium">
+                        <div class="slds-col slds-size_1-of-2 slds-p-horizontal_small">
+                            <p class="slds-text-title">License</p>
+                           <!-- <p>AM1234554</p> -->
+                        </div>
+                        
+                        <div class="slds-col slds-size_1-of-2 slds-p-horizontal_small">
+                            <p class="slds-text-title">Purchase Date</p>
+                            <p>{formattedPurchaseDate}</p>
+                        </div>
+                    
+                    </div>
+
+                    <div class="slds-grid slds-wrap">
+                        
+                        <div class="slds-col slds-size_1-of-2 slds-p-horizontal_small">
+                            <p class="slds-text-title">Manufacture Warranty</p>
+                            <p style={manufactureWarrantyStyle}>
+                                {asset.Asset_Warranty_Status__c}
+                            </p> 
+                        </div>
+                        
+                        
+                     <div class="slds-col slds-size_1-of-2 slds-p-horizontal_small">
+                            <p class="slds-text-title">Connected Car</p>
+                           <!-- <p style="background-color: grey; border-radius: 30px; width: 56px; padding: 5px 10px;">{vehicle.Connected_Car__c}</p>-->
+                        
+                           <p style={ConnectedCarStyle}>
+                            {vehicle.Connected_Car__c}
+                        </p> 
+                        </div>
+
+                    </div> 
+
+                    
+                </div>
+            </div>
+<hr style="margin-bottom: 10px; margin-top: 10px;" />
+
+            <!-- Additional Vehicle Information -->
+            <div class="slds-grid slds-wrap slds-p-around_small">
+                <div class="slds-col slds-size_1-of-4 slds-p-horizontal_small">
+                    <p class="slds-text-title">Owner Count</p>
+                    <p>{vehicle.Owner_Count__c}</p>
+                </div>
+                <div class="slds-col slds-size_1-of-4 slds-p-horizontal_small">
+                    <p class="slds-text-title">Interior Color</p>
+                    <p>{vehicle.ssot__InteriorColorText__c}</p>
+                </div>
+                <div class="slds-col slds-size_1-of-4 slds-p-horizontal_small">
+                    <p class="slds-text-title">Exterior Color</p>
+                    <p>{vehicle.ssot__ExteriorColorText__c}</p>
+                </div>
+                <div class="slds-col slds-size_1-of-4 slds-p-horizontal_small">
+                    <p class="slds-text-title">Odometer</p>
+                    <p>{vehicle.ssot__LastOdometerReadingNumber__c}</p>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-wrap slds-p-around_small">
+                <div class="slds-col slds-size_1-of-4 slds-p-horizontal_small">
+                    <p class="slds-text-title">Chassis Number</p>
+                    <p>{vehicle.ssot__ChassisNumber__c}</p> 
+                </div>
+                <div class="slds-col slds-size_1-of-4 slds-p-horizontal_small">
+                    <p class="slds-text-title">Engine Number</p>
+                    <p>{vehicle.ssot__EngineNumber__c}</p> 
+                </div>
+                <div class="slds-col slds-size_1-of-4 slds-p-horizontal_small">
+                    <p class="slds-text-title">Last Check-in Date</p>
+                    <p>{contact.Last_Check_In_Date__c}</p>
+                </div>
+                <div class="slds-col slds-size_1-of-4 slds-p-horizontal_small">
+                <p class="slds-text-title">Dealership Name</p>
+                    <template if:true={isSupplierAvailable}>
+                        <p>{supplier.Name__c}</p>
+                    </template>
+                    
+                    <template if:false={isSupplierAvailable}>
+                        <p>No value available</p>
+                    </template>
+            </div>
+
+            </div>
+        </div>
+    </template>
+    <!-- Error message if any error occurs -->
+    <template if:true={error}>
+        
+    </template>
+</template>

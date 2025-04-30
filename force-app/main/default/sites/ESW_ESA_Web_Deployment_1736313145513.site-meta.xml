@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomSite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowGuestPaymentsApi>false</allowGuestPaymentsApi>
+    <allowHomePage>false</allowHomePage>
+    <allowStandardAnswersPages>false</allowStandardAnswersPages>
+    <allowStandardIdeasPages>false</allowStandardIdeasPages>
+    <allowStandardLookups>false</allowStandardLookups>
+    <allowStandardPortalPages>true</allowStandardPortalPages>
+    <allowStandardSearch>false</allowStandardSearch>
+    <authorizationRequiredPage>CommunitiesLogin</authorizationRequiredPage>
+    <bandwidthExceededPage>BandwidthExceeded</bandwidthExceededPage>
+    <browserXssProtection>true</browserXssProtection>
+    <cachePublicVisualforcePagesInProxyServers>true</cachePublicVisualforcePagesInProxyServers>
+    <clickjackProtectionLevel>SameOriginOnly</clickjackProtectionLevel>
+    <contentSniffingProtection>true</contentSniffingProtection>
+    <enableAuraRequests>true</enableAuraRequests>
+    <fileNotFoundPage>FileNotFound</fileNotFoundPage>
+    <genericErrorPage>Exception</genericErrorPage>
+    <inMaintenancePage>InMaintenance</inMaintenancePage>
+    <indexPage>CommunitiesLanding</indexPage>
+    <masterLabel>ESW_ESA_Web_Deployment_1736313145513</masterLabel>
+    <redirectToCustomDomain>false</redirectToCustomDomain>
+    <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
+    <selfRegPage>CommunitiesSelfReg</selfRegPage>
+    <serverIsDown>SNA_rX8jT_sf_default_cdn_ESW_ESA_Web_Deployment_17363131455131</serverIsDown>
+   <!-- <siteAdmin>epic.40cc1718259prod1org1@orgfarm.com</siteAdmin>
+    <siteGuestRecordDefaultOwner>epic.40cc1718259prod1org1@orgfarm.com</siteGuestRecordDefaultOwner>-->
+    <siteIframeWhiteListUrls>
+        <url>dpa00000onw0emah.my.site.com</url>
+    </siteIframeWhiteListUrls>
+    <siteIframeWhiteListUrls>
+        <url>*.dpa00000onw0emah.my.site.com</url>
+    </siteIframeWhiteListUrls>
+    <siteIframeWhiteListUrls>
+        <url>dpa00000onw0emah--c.vf.force.com</url>
+    </siteIframeWhiteListUrls>
+    <siteType>ChatterNetwork</siteType>
+    <urlPathPrefix>ESWESAWebDeployment1736313145513vforcesi</urlPathPrefix>
+</CustomSite>

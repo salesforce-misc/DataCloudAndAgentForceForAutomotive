@@ -1,0 +1,16 @@
+{
+  "type" : "sfdc_cms__themeLayout",
+  "title" : "Commerce Layout",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "alignment" : "left",
+          "logoWidth" : "150"
+        },
+        "id" : "58e74891-0195-4be6-b07b-ab96bc0cebba"
+      } ]
+    }
+  },
+  "urlName" : "commerce-layout"
+}

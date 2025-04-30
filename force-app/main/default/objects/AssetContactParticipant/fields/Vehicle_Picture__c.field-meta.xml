@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vehicle_Picture__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+  CONTAINS(Vehicle.Name, &apos;Electa Model 3.1 - 2025&apos;), 
+  IMAGE(&apos;/resource/EM4&apos;, &apos;Electa Model 3.1 - 2025&apos;, 70, 70), 
+  IF(
+    CONTAINS(Vehicle.Name, &apos;Electra Model 4 - 2025&apos;), 
+    IMAGE(&apos;/resource/ElectraModel&apos;, &apos;Electra Model 4 - 2025&apos;, 70, 70),
+    IF(
+      CONTAINS(Vehicle.Name, &apos;Electra Model 3&apos;), 
+      IMAGE(&apos;/resource/ElectraModel3&apos;, &apos;Electra Model 3&apos;, 70, 70),
+ 
+      IMAGE(&apos;/resource/EM4&apos;, &apos;Electa Model 3.1 - 2025&apos;, 70, 70)
+    )
+  )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Vehicle Picture</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

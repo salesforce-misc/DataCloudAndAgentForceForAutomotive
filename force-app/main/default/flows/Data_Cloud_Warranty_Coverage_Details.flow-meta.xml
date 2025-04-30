@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Warranty_Details_For_Vehicle</name>
+        <elementSubtype>AddPromptInstructions</elementSubtype>
+        <label>Warranty Details For Vehicle</label>
+        <locationX>138</locationX>
+        <locationY>1214</locationY>
+        <assignmentItems>
+            <assignToReference>$Output.Prompt</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>(
+Vehicle Name : {!Get_Vehicle.Name}
+Warranty Status : {!Iterate_over_Asset_Milestone.Asset.Entitlement_Status__c}
+End Date : {!Get_Asset_Warranty.EndDate}
+Perk Available {!Get_Asset_Warranty.Perks_Available__c}
+Last Service Date {!Iterate_over_Asset_Milestone.Asset.Last_Service_Date__c}
+Next Service Date :{!Iterate_over_Asset_Milestone.Asset.Next_Service_Due__c}
+)
+</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Iterate_over_Asset_Milestone</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Verify_Asset_is_present</name>
+        <label>Verify Asset is present</label>
+        <locationX>400</locationX>
+        <locationY>458</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Asset_Present</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Asset</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Asset_Warranty</targetReference>
+            </connector>
+            <label>Is Asset Present</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Verify_Asset_Milestone_present</name>
+        <label>Verify Asset Milestone present</label>
+        <locationX>114</locationX>
+        <locationY>890</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Asset_Miletone_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Milestone</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Iterate_over_Asset_Milestone</targetReference>
+            </connector>
+            <label>Is Asset Miletone not null?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Verify_Asset_Milestone_Status</name>
+        <label>Verify Asset Milestone Status</label>
+        <locationX>270</locationX>
+        <locationY>1106</locationY>
+        <defaultConnector>
+            <targetReference>Iterate_over_Asset_Milestone</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Delivered</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Iterate_over_Asset_Milestone.MilestoneType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Delivered</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Warranty_Details_For_Vehicle</targetReference>
+            </connector>
+            <label>Is Delivered</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Verify_Asset_Warranty</name>
+        <label>Verify Asset Warranty</label>
+        <locationX>246</locationX>
+        <locationY>674</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Asset_Warranty_present</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Asset_Warranty</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Milestone</targetReference>
+            </connector>
+            <label>Is Asset Warranty present</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>TodaysDate</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <interviewLabel>Data Cloud Warranty Coverage Details {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Data Cloud Warranty Coverage Details</label>
+    <loops>
+        <name>Iterate_over_Asset_Milestone</name>
+        <label>Iterate over Asset Milestone</label>
+        <locationX>50</locationX>
+        <locationY>998</locationY>
+        <collectionReference>Get_Milestone</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Verify_Asset_Milestone_Status</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>PromptFlow</processType>
+    <recordLookups>
+        <name>Get_Asset</name>
+        <label>Get Asset</label>
+        <locationX>400</locationX>
+        <locationY>350</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Verify_Asset_is_present</targetReference>
+        </connector>
+        <filterLogic>(1 AND 2) AND (3 AND 4 ) AND (5 OR 6)</filterLogic>
+        <filters>
+            <field>VehicleId</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>VehicleId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Vehicle.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>ContactId</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ContactId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ContactId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Entitlement_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>In Warranty</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Entitlement_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Asset</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Asset_Warranty</name>
+        <label>Get Asset Warranty</label>
+        <locationX>246</locationX>
+        <locationY>566</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Verify_Asset_Warranty</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AssetId</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AssetId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Asset.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>EndDate</field>
+            <operator>GreaterThan</operator>
+            <value>
+                <elementReference>TodaysDate</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Perks_Available__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Perks_Available__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>Oil Change</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AssetWarranty</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Contact</name>
+        <label>Get Contact</label>
+        <locationX>400</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Vehicle</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ContactId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Milestone</name>
+        <label>Get Milestone</label>
+        <locationX>114</locationX>
+        <locationY>782</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Verify_Asset_Milestone_present</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AssetId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Asset_Warranty.Asset.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AssetId</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Name</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>Oil Change</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>AssetMilestone</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Vehicle</name>
+        <label>Get Vehicle</label>
+        <locationX>400</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Asset</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>VehicleName</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Vehicle</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>274</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Contact</targetReference>
+        </connector>
+        <triggerType>Capability</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>ContactId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>VehicleName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

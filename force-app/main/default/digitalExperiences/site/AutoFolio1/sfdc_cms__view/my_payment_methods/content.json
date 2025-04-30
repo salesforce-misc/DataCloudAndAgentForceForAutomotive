@@ -1,0 +1,140 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Saved Payment Methods",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"1124fcec-365a-41c4-aa0b-1000ceba6e65\",\"columns\":[{\"UUID\":\"e25e7a73-cf39-4f33-89b7-470c040aa6bb\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"10\",\"seedComponents\":null},{\"UUID\":\"56889c70-3f0c-436f-b868-5081214882ee\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"2\",\"seedComponents\":null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "backgroundColor" : "",
+                "isLinkable" : false,
+                "linkAssistiveText" : "",
+                "paddingHorizontal" : "small",
+                "paddingVertical" : "xx-small",
+                "text" : "Saved Payment Methods",
+                "textAlign" : "left",
+                "textDecoration" : "{\"bold\": true}",
+                "textDisplayInfo" : "{\"textStyle\": \"heading-medium\", \"headingTag\": \"h2\"}"
+              },
+              "definition" : "dxp_base:textBlock",
+              "id" : "bdb58a6d-68ad-4100-86ba-8c4f5a2d807e",
+              "type" : "component"
+            } ],
+            "id" : "e25e7a73-cf39-4f33-89b7-470c040aa6bb",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "alignment" : "right",
+                "size" : "standard",
+                "stretch" : "standard",
+                "text" : "Add",
+                "type" : "primary",
+                "url" : "/add-payment-methods"
+              },
+              "definition" : "dxp_base:button",
+              "id" : "91c5dc53-8c38-497c-8dcd-76d554290d5b",
+              "type" : "component"
+            } ],
+            "id" : "56889c70-3f0c-436f-b868-5081214882ee",
+            "name" : "col2",
+            "title" : "Column 2",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "1124fcec-365a-41c4-aa0b-1000ceba6e65",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"ef8f259a-987a-4c13-ab83-efd2b3d5cc47\",\"columns\":[{\"UUID\":\"09416490-c397-42a4-85c8-9156b0d9c6cc\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "cardDefaultBadgeColor" : "rgb(201,201,201)",
+                "cardDefaultBorderRadius" : "50",
+                "cardDefaultLabel" : "Default",
+                "cardExpiredBadgeColor" : "rgb(254, 147, 57)",
+                "cardExpiredBorderRadius" : "50",
+                "cardExpiredLabel" : "Expired",
+                "emptyMessageTitle" : "You don't have any saved payment methods. Save payment information for a quicker checkout experience.",
+                "footerDefaultLabel" : "Default",
+                "footerDeleteLabel" : "Delete",
+                "itemSpacing" : "small",
+                "itemsPerPage" : "10",
+                "paymentMethodSetId" : "",
+                "previewState" : "noSavedInfoState",
+                "showMoreButtonAlign" : "center",
+                "showMoreButtonLabel" : "Show More",
+                "showMoreButtonSize" : "standard",
+                "showMoreButtonStyle" : "secondary",
+                "showMoreButtonWidth" : "standard"
+              },
+              "definition" : "commerce_builder:paymentSavedPaymentMethodsGrid",
+              "id" : "a4786825-2c87-4fbf-9538-3c2eae5af5ca",
+              "type" : "component"
+            } ],
+            "id" : "09416490-c397-42a4-85c8-9156b0d9c6cc",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "ef8f259a-987a-4c13-ab83-efd2b3d5cc47",
+          "type" : "component"
+        } ],
+        "id" : "7848d7e7-25e1-47ee-980c-561bda016736",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "a028465c-7a47-450c-9b8f-0cf591e67884",
+          "type" : "component"
+        } ],
+        "id" : "70c9b9c3-8b0b-46c2-aeb0-e7ca197539f7",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "a7362318-9f53-428d-9772-77e6080da79e",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "MyAccount",
+    "viewType" : "my-payment-methods"
+  },
+  "urlName" : "saved-payment-methods"
+}

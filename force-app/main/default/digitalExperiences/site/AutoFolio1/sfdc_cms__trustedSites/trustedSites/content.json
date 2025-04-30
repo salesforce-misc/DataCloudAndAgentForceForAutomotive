@@ -1,0 +1,16 @@
+{
+  "type" : "sfdc_cms__trustedSites",
+  "title" : "trustedSites",
+  "contentBody" : {
+    "trustedSites" : [ {
+      "isActive" : true,
+      "source" : "https://dpa00000onw0emah.my.site.com/ESWESAWebDeployment1736313145513/assets/js/bootstrap.min.js",
+      "sourceName" : "TrustedCookie"
+    }, {
+      "isActive" : true,
+      "source" : "https://cdn.c360a.salesforce.com",
+      "sourceName" : "Data Cloud"
+    } ]
+  },
+  "urlName" : "trustedsites"
+}

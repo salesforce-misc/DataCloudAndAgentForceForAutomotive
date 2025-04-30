@@ -1,0 +1,52 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 04-29-2025
+  @last modified by  : Aman Patil
+-->
+
+<template>
+    <lightning-layout class="slds-m-top_x-small">
+        <article class="slds-card lightning-card slds-card_boundary slds-card_related-list-fix slds-box">
+            <div class="slds-page-header slds-page-header_related-list">
+                <div class="slds-page-header__row">
+                    <div class="slds-page-header__col-title">
+                        <div class="slds-media">
+                            <div class="slds-media__figure">
+                                <p id="standard">
+                                    <lightning-icon icon-name="standard:survey" title="survey"
+                                        size="small"></lightning-icon>
+                                </p>
+                                </div>
+                                <div class="slds-media__body">
+                                    <div class="slds-page-header__name">
+                                        <div class="slds-page-header__name-title">
+                                            <h2 class="slds-card__header-title">
+                                                Survey Response
+                                                <!--<a class="slds-card__header-link">Previous Service Appointments</a>-->
+                                            </h2>
+                                        </div>
+                                    </div>
+                                 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+           
+                <div class="slds-card__body slds-card__body_inner">
+                    <lightning-datatable
+                        class="related-list"
+                        data={surveys}
+                        columns={columns}
+                        key-field="id"
+                        hide-checkbox-column="true"
+                        resize-column-disabled="true" 
+                                                
+                    ></lightning-datatable>
+                </div>                
+    
+        </article>
+    </lightning-layout>
+</template>

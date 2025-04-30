@@ -1,0 +1,109 @@
+<template>
+    <template if:true={vehicledetails}>
+    <div class="vehicle-controls-container">
+        <!-- Vehicle Details Section -->
+         <div class="slds-box">
+           
+        <div class="vehicle-header">
+            <b><h2>{vinName}</h2></b>
+            <p>Last updated:{telemetricVehicleData.timestamp__c}</p>
+        </div>
+    
+        <!-- Range and Battery -->
+        <div class="vehicle-stats">
+            <div class="stat">
+                <b><p>Range</p></b>
+                <h3>{range} km</h3>
+            </div>
+            <div class="stat battery">
+                <b><p>Battery</p></b>
+                <h3>{telemetricVehicleData.battery_soc_level__c}%</h3>
+                <div class="battery-indicator">
+                    <div
+                        class="battery-fill" style={batteryStyle}
+                       
+                    ></div>
+                </div>
+            </div>
+        </div>
+        <!-- Location -->
+        <div class="vehicle-location">
+            <b><p>Location: {lat},{lon}</p></b>
+        </div>
+    </div>
+    <div class="climate-control-container">
+        <div class="left-panel">
+            <div class="control-section">
+                <div class="title">Front Driver</div>
+                <div class="lock-container">
+                <div class="button-group">
+                <lightning-icon icon-name="utility:lock" class={lockButtonClass} size="xx-small" alternative-text="Close"></lightning-icon> 
+                <lightning-icon icon-name="utility:unlock" class={unlockButtonClass} size="xx-small"   alternative-text="Open"></lightning-icon>
+                </div>
+                </div>
+               
+                <!-- <button class="lock-button" onclick={toggleLock}>Lock/Unlock</button> -->
+                <div class="target">Target Pressure</div>
+                <div class="temperature-control">
+                    <button class="temperature-control">-</button>
+                    <!--<span>{vehicleData.climateZones.frontDriver}°</span>-->
+                    <button>{telemetricVehicleData.tire_pressure_fl__c}°</button>
+                    <button class="temperature-control">+</button>
+                </div>
+            </div>
+
+            <div class="control-section">
+                <div class="title">Rear Driver</div>
+                <div class="lock-container">
+                    <div class="button-group">
+                    <lightning-icon icon-name="utility:lock" class={lockButtonRDClass} size="xx-small" alternative-text="Close"></lightning-icon> 
+                    <lightning-icon icon-name="utility:unlock" class={unlockButtonRDClass} size="xx-small"   alternative-text="Open"></lightning-icon>
+                    </div>
+                    </div>
+                <div class="target">Target Pressure </div>
+                <div class="temperature-control">
+                    <button class="temperature-control">-</button>
+                    <button>{telemetricVehicleData.tire_pressure_rl__c}°</button>
+                    <button class="temperature-control">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="car-view">
+            <img src={vehicleImg} alt="Car Layout" class="car-image" />
+        </div>
+        <div class="right-panel">
+            <div class="control-section">
+                <div class="title">Front Passenger</div>
+                <div class="lock-container">
+                    <div class="button-group">
+                    <lightning-icon icon-name="utility:lock" class={lockButtonFPClass} size="xx-small" alternative-text="Close"></lightning-icon> 
+                    <lightning-icon icon-name="utility:unlock" class={unlockButtonFPClass} size="xx-small"   alternative-text="Open"></lightning-icon>
+                    </div>
+                    </div>
+                <div class="target">Target Pressure </div>
+                <div class="temperature-control">
+                    <button class="temperature-control">-</button>
+                    <button>{telemetricVehicleData.tire_pressure_fr__c}°</button>
+                    <button class="temperature-control">+</button>
+                </div>
+            </div>
+            <div class="control-section">
+                <div class="title">Rear Passenger</div>
+                <div class="lock-container">
+                    <div class="button-group">
+                    <lightning-icon icon-name="utility:lock" class={lockButtonRPClass} size="xx-small" alternative-text="Close"></lightning-icon> 
+                    <lightning-icon icon-name="utility:unlock" class={unlockButtonRPClass} size="xx-small"   alternative-text="Open"></lightning-icon>
+                    </div>
+                    </div>
+                <div class="target">Target Pressure</div>
+                <div class="temperature-control">
+                    <button class="temperature-control">-</button>
+                    <button>{telemetricVehicleData.tire_pressure_rr__c}°</button>
+                    <button class="temperature-control">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</template>
+</template>

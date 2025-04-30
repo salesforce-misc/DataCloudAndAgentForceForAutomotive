@@ -1,0 +1,74 @@
+<template>
+        <article class="slds-card profile-card">
+            <div class="slds-card__body slds-card__body_inner">
+                <div class="slds-page-header slds-page-header_joined slds-page-header_bleed slds-shrink-none slds-is-relative slds-page-header-no-border"  style="background-color: white;">
+                    <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                        <div class="highlights-icon-container slds-avatar slds-m-right_small icon">
+                            <!--<lightning-icon icon-name={iconName} alt="Service Appointment Icon" class="object-icon"></lightning-icon>-->
+                            <img src={iconName}  alt="Service Appointment Icon" class="object-icon"/>
+                        </div>
+                        <div class="slds-media__body slds-align-middle">
+                            <h2 class="slds-card__header-title">
+                                Previous Appointments
+                                <!--<a class="slds-card__header-link">Previous Service Appointments</a>-->
+                            </h2>
+                        </div>
+                    </header>
+                </div>
+                <template if:true={previousServiceAppointments}>
+                    <div class="slds-card__body slds-card__body_inner">
+                        <lightning-datatable
+                            class="related-list"
+                            data={previousServiceAppointments}
+                            columns={columns}
+                            key-field="id"
+                            hide-checkbox-column="true"
+                            resize-column-disabled="true" 
+                            sorted-by=""
+                            sorted-direction="" 
+                            style="width: 100%; overflow-x: hidden;"                        
+                        ></lightning-datatable>
+                    </div>
+                    <!--<template if:true={showViewAll}>
+                        <footer class="slds-card__footer">
+                            <a onclick={handleGotoRelatedList}>View All</a>
+                        </footer>
+                    </template>-->
+                </template>
+            </div>
+        </article>
+
+        <article class="slds-card profile-card">
+            <div class="slds-card__body slds-card__body_inner">
+                <div class="slds-page-header slds-page-header_joined slds-page-header_bleed slds-shrink-none slds-is-relative slds-page-header-no-border" style="background-color: white;">
+                    <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                        <div class="highlights-icon-container slds-avatar slds-m-right_small icon">
+                            <!--<lightning-icon icon-name={iconName} alt="Service Appointment Icon" class="object-icon"></lightning-icon>-->
+                            <img src={iconName}  alt="Service Appointment Icon" class="object-icon"/>
+                        </div>
+                        <div class="slds-media__body slds-align-middle">
+                            <h2 class="slds-card__header-title">
+                                Upcoming Appointments
+                                <!--<a class="slds-card__header-link">Upcoming Service Appointments</a>-->
+                            </h2>
+                        </div>
+                    </header>
+                </div>
+                <template if:true={upcomingServiceAppointments}>
+                    <div class="slds-card__body slds-card__body_inner">
+                        <lightning-datatable
+                            class="related-list"
+                            data={upcomingServiceAppointments}
+                            columns={columns}
+                            key-field="id"
+                            hide-checkbox-column="true"
+                            resize-column-disabled="true"   
+                            sorted-by=""
+                            sorted-direction=""  
+                            style="width: 100%; overflow-x: hidden;"                   
+                        ></lightning-datatable>
+                    </div>                
+                </template>
+            </div>
+        </article>
+</template>

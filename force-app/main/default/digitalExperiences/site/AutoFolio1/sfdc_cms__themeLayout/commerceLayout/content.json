@@ -1,0 +1,232 @@
+{
+  "type" : "sfdc_cms__themeLayout",
+  "title" : "Commerce Layout",
+  "contentBody" : {
+    "component" : {
+      "attributes" : { },
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "hidePromoBanner" : true,
+            "hideWishlistShortcut" : true
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "columnGutterWidth" : "",
+                "columnMinHeight" : "",
+                "columnVerticalAlign" : "flex-start",
+                "layoutDirectionDesktop" : "row",
+                "layoutDirectionMobile" : "column",
+                "layoutDirectionTablet" : "column",
+                "sectionConfig" : "{\"UUID\":\"11670f72-11c6-4a8e-979d-cf44377da192\",\"columns\":[{\"UUID\":\"de012bc8-43a0-4395-8df6-3ef3ac181762\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+              },
+              "children" : [ {
+                "id" : "de012bc8-43a0-4395-8df6-3ef3ac181762",
+                "name" : "col1",
+                "title" : "Column 1",
+                "type" : "region"
+              } ],
+              "definition" : "dxp_layout:columns",
+              "id" : "11670f72-11c6-4a8e-979d-cf44377da192",
+              "type" : "component"
+            } ],
+            "id" : "fa1c47f3-8857-4eb3-a811-0a00798e8676",
+            "name" : "promoBanner",
+            "title" : "Rich Text Editor (Promo Banner)",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "alignment" : "left",
+                "dxpStyle" : {
+                  "margin" : {
+                    "bottom" : "",
+                    "left" : "",
+                    "right" : "",
+                    "top" : ""
+                  }
+                },
+                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"/sfsites/c/cms/delivery/media/MCJ7NTQQQFVZFJ3KIS2XOVCVLJFM?lastModifiedDate=Mon Feb 17 14:35:53 GMT 2025\",\"altText\":\"\",\"contentKey\":\"MCJ7NTQQQFVZFJ3KIS2XOVCVLJFM\",\"contentType\":null}}",
+                "imageInfoMobile" : "{\"imageInfoV1\":{\"url\":\"\",\"altText\":\"Auto Folio\",\"contentKey\":\"\",\"contentType\":null}}",
+                "logoWidth" : 112
+              },
+              "definition" : "dxp_content_layout:siteLogo",
+              "id" : "58e74891-0195-4be6-b07b-ab96bc0cebba",
+              "type" : "component"
+            } ],
+            "id" : "125bb8e2-7056-4efa-b7fb-c408b7439ec4",
+            "name" : "storeLogo",
+            "title" : "Site Logo",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "alignment" : "left",
+                "navigationMenuEditor" : "Default_Navigation11",
+                "showBackLabel" : true,
+                "showHomeLink" : true
+              },
+              "definition" : "commerce_builder:drilldownNavigation",
+              "id" : "fb821efb-0e92-4768-b86f-6703af072729",
+              "type" : "component"
+            } ],
+            "id" : "159be452-42e1-4a8a-bbbe-97184b819da8",
+            "name" : "navigation",
+            "title" : "Multilevel Navigation Menu",
+            "type" : "region"
+          }, {
+            "id" : "ce27ece8-91d5-4874-a71e-4dba9a39c0f4",
+            "name" : "searchInput",
+            "title" : "Search Bar",
+            "type" : "region"
+          }, {
+            "id" : "4dc9db4b-e693-40c6-9fab-0372e5386ebb",
+            "name" : "shopperCopilot",
+            "title" : "Shopper Copilot",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "iconStyle" : "userIcon",
+                "includeCompanyName" : false,
+                "logOutLabel" : "Log Out",
+                "loginLinkText" : "Log In",
+                "loginLinkTextDecoration" : "{\"underline\":true,\"bold\":false,\"strike\":false}",
+                "loginLinkTextOrientation" : "leftOfIcon",
+                "menuStyle" : "iconAndName",
+                "userNameTextOrientation" : "leftOfIcon",
+                "userProfileMenuNavigationMenuEditor" : "Default_User_Profile_Menu7"
+              },
+              "definition" : "commerce_builder:userProfileMenu",
+              "id" : "e9ed41bd-413e-4752-a98d-6f6d92336745",
+              "type" : "component"
+            } ],
+            "id" : "68f141c3-2d89-4ec0-b7c1-ccd8c8d9887b",
+            "name" : "myAccount",
+            "title" : "Profile Menu",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "iconType" : "heart"
+              },
+              "definition" : "commerce_builder:wishlistShortcut",
+              "id" : "f727cb35-48a8-48a2-9d52-bf38b5939119",
+              "type" : "component"
+            } ],
+            "id" : "d9061123-bee5-462b-be87-d50a15612e38",
+            "name" : "wishlist",
+            "title" : "List Badge",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "checkoutButtonSize" : "small",
+                "checkoutButtonText" : "Checkout",
+                "continueShoppingButtonSize" : "small",
+                "continueShoppingButtonText" : "Continue Shopping",
+                "countType" : "TotalProductCount",
+                "headerText" : "My Cart",
+                "showContinueShoppingButton" : true,
+                "showCount" : true,
+                "showMiniCart" : true,
+                "showMiniCartProperties" : true,
+                "showViewCartButton" : false,
+                "viewCartButtonSize" : "small",
+                "viewCartButtonText" : "View Cart"
+              },
+              "definition" : "commerce_builder:cartBadge",
+              "id" : "11fa60b0-f04e-4f6b-9129-e06e73f1ddbd",
+              "type" : "component"
+            } ],
+            "id" : "99588540-1b61-468f-b2c4-5cc6634efb88",
+            "name" : "cart",
+            "title" : "Cart Badge",
+            "type" : "region"
+          }, {
+            "id" : "66cb7297-e526-4e53-be55-e5f634c81f57",
+            "name" : "copilot",
+            "title" : "copilot",
+            "type" : "region"
+          } ],
+          "definition" : "commerce_builder:layoutHeader",
+          "id" : "a160c9ef-224e-4cb8-8c38-c05352b06237",
+          "type" : "component"
+        } ],
+        "id" : "c52fe604-ebe6-4313-851d-3855ba3a05fc",
+        "name" : "header",
+        "title" : "Header",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : { },
+          "definition" : "c:appointmentFlyout",
+          "id" : "3c57e631-1699-4612-bbf7-b9aef985f0d0",
+          "type" : "component"
+        }, {
+          "attributes" : { },
+          "definition" : "c:defaultPrechatValuesComponent",
+          "id" : "c004b985-37c8-4256-8f19-b4a0af1a37f3",
+          "type" : "component"
+        }, {
+          "attributes" : { },
+          "definition" : "c:embeddedMessaging",
+          "id" : "a2d25ddb-ef39-4f2b-853e-e4e3742364f7",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "deploymentName" : "ESA_Web_Deployment",
+            "hideChatButtonOnLoad" : "Default",
+            "scrtUrl" : "https://dpa00000onw0emah.my.salesforce-scrt.com",
+            "siteEndpoint" : "https://dpa00000onw0emah.my.site.com/ESWESAWebDeployment1736313145513"
+          },
+          "definition" : "experience_messaging:embeddedMessaging",
+          "id" : "bebd2e96-8fa5-4866-8817-a94f6abece53",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : {
+              "isVisible" : false,
+              "padding" : {
+                "bottom" : "3%",
+                "left" : "8%",
+                "right" : "8%",
+                "top" : "1%"
+              }
+            },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"5d0d2af5-7655-4bdf-87cf-d1ccd1d017a3\",\"columns\":[{\"UUID\":\"fae709a0-e949-482d-9a14-0cafbd703750\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "id" : "fae709a0-e949-482d-9a14-0cafbd703750",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "5d0d2af5-7655-4bdf-87cf-d1ccd1d017a3",
+          "scopedBrandingSetId" : "Footer",
+          "type" : "component"
+        } ],
+        "id" : "0bab3319-0020-4edb-8957-8d2d9e071691",
+        "name" : "footer",
+        "title" : "Footer",
+        "type" : "region"
+      } ],
+      "definition" : "commerce:layoutSite",
+      "id" : "ad542c5e-f6ec-43b9-9a23-e4be169e5ac4",
+      "type" : "component"
+    }
+  },
+  "urlName" : "commerce-layout"
+}

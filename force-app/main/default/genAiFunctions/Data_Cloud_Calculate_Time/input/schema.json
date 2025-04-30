@@ -1,0 +1,21 @@
+{
+  "required" : [ "ContactId", "InputType" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "ContactId" : {
+      "title" : "ContactId",
+      "description" : "Contact Id of The customer",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "InputType" : {
+      "title" : "InputType",
+      "description" : "Input Type",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

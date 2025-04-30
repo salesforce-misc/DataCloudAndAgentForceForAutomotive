@@ -1,0 +1,31 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "ReturnProductRelatedMaterials" : {
+      "title" : "ReturnProductRelatedMaterials",
+      "description" : "Stores the list of Product Related Materials",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "lightning__recordInfoType",
+        "lightning:sObjectInfo" : {
+          "apiName" : "ProductRelatedMaterial"
+        }
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "ReturnSurveyResponse" : {
+      "title" : "ReturnSurveyResponse",
+      "description" : "Summarize the details of Outdoor Activities and RoofRack from Survey",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

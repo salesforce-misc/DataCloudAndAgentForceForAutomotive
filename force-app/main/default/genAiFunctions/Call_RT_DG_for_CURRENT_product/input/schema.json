@@ -1,0 +1,28 @@
+{
+  "required" : [ "DGName", "DGRecordId", "inputType" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "DGName" : {
+      "title" : "DGName",
+      "description" : "The name of the data graph where the products seen are held.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "DGRecordId" : {
+      "title" : "DGRecordId",
+      "description" : "The customer identifier - can be addressed with the cookie value.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "inputType" : {
+      "title" : "inputType",
+      "description" : "Input Type for Different Conditions",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

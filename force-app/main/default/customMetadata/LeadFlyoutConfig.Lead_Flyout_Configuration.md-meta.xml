@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Lead Flyout Configuration</label>
+    <protected>false</protected>
+    <values>
+        <field>Bootstrap_Link__c</field>
+        <value xsi:type="xsd:string">https://dpa00000onw0emah.my.site.com/ESWESAWebDeployment1736313145513/assets/js/bootstrap.min.js</value>
+    </values>
+    <values>
+        <field>ESA_Deployment_Link__c</field>
+        <value xsi:type="xsd:string">https://dpa00000onw0emah.my.site.com/ESWESAWebDeployment1736313145513</value>
+    </values>
+    <values>
+        <field>Org_Id__c</field>
+        <value xsi:type="xsd:string">00DPa00000ONW0e</value>
+    </values>
+    <values>
+        <field>Srct_Url__c</field>
+        <value xsi:type="xsd:string">https://dpa00000onw0emah.my.salesforce-scrt.com</value>
+    </values>
+</CustomMetadata>

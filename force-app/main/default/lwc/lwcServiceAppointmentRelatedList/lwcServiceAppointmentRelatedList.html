@@ -1,0 +1,56 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 03-03-2025
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<!--<template>
+    <lightning-card title="Service Appointments">
+        <template if:true={serviceAppointments}>
+            <lightning-datatable
+                hide-checkbox-column
+                data={serviceAppointments}
+                columns={columns}
+                key-field="id"
+            ></lightning-datatable>
+        </template>
+        <template if:true={error}>
+            <div class="slds-text-color_error">{error}</div>
+        </template>
+    </lightning-card>
+</template>-->
+<template>
+    <lightning-layout class="slds-m-top_x-small">
+        <article class="slds-card lightning-card slds-card_boundary slds-card_related-list-fix slds-box">
+            <div class="slds-page-header slds-page-header_joined slds-page-header_bleed slds-shrink-none slds-is-relative slds-page-header-no-border">
+                <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                    <div class="highlights-icon-container slds-avatar slds-m-right_small icon">
+                        <!--<lightning-icon icon-name={iconName} alt="Service Appointment Icon" class="object-icon"></lightning-icon>-->
+                        <img src={iconName}  alt="Service Appointment Icon" class="object-icon"/>
+                    </div>
+                    <div class="slds-media__body slds-align-middle">
+                        <h2 class="slds-card__header-title">
+                            Service Appointments
+                            <!--<a class="slds-card__header-link">Previous Service Appointments</a>-->
+                        </h2>
+                    </div>
+                </header>
+            </div>
+            <template if:true={isDisplayTable}>
+                <div class="slds-card__body slds-card__body_inner">
+                    <lightning-datatable
+                        class="related-list"
+                        data={serviceAppointments}
+                        columns={columns}
+                        key-field="id"
+                        hide-checkbox-column="true"
+                        resize-column-disabled="true" 
+                        sorted-by=""
+                        sorted-direction=""                         
+                    ></lightning-datatable>
+                </div>                
+            </template>
+        </article>
+    </lightning-layout>
+</template>

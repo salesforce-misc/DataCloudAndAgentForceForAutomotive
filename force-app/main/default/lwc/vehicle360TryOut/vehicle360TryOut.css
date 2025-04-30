@@ -1,0 +1,195 @@
+.vehicle-controls-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.detail-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.vehicle-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+.vehicle-header p {
+    margin: 5px 0;
+    color: #666;
+}
+.vehicle-stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.stat {
+    text-align: center;
+}
+.stat p {
+    margin: 0;
+    color: #666;
+}
+.stat h3 {
+    margin: 5px 0;
+    color: #333;
+}
+.battery-indicator {
+    width: 100px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.battery-fill {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+    transition: width 0.3s;
+}
+.vehicle-location {
+    margin: 10px 0;
+    color: #666;
+}
+.climate-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.zone {
+    text-align: center;
+    flex: 0 0 45%; /* Adjust width for layout */
+    margin-bottom: 20px;
+}
+.target{
+    padding-top: 10px;
+}
+.temperature-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.temperature-control button {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.temperature-control span {
+    font-size: 18px;
+    margin: 0 10px;
+    color: #333;
+}
+.car-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+
+.car-image img {
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* New container for buttons */
+.icon-blue{
+    background-color: #0070d2;
+    --sds-c-icon-color-foreground-default: white;
+    border: 2px solid #0070d2;
+    width: 45px;
+    height: 26px;
+}
+.icon-faded{
+    background-color: white;
+    --sds-c-icon-color-foreground-default: rgb(102, 99, 99);
+    /* slds-button-icon-color-fore */
+    border: 2px solid #ccc;
+    width: 45px;
+    height: 26px;
+}
+.lightning-button-icon {
+    height: auto;  
+    width: auto;   
+}
+
+.slds-button{
+    height:2rem;
+    width:4rem;
+    border-radius: 10px;
+}
+
+
+
+/**/
+.climate-control-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+.left-panel, .right-panel {
+    width: 20%;
+}
+.car-view {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.car-image {
+    width: 100%;
+    height: auto;
+}
+.control-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.lock-button {
+    margin-bottom: 10px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0; /* Space between buttons */
+}
+.lock-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+.button-group{
+    display: flex;
+    gap: 0px;
+    margin-bottom: 10px;
+}
+.icon-button{
+    background-color: white;
+    border: 1px solid #d8d8d9;
+    border-radius: 5px;
+    height: 30px;
+    width: 47px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.icon-button.active{
+    background-color: #0070d2;
+    border: none;
+    --sds-c-icon-color-foreground-default: white;
+}

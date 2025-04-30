@@ -1,0 +1,14 @@
+{
+  "required" : [ "InputRecordId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "InputRecordId" : {
+      "title" : "InputRecordId",
+      "description" : "Pass the Id of Record",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}
