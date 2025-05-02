@@ -1,0 +1,59 @@
+openapi: 3.0.3
+components:
+  schemas:
+    vehicle_telemetric:
+      type: object
+      properties:
+        ABS_status:
+          type: string
+        airbag_status:
+          type: string
+        battery_soc_level:
+          type: string
+        battery_voltage:
+          type: string
+        brake_fluid_level:
+          type: string
+        brake_pad_wear_fl:
+          type: string
+        brake_pad_wear_fr:
+          type: string
+        brake_pad_wear_rl:
+          type: string
+        brake_pad_wear_rr:
+          type: string
+        coolant_temperature:
+          type: string
+        engine_temperature:
+          type: string
+        esp_status:
+          type: string
+        eventname:
+          type: string
+        fuel_level:
+          type: string
+        latitude:
+          type: string
+        longitude:
+          type: string
+        odometer:
+          type: string
+        oilpressure:
+          type: string
+        rpm:
+          type: string
+        speed:
+          type: number
+        timestamp:
+          type: string
+          format: date-time
+        tire_pressure_fl:
+          type: string
+        tire_pressure_fr:
+          type: string
+        tire_pressure_rl:
+          type: string
+        tire_pressure_rr:
+          type: string
+        VIN:
+          type: string

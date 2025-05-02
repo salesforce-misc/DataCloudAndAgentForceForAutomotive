@@ -1,0 +1,29 @@
+openapi: 3.0.3
+components:
+  schemas:
+    vehicle_issues:
+      type: object
+      properties:
+        components:
+          type: string
+        crash:
+          type: string
+        dateComplaintFiled:
+          type: string
+        dateOfIncident:
+          type: string
+        fire:
+          type: string
+        numberOfDeaths:
+          type: string
+        numberOfInjuries:
+          type: string
+        odinumber:
+          type: string
+        odi_number:
+          type: string
+        summary:
+          type: string
+        timestamp:
+          type: string
+          format: date-time
