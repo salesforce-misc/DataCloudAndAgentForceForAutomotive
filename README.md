@@ -399,8 +399,6 @@ Third Party Survey Data- https://docs.google.com/spreadsheets/d/1hmD5QQAennbsQCi
 
 [11. Change the email Address.	](#11-change-the-email-address)
 
-[12. Run CRM Analytics Recipes	](#12-run-crm-analytics-recipes)
-
 [13. Add Agent User into Agent force Service Agent and Activate	](#13-add-agent-user-into-agent-force-service-agent-and-activate)
 
 [14. Add site logo	](#14-add-site-logo)
@@ -498,10 +496,6 @@ Third Party Survey Data- https://docs.google.com/spreadsheets/d/1hmD5QQAennbsQCi
 | ----- | ----- | ----- |
 | Change the email Address. |- Go to Setup \-\> Open All Sites</br>- Click on Workspaces (the configured Sites) \-\> Click Administrator</br>- Click on Emails</br>- Change Sender email to system admin email</br>- Click on save | <img width="234" alt="Change the email Address1" src="https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/014afbc7-2973-48ff-af8e-83a3c2829b0c">|
 
-### 12. Run CRM Analytics Recipes
-| Step  | Action and Details  |  Images |
-| ----- | ----- | ----- |
-| Run CRM Analytics Recipes |- Click on App launcher, click on Analytics Studio</br>- Click on Data Manager</br>-  Click on Recipes </br>- Click on ‘Run Now’ On Analytics for Automotive Automotive Analytics RDR’ and ‘Analytics for Automotive Automotive Analytics’ Recipes.</br>- It will take some time to complete. Once It Runs Successfully, status should change to Succeed.   | ![Run CRM Analytics Recipes1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/f614c938-de9b-4958-864d-4557ef107613)![Run CRM Analytics Recipes2](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/0d0723ca-28e1-4e10-af22-e4bb1e73ccfe)![Run CRM Analytics Recipes3](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/6b0b179e-3335-47b1-b38a-ed9e38c049dd)![Run CRM Analytics Recipes4](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/2f22576e-0cb1-42b0-b754-266a5a7e3201)|
 
 ### 13. Add Agent User into Agent force Service Agent and Activate
 | Step  | Action and Details  |  Images |
