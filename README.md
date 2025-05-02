@@ -160,7 +160,7 @@ the org, follow the steps below to create data streams.
   ### 4. Create Automotive_FAQ DLO Creation for Unstructured Data 
   | Step | Action and Details | Images |
   | ----- | ----- | ----- |
-  | Create Automotive FAQ.  | - Click on Data Lake Object Click on New</br>-Click on Create from Data Kits, Click on Next</br>-Select Automotive_FAQ, select connection. Click on Next.</br>-Click on Deploy.| ![Create Automotive FAQ1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/0abe50c1-68fb-4bfa-8170-d6648cea7099) ![Create Automotive FAQ2](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/c3d1d4c6-7914-4912-b489-c733abfe9008)![Create Automotive FAQ3](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/6e9433a3-00a6-4e17-82f8-78e229a3650e)|
+  | Create Automotive FAQ. **Amazon Connection Should be Established**  | - Click on Data Lake Object Click on New</br>-Click on Create from Data Kits, Click on Next</br>-Select Automotive_FAQ, select connection. Click on Next.</br>-Click on Deploy.</br>-Follow same steps for creating **Automotive_Warranty_Info** DLOs| ![Create Automotive FAQ1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/0abe50c1-68fb-4bfa-8170-d6648cea7099) ![Create Automotive FAQ2](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/c3d1d4c6-7914-4912-b489-c733abfe9008)![Create Automotive FAQ3](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/6e9433a3-00a6-4e17-82f8-78e229a3650e)|
 
 ### 5. Create Identity Resolution Ruleset from Data Kit
   | Step | Action and Details | Images |
