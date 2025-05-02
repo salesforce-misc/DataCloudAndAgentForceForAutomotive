@@ -1,0 +1,9 @@
+﻿Survey_Id,Survey_Datetime__c,Response_Submitter__c,Survey_Question__c,Rating_Value__c,Survey_Weight__c,Is_Interested_In_Outdoor_Activities__c,Is_Interested_In_Roof_Rack__c
+1020901,2025-02-11 00:00:00.000,48291735,How was your previous service experience with us?,3,4,true,true
+1020902,2025-01-11 00:00:00.000,48291735,Was the staff helpful in resolving your queries?,4,2,false,true
+1020903,2025-01-01 00:00:00.000,48291735,Would you recommend our service to others?,5,5,true,false
+1020904,2024-12-21 00:00:00.000,48291735,Was the service completed within the committed time?,2,3,false,false
+1020905,2025-02-11 00:00:00.000,19647382,Was the staff helpful in resolving your queries?,2,2,true,false
+1020906,2025-01-11 00:00:00.000,19647382,Was the service completed within the committed time?,3,3,false,true
+1020907,2025-01-01 00:00:00.000,19647382,How was your previous service experience with us?,5,4,true,false
+1020908,2024-12-21 00:00:00.000,19647382,Would you recommend our service to others?,4,5,false,false
