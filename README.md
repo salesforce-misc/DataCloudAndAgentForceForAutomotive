@@ -39,7 +39,7 @@ Table of Contents
 
   | Requirement | Details |
   | ----- | ----- |
-  | Licenses Required | - Data Cloud</br>- Auto Cloud</br>- Sales Cloud</br>- Service Cloud</br>- Experience</br>- Commerce Cloud</br>- Marketing Cloud</br>- MuleSoft (Optional) |
+  | Licenses Required | - Data Cloud</br>- Auto Cloud</br>- Sales Cloud</br>- Service Cloud</br>- Experience</br>- Commerce Cloud</br>- Marketing Cloud</br>- MuleSoft (Optional) </br>Tableau Next|
   | Features Required | - Service Agent</br>- Einstein Agent</br>- Copilot</br>- Prompt Builder</br>- Agent Force</br>- Real-time</br>- Code Builder (Optional) |
 
  ⚠️ **Important Note:** Existing Trailheads playgrounds cannot be used 
