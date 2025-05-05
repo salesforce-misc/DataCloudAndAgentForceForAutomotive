@@ -45,7 +45,7 @@ Table of Contents
  ⚠️ **Important Note:** Existing Trailheads playgrounds cannot be used 
 
 
-### 2. Enable Features on the Org (15 min)
+### 2. Enable Features on the Org (10 min)
 
   | Step | Action and Details | Images |
   | ----- | ----- | ----- |
@@ -56,7 +56,7 @@ Table of Contents
 | Enable Partner Lead Management  | - Go to setup .</br>- Search Partner Lead Management and click on it. </br>- click on toggle enabled.  |  |
 | Enable Interest Tags | - Go to setup .</br>- Search Interest tags .</br>-Enable the toggle. |  |
 
-### 3. Install Pre-Deployment Package (10 min)
+### 3. Install Pre-Deployment Package (25 min)
 
   | Step | Action and Details | Images |
   | ----- | ----- | ----- |
