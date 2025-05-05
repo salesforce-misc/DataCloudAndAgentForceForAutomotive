@@ -18,6 +18,7 @@ Table of Contents
 
 [8. Mulesoft Configuration For Vehicle Issue](#mulesoft-configuration-for-vehicle-issue)
 
+[9. Tableau Dashboard](#Tableau-Dashboard)
 <details><summary>
 
   ## 1. Pre-Deployment Instructions
@@ -718,4 +719,58 @@ Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAu
 
  **Below is the configuration XML file so directly creating new project in Mule Anypoint and copy paste the configuration XML then update the credentials for Salesforce Data Cloud (Streaming Insert Object) connector. (Don’t forget to add the Data Cloud Insert Object Connector from Exchange)**
  </details>
+<details><summary>
+  
+## 5. Configure Salesforce Tableau Next
+</summary>
+
+## Table of Contents
+
+[1. Enable tableau next	](#1-enable-tableau-next)
+
+[2. Create WorkSpace ](#2-create-workspace)
+
+[3. Create semantic model	](#3-Create-semantic-model)
+
+[4. Create Visualization](#4-create-visualization)
+
+[5. Create Dashboard	](#5-Create-dashboard)
+
+**Note:**To support the Automotive app, you can either create a new Salesforce Org or use an existing one, provided it includes the following features and licenses:
+**Important Note:** Existing Trailheads playgrounds cannot be used Enable/Execute below steps in the Org.
+
+### 1. Enable Tableau Next Beta (5 min)
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+| Enable Tableau Next Beta |-From Setup, enter ‘Tableau Next’ in the Quick Find box. </br>-Enable Tableau Next Beta. |    |
+
+### 2. Create Workspace  (5 min)
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+| Create Workspace|-Click on App Launcher And Search Tableau Next </br>-Click on New WorkSpace.</br>-Enter Name "AutoFolio" click on create. |    |
+
+### 3. Create Semantic Models  (5 min)
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+| Create Semantic Models : Asset Contact|-Go to workspace Autofolio </br>-⦁	Click on Add > New Semantic Model and Name it Asset Contact </br>-Add the Data Objects: Asset Contact Participant. |    |
+|Add Logical View In Asset Contact|-	Click on + aside Logical view tab</br>-	Add Vehicle, Asset Contact Participant and Vehicle </br>-Telemetric DMOs and join them all using Common IDS. |   |
+|Create Semantic Model: Lead Intelligence Model|⦁	Go to workspace Autofolio</br>⦁	Click on Add > New Semantic Model and Name it Lead Intelligence Model</br>⦁	Add the Data Objects: Lead Line Item|   |
+|Create Logical Views in Lead Intelligence Model|-⦁	Click on + aside Logical view tab</br>⦁	⦁	Add Lead, LeadLine Item and Product DMOs and join them all using Common ID.|   |
+|Create Semantic Models : Vehicle Model|-⦁	Go to workspace Autofolio</br>⦁	Click on Add > New Semantic Model and Name it Asset Contact</br>⦁	Add the Data Objects: Asset Contact Participant.|  |
+|Add Logical View in Vehicle Model|-⦁	Click on + aside Logical view tab.</br>Add Vehicle, Vehicle Definition and Vehicle Telemetric DMOs and join them all using Common IDS.</br>**Similarly Make the remaining Semantic Models Work Order & Work Type, Logical View**| |
+
+### 4. Create Visualization
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+| Create Visualization|-Go to autofolio</br> ⦁	Click on Add > Visualization</br>⦁	Select the Semantic Models </br>⦁	Add the appropriate Fields in Rows and Columns. |    |
+|Visualization VTD|-⦁	Add below fields on Rows: Vehicle Name, Contact,Latitute, Longitute, Gear Box Type, Fuel Level, RPM, Tire size, Front Rim Size, Engine Temp, Brake Pad Wear, Oil Pressure, Brake Pad Wear, Air Bag, Battery SOC, Battery Voltage.|   |
+|Add Viz: Vehicle Time Line Events|-⦁	Add below fields on Rows: Odometer Reading, Timestamp,Fule Level, Airbag Status, ABS Status.|   |
+
+### 4. Create Dashboard
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+| Create Dashboard|-Go to autofolio</br> ⦁	Click on Add > Dashboard> New Dashboard |    |
+|Dashboard 1: Vehicle Portfolio Insights|-⦁	Add below fields on Rows: Vehicle Name, Contact,Latitute, Longitute, Gear Box Type, Fuel Level, RPM, Tire size, Front Rim Size, Engine Temp, Brake Pad Wear, Oil Pressure, Brake Pad Wear, Air Bag, Battery SOC, Battery Voltage.|  |
+|Add Viz: Vehicle Time Line Events|⦁	Add below fields on Rows: Odometer Reading, Timestamp,Fule Level, Airbag Status, ABS Status.|   |
+</details>
 <details><summary>
