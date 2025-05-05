@@ -721,7 +721,7 @@ Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAu
  </details>
 <details><summary>
   
-## 5. Configure Salesforce Tableau Next
+## 9. Configure Salesforce Tableau Next
 </summary>
 
 ## Table of Contents
@@ -749,28 +749,27 @@ Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAu
 | ----- | ----- | ----- |
 | Create Workspace|-Click on App Launcher And Search Tableau Next </br>-Click on New WorkSpace.</br>-Enter Name "AutoFolio" click on create. |    |
 
-### 3. Create Semantic Models  (5 min)
+### 3. Create Semantic Models  (30 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 | Create Semantic Models : Asset Contact|-Go to workspace Autofolio </br>-⦁	Click on Add > New Semantic Model and Name it Asset Contact </br>-Add the Data Objects: Asset Contact Participant. |    |
 |Add Logical View In Asset Contact|-	Click on + aside Logical view tab</br>-	Add Vehicle, Asset Contact Participant and Vehicle </br>-Telemetric DMOs and join them all using Common IDS. |   |
 |Create Semantic Model: Lead Intelligence Model|⦁	Go to workspace Autofolio</br>⦁	Click on Add > New Semantic Model and Name it Lead Intelligence Model</br>⦁	Add the Data Objects: Lead Line Item|   |
-|Create Logical Views in Lead Intelligence Model|-⦁	Click on + aside Logical view tab</br>⦁	⦁	Add Lead, LeadLine Item and Product DMOs and join them all using Common ID.|   |
+|Create Logical Views in Lead Intelligence Model|-⦁	Click on + aside Logical view tab</br>⦁	Add Lead, LeadLine Item and Product DMOs and join them all using Common ID.|   |
 |Create Semantic Models : Vehicle Model|-⦁	Go to workspace Autofolio</br>⦁	Click on Add > New Semantic Model and Name it Asset Contact</br>⦁	Add the Data Objects: Asset Contact Participant.|  |
 |Add Logical View in Vehicle Model|-⦁	Click on + aside Logical view tab.</br>Add Vehicle, Vehicle Definition and Vehicle Telemetric DMOs and join them all using Common IDS.</br>**Similarly Make the remaining Semantic Models Work Order & Work Type, Logical View**| |
 
-### 4. Create Visualization
+### 4. Create Visualization (15 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 | Create Visualization|-Go to autofolio</br> ⦁	Click on Add > Visualization</br>⦁	Select the Semantic Models </br>⦁	Add the appropriate Fields in Rows and Columns. |    |
 |Visualization VTD|-⦁	Add below fields on Rows: Vehicle Name, Contact,Latitute, Longitute, Gear Box Type, Fuel Level, RPM, Tire size, Front Rim Size, Engine Temp, Brake Pad Wear, Oil Pressure, Brake Pad Wear, Air Bag, Battery SOC, Battery Voltage.|   |
 |Add Viz: Vehicle Time Line Events|-⦁	Add below fields on Rows: Odometer Reading, Timestamp,Fule Level, Airbag Status, ABS Status.|   |
 
-### 4. Create Dashboard
+### 5. Create Dashboard (15 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 | Create Dashboard|-Go to autofolio</br> ⦁	Click on Add > Dashboard> New Dashboard |    |
 |Dashboard 1: Vehicle Portfolio Insights|-⦁	Add below fields on Rows: Vehicle Name, Contact,Latitute, Longitute, Gear Box Type, Fuel Level, RPM, Tire size, Front Rim Size, Engine Temp, Brake Pad Wear, Oil Pressure, Brake Pad Wear, Air Bag, Battery SOC, Battery Voltage.|  |
 |Add Viz: Vehicle Time Line Events|⦁	Add below fields on Rows: Odometer Reading, Timestamp,Fule Level, Airbag Status, ABS Status.|   |
-</details>
-<details><summary>
+
