@@ -742,12 +742,12 @@ Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAu
 ### 1. Enable Tableau Next Beta (5 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| Enable Tableau Next Beta |-From Setup, enter ‘Tableau Next’ in the Quick Find box. </br>-Enable Tableau Next Beta. | [](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Automotive%20Tableau%20Next%20Images/Enable%20Tableau.png)   |
+| Enable Tableau Next Beta |-From Setup, enter ‘Tableau Next’ in the Quick Find box. </br>-Enable Tableau Next Beta. | ![](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Automotive%20Tableau%20Next%20Images/Enable%20Tableau.png)   |
 
 ### 2. Create Workspace  (5 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| Create Workspace|-Click on App Launcher And Search Tableau Next </br>-Click on New WorkSpace.</br>-Enter Name "AutoFolio" click on create. |  [](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Automotive%20Tableau%20Next%20Images/Create%20Workspace.png)  |
+| Create Workspace|-Click on App Launcher And Search Tableau Next </br>-Click on New WorkSpace.</br>-Enter Name "AutoFolio" click on create. |  ![](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Automotive%20Tableau%20Next%20Images/Create%20Workspace.png)  |
 
 ### 3. Create Semantic Models  (30 min)
 | Step  | Action and Details  |  Images |
