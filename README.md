@@ -742,34 +742,34 @@ Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAu
 ### 1. Enable Tableau Next Beta (5 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| Enable Tableau Next Beta |-From Setup, enter ‘Tableau Next’ in the Quick Find box. </br>-Enable Tableau Next Beta. |    |
+| Enable Tableau Next Beta |-From Setup, enter ‘Tableau Next’ in the Quick Find box. </br>-Enable Tableau Next Beta. | [](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Automotive%20Tableau%20Next%20Images/Enable%20Tableau.png)   |
 
 ### 2. Create Workspace  (5 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| Create Workspace|-Click on App Launcher And Search Tableau Next </br>-Click on New WorkSpace.</br>-Enter Name "AutoFolio" click on create. |    |
+| Create Workspace|-Click on App Launcher And Search Tableau Next </br>-Click on New WorkSpace.</br>-Enter Name "AutoFolio" click on create. |  [](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Automotive%20Tableau%20Next%20Images/Create%20Workspace.png)  |
 
 ### 3. Create Semantic Models  (30 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| Create Semantic Models : Asset Contact|-Go to workspace Autofolio </br>-⦁	Click on Add > New Semantic Model and Name it Asset Contact </br>-Add the Data Objects: Asset Contact Participant. |    |
-|Add Logical View In Asset Contact|-	Click on + aside Logical view tab</br>-	Add Vehicle, Asset Contact Participant and Vehicle </br>-Telemetric DMOs and join them all using Common IDS. |   |
-|Create Semantic Model: Lead Intelligence Model|⦁	Go to workspace Autofolio</br>⦁	Click on Add > New Semantic Model and Name it Lead Intelligence Model</br>⦁	Add the Data Objects: Lead Line Item|   |
-|Create Logical Views in Lead Intelligence Model|-⦁	Click on + aside Logical view tab</br>⦁	Add Lead, LeadLine Item and Product DMOs and join them all using Common ID.|   |
-|Create Semantic Models : Vehicle Model|-⦁	Go to workspace Autofolio</br>⦁	Click on Add > New Semantic Model and Name it Asset Contact</br>⦁	Add the Data Objects: Asset Contact Participant.|  |
-|Add Logical View in Vehicle Model|-⦁	Click on + aside Logical view tab.</br>Add Vehicle, Vehicle Definition and Vehicle Telemetric DMOs and join them all using Common IDS.</br>**Similarly Make the remaining Semantic Models Work Order & Work Type, Logical View**| |
+| Create Semantic Models : Asset Contact|-Go to workspace Autofolio </br>-⦁	Click on Add > New Semantic Model and Name it Asset Contact </br>-Add the Data Objects: Asset Contact Participant. | [](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Automotive%20Tableau%20Next%20Images/Create%20Semantic%20Models%20Asset%20Contact.png)   |
+|Add Logical View In Asset Contact|-	Click on + aside Logical view tab</br>-	Add Vehicle, Asset Contact Participant and Vehicle </br>-Telemetric DMOs and join them all using Common IDS. | [](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Automotive%20Tableau%20Next%20Images/Add%20Logical%20View%20in%20Asset%20Contact.png)  |
+|Create Semantic Model: Lead Intelligence Model|⦁	Go to workspace Autofolio</br>⦁	Click on Add > New Semantic Model and Name it Lead Intelligence Model</br>⦁	Add the Data Objects: Lead Line Item| [](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Automotive%20Tableau%20Next%20Images/Create%20Semantic%20Model%20Lead%20Intelligence%20Model.png)  |
+|Create Logical Views in Lead Intelligence Model|-	Click on + aside Logical view tab</br>⦁	Add Lead, LeadLine Item and Product DMOs and join them all using Common ID.| [](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Automotive%20Tableau%20Next%20Images/Create%20Logical%20Views%20in%20Lead%20Intelligence%20Model.png)   |
+|Create Semantic Models : Vehicle Model|-⦁	Go to workspace Autofolio</br>⦁	Click on Add > New Semantic Model and Name it Asset Contact</br>⦁	Add the Data Objects: Asset Contact Participant.| [](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Automotive%20Tableau%20Next%20Images/Create%20Semantic%20Models%20Vehicle%20Model.png) |
+|Add Logical View in Vehicle Model|-⦁	Click on + aside Logical view tab.</br>Add Vehicle, Vehicle Definition and Vehicle Telemetric DMOs and join them all using Common IDS.</br>**Similarly Make the remaining Semantic Models Work Order & Work Type, Logical View**| [](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Automotive%20Tableau%20Next%20Images/Add%20Logical%20View%20in%20Vehicle%20Model.png) |
 
 ### 4. Create Visualization (15 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| Create Visualization|-Go to autofolio</br> ⦁	Click on Add > Visualization</br>⦁	Select the Semantic Models </br>⦁	Add the appropriate Fields in Rows and Columns. |    |
-|Visualization VTD|-⦁	Add below fields on Rows: Vehicle Name, Contact,Latitute, Longitute, Gear Box Type, Fuel Level, RPM, Tire size, Front Rim Size, Engine Temp, Brake Pad Wear, Oil Pressure, Brake Pad Wear, Air Bag, Battery SOC, Battery Voltage.|   |
-|Add Viz: Vehicle Time Line Events|-⦁	Add below fields on Rows: Odometer Reading, Timestamp,Fule Level, Airbag Status, ABS Status.|   |
+| Create Visualization|-Go to autofolio</br> ⦁	Click on Add > Visualization</br>⦁	Select the Semantic Models </br>⦁	Add the appropriate Fields in Rows and Columns. | [](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Automotive%20Tableau%20Next%20Images/Create%20Visualizations.png)   |
+|Visualization VTD|-⦁	Add below fields on Rows: Vehicle Name, Contact,Latitute, Longitute, Gear Box Type, Fuel Level, RPM, Tire size, Front Rim Size, Engine Temp, Brake Pad Wear, Oil Pressure, Brake Pad Wear, Air Bag, Battery SOC, Battery Voltage.| [](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Automotive%20Tableau%20Next%20Images/Visualization%20VTD.png)  |
+|Add Viz: Vehicle Time Line Events|-⦁	Add below fields on Rows: Odometer Reading, Timestamp,Fule Level, Airbag Status, ABS Status.|  [](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Automotive%20Tableau%20Next%20Images/Add%20Viz%20Vehicle%20Time%20Line%20Events.png) |
 
 ### 5. Create Dashboard (15 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 | Create Dashboard|-Go to autofolio</br> ⦁	Click on Add > Dashboard> New Dashboard |    |
-|Dashboard 1: Vehicle Portfolio Insights|-⦁	Add below fields on Rows: Vehicle Name, Contact,Latitute, Longitute, Gear Box Type, Fuel Level, RPM, Tire size, Front Rim Size, Engine Temp, Brake Pad Wear, Oil Pressure, Brake Pad Wear, Air Bag, Battery SOC, Battery Voltage.|  |
-|Add Viz: Vehicle Time Line Events|⦁	Add below fields on Rows: Odometer Reading, Timestamp,Fule Level, Airbag Status, ABS Status.|   |
+|Dashboard 1: Vehicle Portfolio Insights|-⦁	Add below fields on Rows: Vehicle Name, Contact,Latitute, Longitute, Gear Box Type, Fuel Level, RPM, Tire size, Front Rim Size, Engine Temp, Brake Pad Wear, Oil Pressure, Brake Pad Wear, Air Bag, Battery SOC, Battery Voltage.| [](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Automotive%20Tableau%20Next%20Images/Dashboard%201%20Vehicle%20Portfolio%20Insights.png)|
+|Add Viz: Vehicle Time Line Events|⦁	Add below fields on Rows: Odometer Reading, Timestamp,Fule Level, Airbag Status, ABS Status.|  [](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Automotive%20Tableau%20Next%20Images/Add%20Viz%20Vehicle%20Time%20Line%20Event.png) |
 
