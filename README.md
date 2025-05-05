@@ -336,7 +336,7 @@ the org, follow the steps below to create data streams.
 ### 2. Setup Data in Amazon S3
 | Step | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| Setup Data in Amazon S3 | - Log into Management Console and proceed to [S3 service](https://s3.console.aws.amazon.com/s3/home) and create a new bucket (give it an appropriate name).</br>  ***NOTE*****:** if you already have a bucket, you don’t need to create another bucket. Download the following files to your computer:</br>- Automotive FAQ PDF  csv [https://drive.google.com/file/d/1xuZfrxosGAWUTEo-3DMzkch1gx3Jv0Fr/view?usp=drive\_link](https://drive.google.com/file/d/16EpkMQrZpkBr4ySjdKsYww4FzRjOIk8i/view?usp=drive_link )]</br>- Upload these files to the appropriate S3 bucket.  |  |
+| Setup Data in Amazon S3 | - Log into Management Console and proceed to [S3 service](https://s3.console.aws.amazon.com/s3/home) and create a new bucket (give it an appropriate name).</br>  ***NOTE*****:** if you already have a bucket, you don’t need to create another bucket. Download the following files to your computer:</br>- Automotive FAQ PDF  csv [https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/tree/master/AWS%20Unstructure%20Data](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/tree/master/AWS%20Unstructure%20Data )]</br>- Upload these files to the appropriate S3 bucket.  |  |
 
 ### 3. Setup Data in Snowflake
 | Step | Action and Details  |  Images |
