@@ -356,7 +356,7 @@ create or replace TABLE <<database_name>>.<<schema_name>>.THIRD_PARTY_SURVEY (
 );
 
 Load data in the below csv file into Third_Party_Survey_Data table:
-Third Party Survey Data- https://docs.google.com/spreadsheets/d/1hmD5QQAennbsQCi0H--BlSY2gfB4Lpj-ei_Z5uhVMxg/edit?usp=sharing
+Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/tree/master/AWS%20Unstructure%20Data](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/tree/master/Snowflake%20Data)](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/tree/master/Snowflake%20Data )]
 ```
 ### 4. Create ML Model  
 | Step | Action and Details  |  Images |
