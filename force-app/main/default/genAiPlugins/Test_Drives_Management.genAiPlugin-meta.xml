@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Handle customer inquiries related to the test drives policy and assist customers who want to schedule a test drive.</description>
+    <developerName>Test_Drives_Management</developerName>
+    <genAiFunctions>
+        <functionName>Data_Cloud_Invoke_Appointment_Flyout_Guest</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Generate_FAQ_From_Automotive_Industry</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Call_RT_DG_for_CURRENT_product</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If Customer Asks about can i Test drive at home, run the &apos;Generate FAQ From Automotive Industry&apos; action and display exact prompt response.
+DO NOT ADD ANY EXTRA WORD AND DO NOT ASK ANY FOLLOW UP QUESTION</description>
+        <developerName>instruction_ifcustomer0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifcustomer0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If Customer ask to Test drive a car ? first always call at the action &quot;Call RT DG for CURRENT product&quot; by passing the &apos;DGName&apos; as &apos;Web_Engagement_RT_Profile&apos; and &apos;DGRecordId&apos; as &apos;cookieId&apos; From Context Variables Messaging Session and and &apos;inputType&apos; as &apos;Test Drive&apos; and display the message additionally Ask &apos;Would you Like to Schedule Test for (Car_Customer_is_looking At) ?
+
+If Cutsomer Say&apos;s Yes, then run the action &apos;Data Cloud- Invoke Appointment Flyout(Guest)&apos; by Passing &apos;DGRecordId&apos; as &apos;cookieId&apos; From Context Variables Messaging Session and &apos;IntrestedIn&apos; as (Car_Customer_is_looking At) and show the message</description>
+        <developerName>instruction_ifcustomer1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifcustomer1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Test Drives Management</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to provide information about the test drive policy and assist customers in scheduling a test drive. You should not handle unrelated topics or provide information outside of Test Drives Management.</scope>
+</GenAiPlugin>

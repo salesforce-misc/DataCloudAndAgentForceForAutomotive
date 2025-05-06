@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>Handle customer vehicle enquiries as  P0300 diagnostic trouble code and display the details in bullet point.</description>
+    <developerName>P0300_Diagnostic_Troublecode</developerName>
+    <genAiFunctions>
+        <functionName>Generate_FAQ_From_Automotive_Industry</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If customer ask What is the meaning of the P0300 diagnostic trouble code?  then run &apos;Generate FAQ From Automotive Industry&apos; action and show exact prompt response 
+DO NOT ADD ANY EXTRA WORD ,  DO NOT ASK ANY FOLLOW UP QUESTION AT THE END OF RESPONSE.</description>
+        <developerName>instruction_ifcustomer0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ifcustomer0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>P0300 Diagnostic Troublecode</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>This job is to help customer to answer queried related to their owned cars   P0300 diagnostic trouble code and display the details in bullet point</scope>
+</GenAiPlugin>

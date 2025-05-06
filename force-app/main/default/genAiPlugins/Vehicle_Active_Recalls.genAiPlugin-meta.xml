@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>Handle customer vehicle enquiries as active recalls available and display the details in bullet point.</description>
+    <developerName>Vehicle_Active_Recalls</developerName>
+    <genAiFunctions>
+        <functionName>Data_Cloud_Vehicle_Recall_Availblity</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If customer ask Are there any active recalls? then call the action &apos;Data Cloud Vehicle Recall Availblity&apos; and pass the current Record Id and say &apos;Here are active recall details for car:&apos; then display details in paragraph.
+DO NOT ASK ANYTHING EXTRA.</description>
+        <developerName>instruction_ifcustomer0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ifcustomer0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Vehicle Active Recalls</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>This job is to help customer to answer queried related to their owned cars  active recalls available and and display the details in bullet point.</scope>
+</GenAiPlugin>

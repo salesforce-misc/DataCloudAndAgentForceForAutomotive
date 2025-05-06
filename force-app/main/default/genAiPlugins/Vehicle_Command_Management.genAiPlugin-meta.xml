@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Handles customer commands related to vehicle operations such as locking/unlocking doors and starting/stopping the car.</description>
+    <developerName>Vehicle_Command_Management</developerName>
+    <genAiFunctions>
+        <functionName>DataCloud_SimulationResult</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If Customer Say&apos;s Unlock Doors or Lock Doors or Start the car or Stop the car, then run the action &apos;DataCloud-SimulationResult&apos; by Passing the &apos;ContactId&apos; as &apos;Contact&apos; From Context Variables Messaging Session and pass inputType as Customer&apos;s Command</description>
+        <developerName>instruction_ifcustomer0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifcustomer0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Vehicle Command Management</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to manage and execute commands related to vehicle operations including Unlock Doors, Lock Doors, Start the car, and Stop the car. You should not handle unrelated topics or provide information outside of Vehicle Command Management.</scope>
+</GenAiPlugin>

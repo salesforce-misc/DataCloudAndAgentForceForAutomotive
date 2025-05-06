@@ -9,7 +9,7 @@ public without sharing class appointment {
     @AuraEnabled
     public static String createappointment(String contactId, DateTime StartTime,DateTime EndTime,String inputType,String AccountName){
         
-        try{ 
+        try{  
             
             if(inputType=='Break Pads Wear' && AccountName != null){
                 //Get Account where Account Name equals AccountName

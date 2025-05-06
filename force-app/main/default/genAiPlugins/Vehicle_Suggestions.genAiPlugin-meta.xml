@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Handles customer inquiries and actions related to providing car suggestions</description>
+    <developerName>Vehicle_Suggestions</developerName>
+    <genAiFunctions>
+        <functionName>Vehicle_Recommenadation</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Call_RT_DG_for_CURRENT_product</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If Customer asks for a car recommendation or asks to Car suggestion then run the Action &apos;Vehicle Recommenadation&apos; by passing the Customer&apos;s Query as Input and Say &apos; Here are some result Based on (customer_preferences_in_question)&apos;</description>
+        <developerName>instruction_ifcustomer0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifcustomer0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Vehicle Suggestions</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to assist customers with inquiries about cars Suggestions and Recommendation based on their preferences. You should not handle unrelated topics or provide information outside of vehicle suggestions. You should not handle unrelated topics or provide information outside of Vehicle Suggestions.</scope>
+</GenAiPlugin>

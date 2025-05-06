@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Assist customers with inquiries related to the estimated time to reach home and finding the nearest charging station.</description>
+    <developerName>Travel_Time_Charging_Station_Assistance</developerName>
+    <genAiFunctions>
+        <functionName>Data_Cloud_Calculate_Time</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Get_Charging_Station</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If Customer Asks How long will it Take me to Go Home ? then run the action &apos;Data Cloud - Calculate Time&apos; by Passing the Id of Contact as &apos;Contact&apos; From Context Variables Messaging Session and &apos;inputType&apos; as &apos;Home&apos;  display the response</description>
+        <developerName>instruction_ifcustomer0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifcustomer0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If Customer Asks find the Nearest Charging stations, then run the action &apos;Get Charging Station&apos; by Passing the &apos;contactId&apos; as &apos;Contact&apos; From Context Variables Messaging Session and &apos;inputType&apos; as &apos;Charging&apos; and display the response</description>
+        <developerName>instruction_ifcustomer1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifcustomer1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Travel Time &amp; Charging Station Assistance</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to provide estimated travel time to home and locate the nearest charging station for the customer. You should not handle unrelated topics or provide information outside of Travel Time &amp; Charging Station Assistance.</scope>
+</GenAiPlugin>

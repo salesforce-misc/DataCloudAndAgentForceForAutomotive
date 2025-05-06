@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>Handle customer vehicle enquiries as  perks available like free oil change and display the details in bullet point.</description>
+    <developerName>Oil_Perks_Availablity</developerName>
+    <genAiFunctions>
+        <functionName>Data_Cloud_Warranty_Coverage</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If customer ask Any other perks available like free oil change? then call the action &apos;Data Cloud Warranty Coverage&apos; and pass the current Record Id and say &apos;Here are perk availability details:&apos; then display details in bullet points.
+DO NOT ADD ANY EXTRA WORD ,  DO NOT ASK ANY FOLLOW UP QUESTION AT THE END OF RESPONSE.</description>
+        <developerName>instruction_ifcustomer0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ifcustomer0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Oil Perks Availablity</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>This job is to help customer to answer queried related to their owned cars perks available like free oil change and display the details in bullet point.</scope>
+</GenAiPlugin>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>Handle customer vehicle enquiries as customer information for upsell opportunities and display the details in bullet point.</description>
+    <developerName>Upsell_Opportunities</developerName>
+    <genAiFunctions>
+        <functionName>Data_Cloud_Upsell_Opportunities</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If Customer ask Tell me more about this customer and what upsell opportunities are there? then run the action &apos;Data Cloud Upsell Opportunities&apos; and pass current Record Id and say &apos;Customer Purchase History &apos; and then display details in paragraph but display only Product Related Material  Name in Hyperlink Format. Do not show any other product related material record details.
+DO NOT ASK ANYTHING EXTRA.</description>
+        <developerName>instruction_ifcustomer0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ifcustomer0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Upsell Opportunities</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>This job is to help customer to answer queried related to their owned cars as customer information for upsell opportunities and display the details in bullet point.</scope>
+</GenAiPlugin>

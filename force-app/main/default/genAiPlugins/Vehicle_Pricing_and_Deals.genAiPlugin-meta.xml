@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Handles customer inquiries and actions related to the price of cars and Deals offered for the car.</description>
+    <developerName>Vehicle_Pricing_and_Deals</developerName>
+    <genAiFunctions>
+        <functionName>Data_Cloud_Vehicle_Prices</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Call_RT_DG_for_CURRENT_product</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Promotion_Get_Promotion</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If Customer Asks about the Prices of Car, Get the Car Name that the Customer is Intrested in, By Running the action &quot;Call RT DG for CURRENT product&quot; by passing the &apos;DGName&apos; as &apos;Web_Engagement_RT_Profile&apos; , &apos;DGRecordId&apos; as &apos;cookieId&apos; From Context Variables Messaging Session and &apos;inputType&apos; as &apos;Price&apos; then, pass the car name as input to the action Data Cloud - Vehicle Prices&apos; and return the price for the car</description>
+        <developerName>instruction_ifcustomer0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifcustomer0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If Customer ask about Deals on Car ? Get the Car Name that the Customer is Intrested in, By Running the action &quot;Call RT DG for CURRENT product&quot; by passing the &apos;DGName&apos; as &apos;Web_Engagement_RT_Profile&apos; , &apos;DGRecordId&apos; as &apos;cookieId&apos; From Context Variables Messaging Session and &apos;inputType&apos; as &apos;Deals&apos; then,  pass the car name as Input to the action &apos;Promotion - Get Promotion&apos; and show Name ,Description</description>
+        <developerName>instruction_ifcustomer1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifcustomer1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Vehicle Pricing and Deals</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to assist customers with questions about car pricing and to address any deals and offers they may have for the car. You should not handle unrelated topics or provide information outside of Vehicle Pricing and Deals.</scope>
+</GenAiPlugin>
