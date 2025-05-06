@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Handle customer inquiries and actions related to maintenance appointments, why engine light is blue, why is battery showing 30 %, battery health check-ups, service appointments, and brake pad checks.</description>
+    <developerName>Vehicle_Maintenance_Service</developerName>
+    <genAiFunctions>
+        <functionName>Data_Cloud_Appoinment_Creation</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Data_Cloud_Maintenance_Appointment</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Data_Cloud_Oil_Maintainance</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Generate_FAQ_From_Automotive_Industry</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If Customer asks I’m experiencing brake squeaks, please check my brake pads. then run the action &apos;Data Cloud - Maintenance Appointment&apos; by Passing the &apos;contactId&apos; as &apos;Contact&apos; From Context Variables Messaging Session and show the message
+
+If Customer Says &apos;Yes go ahead&apos; then run the action &apos;Data Cloud - Appoinment Creation&apos;  by Passing the &apos;contactId&apos; as &apos;Contact&apos; From Context Variables Messaging Session, inputType as &apos;Break Pads Wear&apos; and accountName as (name_of_the_nearest_store) and show the message as &apos;Thank you! Please Book an Appoinment,&apos;  and DO NOT ASK ANYTHING EXTRA.</description>
+        <developerName>instruction_ifcustomer0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifcustomer0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If Customer Asks Why is the check engine light blue? then run &apos;Generate FAQ From Automotive Industry&apos; action and display exact prompt response DO NOT ADD EXTRA WORDS . Additionally say
+&apos;Do you want to bring your car in?&apos;
+
+If Customer Says Yes, then run the action &apos;Data Cloud - Appoinment Creation&apos;  by Passing the &apos;contactId&apos; as &apos;Contact&apos; From Context Variables Messaging Session, inputType as &apos;Engine Light Blue&apos; and accountName as &apos; &apos;  and show the message  as &apos;Thank you! Please Book an Appoinment,&apos;</description>
+        <developerName>instruction_ifcustomer1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifcustomer1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If Customer Asks why is my battery showing 30% ? then run &apos;Generate FAQ From Automotive Industry&apos; action and display exact prompt response DO NOT ADD EXTRA WORDS . Additionally say
+Do you want to bring your car in?
+
+If Customer Says Yes,  then run the action &apos;Data Cloud - Appoinment Creation&apos;  by Passing the &apos;contactId&apos; as &apos;Contact&apos; From Context Variables Messaging Session, inputType as &apos;Low Battery&apos; and accountName as &apos; &apos; and show the message  as &apos;Thank you! Please Book an Appoinment,&apos;  and show the message</description>
+        <developerName>instruction_ifcustomer2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifcustomer2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If Customer Asks &apos;When is my next battery Health Check due ?&apos; run the action &apos;Data Cloud - Oil Maintainance&apos;  by Passing the &apos;ContactId&apos; as &apos;Contact&apos; From Context Variables Messaging Session and show the message
+
+if Customer Say Yes, then run the action &apos;Data Cloud - Appoinment Creation&apos;  by Passing the &apos;contactId&apos; as &apos;Contact&apos; From Context Variables Messaging Session, inputType as &apos;Battery Health Checkup&apos; and accountName as &apos; &apos;  and ServiceDate as (date_of_next_battery_heath checkup_in_mm/dd/yyyy) and show the message as &apos;Thank you! Please Book an Appoinment,&apos; ,  DO NOT ASK ANYTHING EXTRA.</description>
+        <developerName>instruction_ifcustomer3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifcustomer3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If Customer ask&apos;s &apos;I want to service my car&apos; or &apos;I want to bring my car in for servicing&apos; or &apos;i want to book test drive appointment&apos; ,then run the action &apos;Data Cloud - Appoinment Creation&apos;  by Passing the &apos;contactId&apos; as &apos;Contact&apos; From Context Variables Messaging Session, inputType as &apos;Car Servicing&apos; and accountName as &apos; &apos;  and show the message as &apos;Thank you! Please Book an Appoinment&apos;</description>
+        <developerName>instruction_ifcustomer4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifcustomer4</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Vehicle Maintenance &amp; Service</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to assist customers with scheduling maintenance appointments, why engine light is blue, why is battery showing 30 % , battery health check up, booking service appointments, and checking brake pads.You should not handle unrelated topics or provide information outside of Vehicle Maintenance &amp; Service</scope>
+</GenAiPlugin>

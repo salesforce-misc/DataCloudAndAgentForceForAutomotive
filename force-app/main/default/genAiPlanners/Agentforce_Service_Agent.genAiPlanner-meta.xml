@@ -5,10 +5,31 @@
         <genAiFunctionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</genAiFunctionName>
     </genAiFunctions>
     <genAiPlugins>
-        <genAiPluginName>Guest_Experience</genAiPluginName>
+        <genAiPluginName>Free_Service_Eligibility_Roadside_Assistance</genAiPluginName>
     </genAiPlugins>
     <genAiPlugins>
-        <genAiPluginName>Owner_Experience</genAiPluginName>
+        <genAiPluginName>Test_Drives_Management</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Travel_Time_Charging_Station_Assistance</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Vehicle_Command_Management</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Vehicle_Delivery_Wait_Time</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins> 
+        <genAiPluginName>Vehicle_Issues</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Vehicle_Maintenance_Service</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Vehicle_Pricing_and_Deals</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Vehicle_Suggestions</genAiPluginName>
     </genAiPlugins>
     <masterLabel>Agentforce Service Agent</masterLabel>
     <plannerType>AiCopilot__ReAct</plannerType>

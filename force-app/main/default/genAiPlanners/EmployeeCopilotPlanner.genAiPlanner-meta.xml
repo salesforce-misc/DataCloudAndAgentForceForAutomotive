@@ -4,9 +4,28 @@
     <genAiFunctions>
         <genAiFunctionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</genAiFunctionName>
     </genAiFunctions>
-    <genAiPlugins>
-        <genAiPluginName>Technician_Experience</genAiPluginName>
+     <genAiPlugins>
+        <genAiPluginName>Oil_Perks_Availablity</genAiPluginName>
     </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>P0300_Diagnostic_Troublecode</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Upsell_Opportunities</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Vehicle_Active_Recalls</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Vehicle_Commands</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Vehicle_Delay_Status</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Vehicle_Warranty</genAiPluginName>
+    </genAiPlugins>
+
     <masterLabel>EmployeeCopilotPlanner</masterLabel>
     <plannerType>AiCopilot__ReAct</plannerType>
 </GenAiPlanner>

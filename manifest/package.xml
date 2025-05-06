@@ -2,22 +2,7 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	
 	<types>
-		<members>Free_Service_Eligibility_Roadside_Assistance</members>
-		<members>Oil_Perks_Availablity</members>
-		<members>P0300_Diagnostic_Troublecode</members>
-		<members>Test_Drives_Management</members>
-		<members>Travel_Time_Charging_Station_Assistance</members>
-		<members>Upsell_Opportunities</members> 
-		<members>Vehicle_Active_Recalls</members>
-		<members>Vehicle_Command_Management</members>
-		<members>Vehicle_Commands</members>
-		<members>Vehicle_Delay_Status</members>
-		<members>Vehicle_Delivery_Wait_Time</members>
-		<members>Vehicle_Issues</members>
-		<members>Vehicle_Maintenance_and_Service</members>
-		<members>Vehicle_Pricing_and_Deals</members>
-		<members>Vehicle_Suggestions</members>
-		<members>Vehicle_Warranty</members>
+		<members>Vehicle_Maintenance_Service</members>
 		<name>GenAiPlugin</name>
 	</types>
 	<version>63.0</version>

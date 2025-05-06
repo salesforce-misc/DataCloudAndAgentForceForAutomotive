@@ -3,7 +3,7 @@
   "properties" : {
     "DGOutput" : {
       "title" : "DGOutput",
-      "description" : "These are all the product visited by the customer that the agent will use to provide contextualized answer.\n\nIf there multiple productEngagements returned, and pick the latest record by checking this field ssot__EngagementDateTm__c",
+      "description" : "These are all the product visited by the customer that the agent will use to provide contextualized answer.\n\nIf there are multiple productEngagements returned, pick the latest/ most recent record by checking this field ssot__EngagementDateTm__c",
       "lightning:type" : "lightning__textType",
       "lightning:isPII" : false,
       "copilotAction:isDisplayable" : true,
