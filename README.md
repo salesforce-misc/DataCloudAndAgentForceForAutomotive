@@ -135,8 +135,6 @@ Table of Contents
 
 [11. Create Activation	](#11-Create-Activation)
 
-[12. Search Index and Retriever Configuration ](#12-Search-Index-and-Retriever-Configuration)
-
 
 ### 1. Install the Data Kit to add Data Cloud components to the Org (15 mins)
 The Data Kit is installed as a part of the Package installation. Once the Data is available in
@@ -207,11 +205,6 @@ the org, follow the steps below to create data streams.
   | ----- | ----- | ----- |
   |Create Activation|-Go to Data Cloud app </br>-Click on the Activations tab</br>-Click on new</br>-Select Segment and continue </br>-By default, space is default </br>-Need to select the High Purchase Probability Customer V8 segment and activation target as marketing </br>-click on continue</br>-Select Email and Click on continue</br>-Click on add attributes </br>-And from individual select the following attributes First Name and Last Name </br>-Click on Save and provide name as High Purchase Probability Activations. |![Create Activations1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Data%20Cloud%20Configuration/Create%20Activations/Create%20Activations1.png)![Create Activations2](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Data%20Cloud%20Configuration/Create%20Activations/Create%20Activations1.png)![Create Activations3](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Data%20Cloud%20Configuration/Create%20Activations/Create%20Activations3.png)![Create Activations4](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Data%20Cloud%20Configuration/Create%20Activations/Create%20Activations4.png)![Create Activations5](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Data%20Cloud%20Configuration/Create%20Activations/Create%20Activations5.png)|
   |Create Activations for Recall Customer |-Click on data cloud app</br>-Click on the Activations tab </br>-Click on new</br>-Select Segment and continue </br>-By default, space is default </br>-Need to select the Upcoming Warranty End Date segment and activation target as marketing</br>-click on continue</br>-select email and sms </br>-click on continue</br>-click on add attribute</br>-And from individual select the Following attributes First Name, Last Name, Country</br>-Click on Save and provide name as Upcoming Warranty End Date.| ![Create Activations for Recall Customer1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/assets/60563/1779abfe-f99b-4e0e-8c97-994947ca6093)|
-
-  ### 12. Search Index and Retriever Configuration (15 min)
-| Step | Action and Details | Images |
-  | ----- | ----- | ----- |
-  |Search Index and Retriever Configuration|-Go to App Launcher Search for Data Cloud, Go to Search Index Tab. </br>-Click on New, Select From a Data Kit , Select ‘SFAutomotiveDataKitsPackage’ , Select Product ,Click on Next </br>-For Search Type Select Hybrid Search, Click Next </br>-For Chunking, Keep the Same Changes and Click Next. </br>-For Vectorization, Make sure E5 Large V2 Embedding model is Selected, Click Next  </br>-For Fields for Filtering, Keep Same, Click Next. </br>-For Ranking, no Change , Click Next </br>-Click Save </br>-After Save the ‘Search Index Last Run Status’ Will be In Progress, wait for 15-30 Minutes Till the Status changes to Ready. </br>-**Create Retriever for Showing Product**</br>-Create  Retriver, Go to App Launcher Search for Data Cloud, Go to Einstein Studio Tab. On the Left Side below Models, click on Retriver, Clikc on New Retriver </br>-In Select Retriever Type Section, Select Data Source as Data Cloud, In which data space does the source data reside? As default, data model objec as Product, Data model object's search index configuration as Product, Click Next </br>-In Section Define Retriver Filters, Select All Document, Click Next </br>-In Section Confiure Retriver Results Number  of Results as 20 and map Fields to Return as following </br>**1-** Field Label :Seat Capacity Field Name :Direct Attribute > Product >Seat Capacity </br>**2-** Field Label :Product Description Field Name :Direct Attribute > Product >Product Description </br>**3-** Field Label :Vehicle Name Field Name :Direct Attribute > Product >Product Name</br>-Click Next</br>-Click Save</br>-Click on Setup, in the Quick Find Box, enter Prompt Builder, and then select Prompt Builder </br>-Search for the Prompt Template named Vehicle Recommendation and click on the hyperlink </br>-Place the cursor after the text the ‘Vehicle Details:’, click on Resource then click on Einstein Search then click on ‘Product’ click on ‘Product retriever’ </br>-On the right side click on default ‘Product retriever’ click on Search Parameter click on Free Text Click on Question</br>-Scroll down Select Chunk under Output Field and Enter 1 in Number of Result </br>-Click on Save As New Version click Activate  |     |
 </details>
 
 <details><summary>
@@ -243,7 +236,9 @@ the org, follow the steps below to create data streams.
 
 [11. Create order and orderItem Data	](#11-create-order-and-orderitem-data)  
 
-[12. Create Opportunity ML Data](#12-Create-Opportunity-ML-Data)
+[12. Create Opportunity ML Data](#12-Create-Opportunity-ML-Data) 
+
+[13. Search Index and Retriever Configuration](#13-Search-Index-and-Retriever-Configuration)
 
 ### 1. Verify Organization Wide Address (5 min)
   | Step  | Action and Details  |  Images |
@@ -310,6 +305,11 @@ the org, follow the steps below to create data streams.
   | Step  | Action and Details  |  Images |
   | ----- | ----- | ----- |
 |Create Opportunity ML Data |-Click on App Launcher, search for Automotive Setup and click on Automotive Setup app  </br>-Click on the **Create Opportunity Data For ML** button (highlighted in the screenshot below) and wait for a confirmation message before proceeding further. |  |
+
+ ### 13. Search Index and Retriever Configuration (15 min)
+| Step | Action and Details | Images |
+  | ----- | ----- | ----- |
+  |Search Index and Retriever Configuration|-Go to App Launcher Search for Data Cloud, Go to Search Index Tab. </br>-Click on New, Select From a Data Kit , Select ‘SFAutomotiveDataKitsPackage’ , Select Product ,Click on Next </br>-For Search Type Select Hybrid Search, Click Next </br>-For Chunking, Keep the Same Changes and Click Next. </br>-For Vectorization, Make sure E5 Large V2 Embedding model is Selected, Click Next  </br>-For Fields for Filtering, Keep Same, Click Next. </br>-For Ranking, no Change , Click Next </br>-Click Save </br>-After Save the ‘Search Index Last Run Status’ Will be In Progress, wait for 15-30 Minutes Till the Status changes to Ready. </br>-**Create Retriever for Showing Product**</br>-Create  Retriver, Go to App Launcher Search for Data Cloud, Go to Einstein Studio Tab. On the Left Side below Models, click on Retriver, Clikc on New Retriver </br>-In Select Retriever Type Section, Select Data Source as Data Cloud, In which data space does the source data reside? As default, data model objec as Product, Data model object's search index configuration as Product, Click Next </br>-In Section Define Retriver Filters, Select All Document, Click Next </br>-In Section Confiure Retriver Results Number  of Results as 20 and map Fields to Return as following </br>**1-** Field Label :Seat Capacity Field Name :Direct Attribute > Product >Seat Capacity </br>**2-** Field Label :Product Description Field Name :Direct Attribute > Product >Product Description </br>**3-** Field Label :Vehicle Name Field Name :Direct Attribute > Product >Product Name</br>-Click Next</br>-Click Save</br>-Click on Setup, in the Quick Find Box, enter Prompt Builder, and then select Prompt Builder </br>-Search for the Prompt Template named Vehicle Recommendation and click on the hyperlink </br>-Place the cursor after the text the ‘Vehicle Details:’, click on Resource then click on Einstein Search then click on ‘Product’ click on ‘Product retriever’ </br>-On the right side click on default ‘Product retriever’ click on Search Parameter click on Free Text Click on Question</br>-Scroll down Select Chunk under Output Field and Enter 1 in Number of Result </br>-Click on Save As New Version click Activate  |     |
 </details>
 <details><summary>
 
