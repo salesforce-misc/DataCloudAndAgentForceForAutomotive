@@ -61,7 +61,7 @@ Table of Contents
 
   | Step | Action and Details | Images |
   | ----- | ----- | ----- |
-  | Install package | - Click on this Package Installation [Link ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tPa000000iKz7)</br>- Sign-in to the Org with your credentials.</br>- Choose Install for Admins Only option</br>- Choose “Rename conflicting components in package” and click the Install button.</br>- Wait until installation is completed, you will receive a confirmation on logged in user’s email | ![Install package1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Pre%20Deployment%20Images/Install%20package1.png)|
+  | Install package | - Click on this Package Installation [Link ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tPa000000iLGr)</br>- Sign-in to the Org with your credentials.</br>- Choose Install for Admins Only option</br>- Choose “Rename conflicting components in package” and click the Install button.</br>- Wait until installation is completed, you will receive a confirmation on logged in user’s email | ![Install package1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Pre%20Deployment%20Images/Install%20package1.png)|
 | Verify Package installation | - Click Setup</br>- Search for package</br>- Search for 'AutomotiveConfigPackage' is installed  |![verify package install1](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Pre%20Deployment%20Images/verify%20package%20install1.png)|
 
   | Step | Action and Details | Images |
