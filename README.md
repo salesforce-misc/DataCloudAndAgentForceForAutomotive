@@ -438,12 +438,6 @@ Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAu
 
 [30.Experience Site Product Price as Display 1 Price Configuration  ](#30-Experience-Site-Product-Price-as-Display-1-Price-Configuration)
 
-[33.Change Layout URL ](#33-Change-Layout-URL)
-
-[34.Remove the Embedded Messaging from Content Section ](#34-Remove-the-Embedded-Messaging-from-Content-Section)
-
-[35.Remove the Trusted Site ](#35-Remove-the-Trusted-Site)
-
 
 ### 1. Refresh Snowflake Data Streams (5 min)
 | Step  | Action and Details  |  Images |
@@ -611,20 +605,8 @@ Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAu
 |Enable Email Deliverability |-go to setup</br>-search for deliverability</br>-**Access to Send Email (All Email Services) -->Select All Email**  |   |
 |Assign Permission to Agent User |-Go to setup</br>-In the Top Search for 'Agent User'</br>-Click on agent user</br>-Go the Permission Set Assignment, Cilkc on Edit</br>-Select 'Automotive Service Agent' Permission set and add to the Right Side</br>-Click Save|    |
 |Assign CSS For Header|-Go to setup</br>-Search for All Site</br>-for 'Autofolio' Site Click on Builder</br>-Click on Settings Icon on Left Side </br>-Click on Advanced --> Click on Edit Head Markup </br>-Paste this CSS</br> .header { width:100%;  </br>}</br>  header{ </br>     background: black !important; </br>   }</br>  .slds-has-flexi-truncate ul li a { </br> color: #f0f0f0 !important; }</br>.slds-icon_small{ fill: white;}|   |
-
-### 33.Change Layout URL 
-| Step  | Action and Details  |  Images |
-| ----- | ----- | ----- |
 |Change Layout URL |-Go to setup </br>-Search for All Sites </br>-For Autofolio click on Workspaces And click on Administration </br>-Click on login and registration page </br>-go to Logout Page URL add the Domain URL as (https://Domain_Url/Autofolio/) </br>-**Steps to get Domain URL-** Go to setup search for domains click on Domains and copy the **Site.com URL** |   |
-
-### 34.Remove the Embedded Messaging from Content Section  
-| Step  | Action and Details  |  Images |
-| ----- | ----- | ----- |
 |Remove the Embedded Messaging from Content Section  |-Go to setup </br>-Search for All Sites </br>-For Autofolio Click on Builder  </br>-Go to Product Page and Left Side Click on **Page structure**  </br>-Under Content Section Remove the **Embedded Messaging Component** |   |
-
-### 35.Remove the Trusted Site 
-| Step  | Action and Details  |  Images |
-| ----- | ----- | ----- |
 |Remove the Trusted Site  |-Go to setup </br>-Search for All Sites </br>-For Autofolio Click on Builder </br>-Go to Seatings-->Security and Privacy  </br>-Under Trusted Sites for Scripts </br>-Delete the **Trusted Cookie and Publish** |   |
 </details>
 <details><summary>
