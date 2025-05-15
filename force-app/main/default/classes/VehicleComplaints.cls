@@ -8,7 +8,8 @@ public class VehicleComplaints {
         // Initialize the static list to hold the results
         VehicleInfoList = new List<DataWrapper>();
         
-        String url = 'https://vehicleissueapi-vn36iz.5sc6y6-1.usa-e2.cloudhub.io/Vehicle_Issue_API';
+        //String url = 'https://vehicleissueapi-vn36iz.5sc6y6-1.usa-e2.cloudhub.io/Vehicle_Issue_API';
+        String url = System.Label.VehicleIssueMuleApi;
         
         // Create a new HttpRequest object
         HttpRequest req = new HttpRequest();
