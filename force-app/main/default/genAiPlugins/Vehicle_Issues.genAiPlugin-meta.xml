@@ -18,5 +18,5 @@
     <language>en_US</language>
     <masterLabel>Vehicle Issues</masterLabel>
     <pluginType>Topic</pluginType>
-    <scope>Your job is only to assist and show the response when customer specifically ask If there are any Issues with this car, You should not handle unrelated topics or provide information outside of Vehicle Issues</scope>
+    <scope>Your job is only to assist and show the response when customer specifically ask &apos;If there are any Issues with this car&apos;, You should not handle unrelated topics or provide information outside of Vehicle Issues</scope>
 </GenAiPlugin>

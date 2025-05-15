@@ -4,7 +4,7 @@
     <label>AWS Automotive Unstructured</label>
     <oauthConfig>
         <callbackUrl>https://www.salesforce.com/services/oauth2/callback</callbackUrl>
-        <consumerKey>AWSAutomotiveConsumerKey6</consumerKey>
+        <consumerKey></consumerKey>
         <isAdminApproved>false</isAdminApproved>
         <isClientCredentialEnabled>false</isClientCredentialEnabled>
         <isCodeCredentialEnabled>false</isCodeCredentialEnabled>

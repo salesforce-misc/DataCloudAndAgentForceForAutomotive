@@ -3,7 +3,7 @@
     <actionCalls>
         <name>Call_Apex_to_Send_Email_on_Low_Battery</name>
         <label>Call Apex to Send Email on Low Battery</label>
-        <locationX>842</locationX>
+        <locationX>50</locationX>
         <locationY>242</locationY>
         <actionName>SFMCCallOutService</actionName>
         <actionType>apex</actionType>
@@ -21,13 +21,13 @@
     <actionCalls>
         <name>Call_Journey_API</name>
         <label>Call Journey API</label>
-        <locationX>50</locationX>
+        <locationX>314</locationX>
         <locationY>242</locationY>
         <actionName>SFMCCallOutService</actionName>
         <actionType>apex</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
-            <name>EventId</name>
+            <name>EventId</name> 
             <value>
                 <elementReference>$Record.eventname__c</elementReference>
             </value>
@@ -38,7 +38,7 @@
     <actionCalls>
         <name>JourneyAPI_Maintenance</name>
         <label>JourneyAPI Maintenance</label>
-        <locationX>578</locationX>
+        <locationX>842</locationX>
         <locationY>242</locationY>
         <actionName>SFMCCallOutService</actionName>
         <actionType>apex</actionType>
@@ -55,7 +55,7 @@
     <actionCalls>
         <name>JourneyAPI_Recall</name>
         <label>JourneyAPI Recall</label>
-        <locationX>314</locationX>
+        <locationX>578</locationX>
         <locationY>242</locationY>
         <actionName>SFMCCallOutService</actionName>
         <actionType>apex</actionType>
@@ -77,6 +77,21 @@
         <locationX>578</locationX>
         <locationY>134</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Low_Battery_Indicator</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.BatterySOCLevel_Number__c</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>30.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Call_Apex_to_Send_Email_on_Low_Battery</targetReference>
+            </connector>
+            <label>Low Battery Indicator</label>
+        </rules>
         <rules>
             <name>SOS</name>
             <conditionLogic>and</conditionLogic>
@@ -118,7 +133,7 @@
             <name>Odometre_Greater_than_6000</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>$Record.Odometre_Number__c</leftValueReference>
+                <leftValueReference>$Record.OdometreReading_Number__c</leftValueReference>
                 <operator>GreaterThanOrEqualTo</operator>
                 <rightValue>
                     <numberValue>6000.0</numberValue>
@@ -128,21 +143,6 @@
                 <targetReference>JourneyAPI_Maintenance</targetReference>
             </connector>
             <label>OdometreDiff Greater than 6000</label>
-        </rules>
-        <rules>
-            <name>Low_Battery_Indicator</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.BatterySOCLevel_Number__c</leftValueReference>
-                <operator>LessThanOrEqualTo</operator>
-                <rightValue>
-                    <numberValue>30.0</numberValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Call_Apex_to_Send_Email_on_Low_Battery</targetReference>
-            </connector>
-            <label>Low Battery Indicator</label>
         </rules>
     </decisions>
     <environments>Default</environments>
@@ -194,7 +194,7 @@
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>DataCloudDataChange</triggerType>
     </start>
-    <status>Obsolete</status>
+    <status>Active</status>
     <variables>
         <name>eventType</name>
         <dataType>String</dataType>

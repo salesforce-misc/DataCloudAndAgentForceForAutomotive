@@ -6,7 +6,7 @@
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Owner</label>
     <required>false</required>
-    <trackHistory>false</trackHistory>
+    <trackHistory>false</trackHistory> 
     <type>Text</type>
     <unique>false</unique>
 </CustomField>

@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>ObjectAndFieldLevelPermissionAuto</members>
+		<members>VehicleComplaints</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>Data_Cloud_Vehicle_Complaints</members>
+		<name>Flow</name>
+	</types>
 	
 	<types>
-		<members>Vehicle_Maintenance_Service</members>
-		<name>GenAiPlugin</name>
+		<members>MuleSoftVehicleIssue</members>
+		<name>RemoteSiteSetting</name>
 	</types>
 	<version>63.0</version>
 </Package>
