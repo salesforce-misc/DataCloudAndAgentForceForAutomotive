@@ -2,9 +2,8 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	
 	<types>
-		<members>VehicleIssueMuleApi</members>
-		<name>CustomLabel</name>
-	</types>  
-	
+		<members>site/AutoFolio1.sfdc_cms__appPage/mainAppPage</members>
+		<name>DigitalExperience</name>
+	</types>
 	<version>63.0</version>
 </Package>
