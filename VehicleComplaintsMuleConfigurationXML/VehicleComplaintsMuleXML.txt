@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:tls="http://www.mulesoft.org/schema/mule/tls" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/tls http://www.mulesoft.org/schema/mule/tls/current/mule-tls.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="6ebf9ff2-9a4c-4a75-803b-7a6e31358e1c" >
+		<http:listener-connection host="0.0.0.0" port="8081">
+		</http:listener-connection>
+	</http:listener-config>
+	<http:request-config name="HTTP_Request_configuration" doc:name="HTTP Request configuration" doc:id="297475b6-5f01-4e54-a3f0-00f7fe210c80" >
+		<http:request-connection host="api.nhtsa.gov" />
+	</http:request-config>
+	<flow name="vehicleissueapiFlow" doc:id="52aecd20-cec7-4983-aeaa-e1372d7e5a9e" >
+		<http:listener doc:name="Listener" doc:id="0f4cd0eb-cc6e-41bb-9455-b2fae27e7374" config-ref="HTTP_Listener_config" path="/Vehicle_Issue_API" allowedMethods="GET"/>
+		<http:request method="GET" doc:name="Request" doc:id="8d63cf76-8568-4966-b1af-976cbc09914c" config-ref="HTTP_Request_configuration" path="/complaints/complaintsByVehicle?make=acura&amp;model=rdx&amp;modelYear=2012"/>
+		<ee:transform doc:name="Transform Message" doc:id="86e6bbe9-d96f-4944-b1a7-cf3eb9964685" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+var requiredODINumbers = [11124195 ,11074082, 10818539, 10459314] // List of required ODI numbers
+---
+{
+    filteredResults: payload.results filter (item) -> requiredODINumbers contains item.odiNumber
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<ee:transform doc:name="Transform Message" doc:id="e0d62361-dd7b-4019-b2c0-656914341f0c" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+  transformedResults: payload.filteredResults map (item) -> {
+    odi_number: (item.odiNumber) as String,
+    odinumber: (item.odiNumber) as String,
+    crash: item.crash as String,
+    fire: item.fire as String,
+    numberOfInjuries: item.numberOfInjuries as String,
+    numberOfDeaths: item.numberOfDeaths as String,
+    dateOfIncident: item.dateOfIncident as String,
+    dateComplaintFiled: item.dateComplaintFiled as String ,
+    components: item.components as String,
+    summary: item.summary as String,
+    timestamp: now() as DateTime,
+    
+    }
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<ee:transform doc:name="Transform Message" doc:id="cfa6ed70-4d9f-4deb-a2c7-d0bc2ee40c42" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	"data":payload.transformedResults
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+</mule>
