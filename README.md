@@ -692,10 +692,12 @@ Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAu
 ### 1. Mule Configuration (25 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-|Create a new project in Anypoint Studio  |- |   |
-
-
- </details>
+| |- Create a new project in Anypoint Studio. |   |
+| |- Add the Listener in the Flow and Click on plus button icon to Configure the HTTP listener and then click on Test Connection button for listener connections and add the Path as “/Vehicle_Issue_API”.|   |
+| |-	Add HTTP Request connector to Call NHTSA Public API to get the complaints.</br>⦁	URL: /complaints/complaintsByVehicle?make=acura&model=rdx&modelYear=2012 </br>⦁	Method: “GET” </br>⦁	Click on the plus icon button to configure the HTTP request and add Host and Protocol.</br>-Host: api.nhtsa.gov </br>-Protocol: HTTPS|   |
+| |⦁	Add Transform Message and below is the script that need to use. </br>%dw 2.0</br>output application/json</br>var requiredODINumbers = [11124195 ,11074082, 10818539, 10459314] // List of required ODI numbers</br>{</br>filteredResults: payload.results filter (item) -> requiredODINumbers contains item.odiNumber</br>} </br>⦁	Add another Transform Message and below is the script that needs to use. </br></br>%dw 2.0 <br/>output application/json <br />--- <br />{ <br /> transformedResults: payload.filteredResults map (item) -> { <br />odi_number: (item.odiNumber) as String, <br /> odinumber: (item.odiNumber) as String, <br />crash: item.crash as String, <br />fire: item.fire as String, <br />numberOfInjuries: item.numberOfInjuries as String, <br />numberOfDeaths: item.numberOfDeaths as String, <br />dateOfIncident: item.dateOfIncident as String, <br /> dateComplaintFiled: item.dateComplaintFiled as String, <br />components: item.components as String, <br /> summary: item.summary as String, <br />timestamp: now() as DateTime <br /> } <br />}|  |
+| |-Add the Final Transform message in Mule to prepare the JSON this will come up as Mule API response.</br>%dw 2.0 <br />output application/json <br />--- <br />|  |
+</details>
 <details><summary>
   
 ## 9. Configure Salesforce Tableau Next
