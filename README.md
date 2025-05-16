@@ -681,6 +681,8 @@ Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAu
 
 **Note: Skip the Mule Configuration Steps If you are using provided Configuration XML file directly in the Mule Project.**
 
+</br>XML File: https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/VehicleComplaintsMuleConfigurationXML/VehicleComplaintsMuleXML.txt </br>
+
 ### 1. Mule Configuration (25 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
