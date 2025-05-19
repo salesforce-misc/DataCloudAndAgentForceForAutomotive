@@ -5,16 +5,7 @@
 
   ## 1. Pre-Deployment Instructions
 </summary>
-
- ### Table of Contents
-  [1.	Salesforce Org Setup Requirements for Automotive App](#1-salesforce-org-setup-requirements-for-automotive-app)
-  
-  [2.	Enable Features on the Org](#3-enable-features-on-the-org)
-
-  [3.	Install Pre-Deployment Package](#2-install-pre-deployment-package)
-  
-  [4.	Setup the Salesforce Org](#4-setup-the-salesforce-org)
-
+4 steps process
 
   ### 1. Salesforce Org Setup Requirements for Automotive App (5 min)
 
@@ -75,11 +66,7 @@
   
   ## 2. Salesforce Package Installation 
 </summary>
-
-### Table of Contents
-  [1.	Install AutoFolio Base Package ](#1-Install-AutoFolio-Base-package)
-  
-  [2.	Verify The Package is installed ](#2-Verify-The-Package-is-installed)
+1 steps process
 
 ### 1. Install Automotive Base Package (10 min)
  | Step | Action and Details | Images |
@@ -92,30 +79,7 @@
 
  ## 3. Data Cloud Configuration
 </summary>
-
-## Table of Contents
-
-[1. Install the Data Kit to add Data Cloud components to the Org	](#1-install-the-data-kit-to-add-data-cloud-components-to-the-org)
-
-[2. Create Data Stream for Snowflake	](#2-create-data-stream-for-snowflake)
-
-[3.Create Ingestion API for Mule Data Streams from Data Kit	](#3-Create-Ingestion-API-for-Mule-Data-Streams-from-Data-Kit)
-
-[4. Create Automotive FAQ DLO Creation for unstructured data](#4-Create-Automotive-FAQ-DLO-Creation-for-unstructured-data)
-
-[5. Create Identity Resolution Ruleset from Data Kit	](#5-Create-Identity-Resolution-Ruleset-from-Data-Kit)
-
-[6.Create Calculated Insights	](#6-Create-Calculated-Insights)
-
-[7. Create Data Graph	](#7-Create-Data-Graph)
-
-[8. Create Data Cloud Copy Field Enrichment	](#8-Create-Data-Cloud-Copy-Field-Enrichment)
-
-[9. Create activation target	](#9-Create-activate-target)
-
-[10. Create segment from data kit](#10-Create-segment-from-data-kit)
-
-[11. Create Activation	](#11-Create-Activation)
+11 steps process
 
 
 ### 1. Install the Data Kit to add Data Cloud components to the Org (15 mins)
@@ -194,33 +158,7 @@ the org, follow the steps below to create data streams.
   ## 4. Commerce Cloud Configuration And Sample Data Creation
 </summary>
 
-## Table of Contents
-
-[1. Verify Organization Wide Address Exists or not	](#1-verify-organization-wide-address)
-
-[2. Install Agent and Experience Site Package	](#2-install-agent-and-experience-site-package)
-
-[3. Create Sample Data 	](#3-create-sample-data)
-
-[4. Create Commerce Data 	](#4-create-commerce-data)
-
-[5. Search Update	](#5-turnon-search-update)
-
-[6. Upload CMS Images into the Store And verify workspace	](#6-upload-cms-images-into-the-store-and-verify-workspace)
-
-[7. Add CMS Product Image	](#7-add-image-to-a-product-in-cms)
-
-[8. Enable as buyer group	](#8-Enable-as-buyer-group)
-
-[9. Enable as guest access	](#9-Enable-as-guest-access)
-
-[10. Create community user and assign buyer account to buyer group	](#10-create-community-user-and-assign-buyer-account-to-buyer-group)
-
-[11. Create order and orderItem Data	](#11-create-order-and-orderitem-data)  
-
-[12. Create Opportunity ML Data](#12-Create-Opportunity-ML-Data) 
-
-[13. Search Index and Retriever Configuration](#13-Search-Index-and-Retriever-Configuration)
+13 steps process
 
 ### 1. Verify Organization Wide Address (5 min)
   | Step  | Action and Details  |  Images |
@@ -297,18 +235,7 @@ the org, follow the steps below to create data streams.
 
  ## 5. Configure Amazon and Snowflake Connections
 </summary>
-
-## Table of Contents
-
-[1. Assign account page layout	](#1-assign-account-page-layout)
-
-[2. Setup Data in Amazon S3	](#2-setup-data-in-amazon-s3)
-
-[3. Setup Data in Snowflake	](#3-setup-data-in-snowflake)
-
-[4. Create ML Model	](#4-Create-ML-Model)
-
-[5. Add ML Model Into Flow](#5-Add-ML-Model-Into-flow)
+5 steps process
 
  
 ### 1. Assign Account Page Layout (10 min)
@@ -553,34 +480,26 @@ Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAu
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 |Assign AutoFolio Guest Buyer Profile |-Click on App Launcher on the left side.  </br>- Search Commerce and click on it.  </br>-Select Store name as “AutoFolio” if not selected on the left side </br>-Click on settings on left side and expand it </br>-Click on “Buyer Access” tab on the menu. </br>-Scroll down under Enable Guest Access and Click on AutoFolio guest buyer profile And click on related tab. </br>-click on Assign buyer group and select **AutoFolio buyer group**. |   ![](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Finish%20Configuration%20Image/Assign%20AutoFolio%20Guest%20Buyer%20Profile.1.png) ![](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Finish%20Configuration%20Image/Assign%20AutoFolio%20Guest%20Buyer%20Profile.2.png) |
-
-### 27. Assign AutoFolio Buyer Group (15 min)
-| Step  | Action and Details  |  Images |
-| ----- | ----- | ----- |
 |Assign AutoFolio Buyer Group |-Select Store name as “AutoFolio” if not selected on the left side  </br>- Click on settings on left side and expand it .  </br>-Click on “Buyer Access” tab on the menu. </br>-Click on settings on left side and expand it </br>-Under store access go to buyer group section and click on AutoFolio Buyer group. </br>-Go to related tab and click on assign on buyer group member.   </br>-select **TMZ Dealership and AutoFolio Guest Buyer Profile** and save. </br>**Enable Product tab on exp site After login(Excluding self registration user and apart from John Smith and Guest user) Follow below steps:** </br>-Go to setup>>user>>open user>> click on permission set assignment>>click on edit permission >>select Buyer from Available permission set and click on Add>>click on save </br>-Go to Contact's associated account record and click on as enable as buyer button>> click on Enable </br>-Go to Commerce Store AutoFolio>>Click on settings on left side and expand it >>Click on “Buyer Access” tab on the menu. </br>-Under store access go to buyer group section and click on AutoFolio Buyer group.  </br>-Go to related tab and click on assign from buyer group member and Select Contact's associated account  and save. | ![](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Finish%20Configuration%20Image/Assign%20AutoFolio%20Buyer%20Group1.png) ![](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Finish%20Configuration%20Image/Assign%20AutoFolio%20Buyer%20Group2.png)    |
 
-### 28.Assign Buyer Group For Self Registration (5 min)
+### 27.Assign Buyer Group For Self Registration (5 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- | 
 |Assign Buyer Group For Self Registration |-Scroll down to self-registration section </br>-Select Profile as ‘Autofolio community user’ </br>-Account record type as ‘Business Type’ </br>-Permission group set ‘Commerce_shopper’ </br>-Default buyer as ‘Autofolio Buyer Group’ </br>-Click Save|   <img width="239" alt="Assign Buyer Group For Self Registration1" src="https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Finish%20Configuration%20Image/Assign%20Buyer%20Group%20For%20Self%20Registration1.png">|
 
-### 29.Configure Segment (5 min)
+### 28.Configure Segment (5 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 |Configure Segment|-Go to data cloud </br>-Search for Segments And Click on hyperlink of each segment one by one </br>-click on save</br>-The segment count should be greater than 0. </br>-click on done</br>-Click on the Publish now button. |  ![Segment](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Finish%20Configuration%20Image/Segment.png) |
 
-### 30.If Strikethrough price is not populating on UI for any of the products then perform below steps (10 min)
+### 29.If Strikethrough price is not populating on UI for any of the products then perform below steps (10 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 |If Strikethrough price is not populating on UI for any of the products then perform below steps|-Go to App launcher>> Enter Commerce and click on it>>Select AutoFolio >>  </br>-click on the product where strikethrough price is not present on UI (eg: Electra Model 3.2 - 2025)>> Scroll down </br>-Click on Go to Global product Record>> Once you landed on Product record page then click on Related tab </br>-Search for Pricebook>> click on edit button of Standard Pricebook (do not change any values)>> click on save.</br>-Go back to Store again>> on the left hand side >> click on Website Design>>Select product from dropdown>> click on publish button </br>- Once its successfully published then>> Go back to Store again>> on the left hand side >> Scroll down >> Expand Setting </br>-click on search >>click on update button>> Select full update>> then click on Update button. </br>-Refresh the page after 10 to 15 min and see Automatic update status mark as completed or not , if not then wait to complete it.</br>-Go back to Site url>>hard refresh it >> click on product tab>>see the price is coming or not </br>-if price is still not coming then>> Go to setup>> enter all sites under quick find box>> click on All sites </br>- Click on Builder for AutoFolio Site, click on publish button>> wait for 10 to 15 min for successful publishing the site</br>- Go back to Site url>> hard refresh it >>click on product tab>> see the price is coming or not. |    |
 | |-**To proceed for testing kindly change below fields manually**</br>-We are using John Smith contact for testing purpose whose email id ends with dataclouddemo.com And Address, Email </br>-phone number, please add phone extension as well don't add plus sign please see eg(eg: 19045737373, 1 is here as usa phone number extension), |  |
-
-### 31.Experience Site Product UI Configuration (5 min)
-| Step  | Action and Details  |  Images |
-| ----- | ----- | ----- |
 |Experience Site Product UI Configuration |-Go to App Launcher>>Enter All Sites and click on it. </br>-For  Autofolio site click on builder </br>-click on preview>>click product>>click on back to builder again </br>-search for product images then click on it( result grid) </br>-Under Grid layout there is Number of Columns on Desktop – Select More Column Spacing – Select None Row Spacing- Select None.</br>-Publish the Site  |   |
 
-### 32.Experience Site Product Price as Display 1 Price Configuration (15 min)
+### 30.Experience Site Product Price as Display 1 Price Configuration (15 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 | Experience Site Product Price as Display 1 Price Configuration |-Go to App Launcher>>Enter All sites in quick find box>> click on it </br>-For  Autofolio site click on builder</br>-click on preview>>click product>>Click on any of Electra product </br>-click on back to builder again>>There are some pricing details present click on it </br>-Under Setting scroll down >> Pricing type as Display 1 Price </br>-Click on Publish button. |   |
