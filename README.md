@@ -1,39 +1,11 @@
-# DataCloudAutomotiveDemo
+**Automotive**</br> 
 
-Table of Contents
-=======================
-[1. Installation Guide Sample](#pre-deployment-instructions) 
-
-[2. Salesforce Package Installation](#salesforce-package-installation)
-
-[3. Data-Cloud Configuration](#data-cloud-configuration)
-
-[4. Commerce Cloud Configuration And Sample Data Creation](#commerce-cloud-configuration-and-sample-data-creation)
-
-[5.Configure amazon and snowflake connection](#configure-amazon-and-snowflake-connection)
-
-[6. Finish Configuration](#finish-configuration)
-
-[7. Mulesoft Configuration For Real Time Telemetric Data](#mulesoft-configuration-for-real-time-telemetric-data)
-
-[8. Mulesoft Configuration For Vehicle Issue](#mulesoft-configuration-for-vehicle-issue)
-
-[9. Tableau Dashboard](#Tableau-Dashboard)
 <details><summary>
 
   ## 1. Pre-Deployment Instructions
 </summary>
 
- ### Table of Contents
-  [1.	Salesforce Org Setup Requirements for Automotive App](#1-salesforce-org-setup-requirements-for-automotive-app)
-  
-  [2.	Enable Features on the Org](#3-enable-features-on-the-org)
-
-  [3.	Install Pre-Deployment Package](#2-install-pre-deployment-package)
-  
-  [4.	Setup the Salesforce Org](#4-setup-the-salesforce-org)
-
-
+4 step process
   ### 1. Salesforce Org Setup Requirements for Automotive App (5 min)
 
    To support the Automotive app, you can either create a new Salesforce Org or use an existing one, provided it includes the following features and licenses: 
