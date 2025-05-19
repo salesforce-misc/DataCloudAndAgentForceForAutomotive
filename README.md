@@ -1,24 +1,6 @@
-# DataCloudAutomotiveDemo
+**Automotive**</br>
+====================
 
-Table of Contents
-=======================
-[1. Installation Guide Sample](#pre-deployment-instructions) 
-
-[2. Salesforce Package Installation](#salesforce-package-installation)
-
-[3. Data-Cloud Configuration](#data-cloud-configuration)
-
-[4. Commerce Cloud Configuration And Sample Data Creation](#commerce-cloud-configuration-and-sample-data-creation)
-
-[5.Configure amazon and snowflake connection](#configure-amazon-and-snowflake-connection)
-
-[6. Finish Configuration](#finish-configuration)
-
-[7. Mulesoft Configuration For Real Time Telemetric Data](#mulesoft-configuration-for-real-time-telemetric-data)
-
-[8. Mulesoft Configuration For Vehicle Issue](#mulesoft-configuration-for-vehicle-issue)
-
-[9. Tableau Dashboard](#Tableau-Dashboard)
 <details><summary>
 
   ## 1. Pre-Deployment Instructions
