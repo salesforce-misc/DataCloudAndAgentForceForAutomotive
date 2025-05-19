@@ -1,4 +1,5 @@
 **Automotive**</br> 
+=============
 
 <details><summary>
 
@@ -65,11 +66,7 @@
   
   ## 2. Salesforce Package Installation 
 </summary>
-
-### Table of Contents
-  [1.	Install AutoFolio Base Package ](#1-Install-AutoFolio-Base-package)
-  
-  [2.	Verify The Package is installed ](#2-Verify-The-Package-is-installed)
+1 steps process
 
 ### 1. Install Automotive Base Package (10 min)
  | Step | Action and Details | Images |
@@ -82,31 +79,7 @@
 
  ## 3. Data Cloud Configuration
 </summary>
-
-## Table of Contents
-
-[1. Install the Data Kit to add Data Cloud components to the Org	](#1-install-the-data-kit-to-add-data-cloud-components-to-the-org)
-
-[2. Create Data Stream for Snowflake	](#2-create-data-stream-for-snowflake)
-
-[3.Create Ingestion API for Mule Data Streams from Data Kit	](#3-Create-Ingestion-API-for-Mule-Data-Streams-from-Data-Kit)
-
-[4. Create Automotive FAQ DLO Creation for unstructured data](#4-Create-Automotive-FAQ-DLO-Creation-for-unstructured-data)
-
-[5. Create Identity Resolution Ruleset from Data Kit	](#5-Create-Identity-Resolution-Ruleset-from-Data-Kit)
-
-[6.Create Calculated Insights	](#6-Create-Calculated-Insights)
-
-[7. Create Data Graph	](#7-Create-Data-Graph)
-
-[8. Create Data Cloud Copy Field Enrichment	](#8-Create-Data-Cloud-Copy-Field-Enrichment)
-
-[9. Create activation target	](#9-Create-activate-target)
-
-[10. Create segment from data kit](#10-Create-segment-from-data-kit)
-
-[11. Create Activation	](#11-Create-Activation)
-
+11 steps process
 
 ### 1. Install the Data Kit to add Data Cloud components to the Org (15 mins)
 The Data Kit is installed as a part of the Package installation. Once the Data is available in
@@ -183,34 +156,7 @@ the org, follow the steps below to create data streams.
 
   ## 4. Commerce Cloud Configuration And Sample Data Creation
 </summary>
-
-## Table of Contents
-
-[1. Verify Organization Wide Address Exists or not	](#1-verify-organization-wide-address)
-
-[2. Install Agent and Experience Site Package	](#2-install-agent-and-experience-site-package)
-
-[3. Create Sample Data 	](#3-create-sample-data)
-
-[4. Create Commerce Data 	](#4-create-commerce-data)
-
-[5. Search Update	](#5-turnon-search-update)
-
-[6. Upload CMS Images into the Store And verify workspace	](#6-upload-cms-images-into-the-store-and-verify-workspace)
-
-[7. Add CMS Product Image	](#7-add-image-to-a-product-in-cms)
-
-[8. Enable as buyer group	](#8-Enable-as-buyer-group)
-
-[9. Enable as guest access	](#9-Enable-as-guest-access)
-
-[10. Create community user and assign buyer account to buyer group	](#10-create-community-user-and-assign-buyer-account-to-buyer-group)
-
-[11. Create order and orderItem Data	](#11-create-order-and-orderitem-data)  
-
-[12. Create Opportunity ML Data](#12-Create-Opportunity-ML-Data) 
-
-[13. Search Index and Retriever Configuration](#13-Search-Index-and-Retriever-Configuration)
+13 steps process
 
 ### 1. Verify Organization Wide Address (5 min)
   | Step  | Action and Details  |  Images |
@@ -287,19 +233,7 @@ the org, follow the steps below to create data streams.
 
  ## 5. Configure Amazon and Snowflake Connections
 </summary>
-
-## Table of Contents
-
-[1. Assign account page layout	](#1-assign-account-page-layout)
-
-[2. Setup Data in Amazon S3	](#2-setup-data-in-amazon-s3)
-
-[3. Setup Data in Snowflake	](#3-setup-data-in-snowflake)
-
-[4. Create ML Model	](#4-Create-ML-Model)
-
-[5. Add ML Model Into Flow](#5-Add-ML-Model-Into-flow)
-
+5 steps process
  
 ### 1. Assign Account Page Layout (10 min)
 | Step | Action and Details  |  Images |
@@ -347,69 +281,7 @@ Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAu
 
   ## 6. Finish Configuration
 </summary>
-
-## Table of Contents
-
-[1. Refresh Snowflake Data Streams	](#1-refresh-snowflake-data-streams)
-
-[2. Run Identity Resolution Ruleset	](#2-run-identity-resolution-ruleset)
-
-[3. Run Calculated Insights	](#3-run-calculated-insights)
-
-[4. Activate Messaging Setting	](#4-activate-messaging-setting)
-
-[5. Update Einstein Search Retriever](#5-update-einstein-search-retriever)
-
-[6. Configure Digital Experience.	](#6-configure-digital-experience)
-
-[7. Enable Login Access.](#7-enable-login-access)
-
-[8. Change the layout of the Login page.](#8-change-the-layout-of-the-login-page)
-
-[9. Change the layout of the forget password page.	](#9-change-the-layout-of-the-forget-password-page)
-
-[10. Change the layout of the Register page.	](#10-change-the-layout-of-the-register-page)
-
-[11. Change the email Address.	](#11-change-the-email-address)
-
-[12. Add Agent User into Agent force Service Agent and Activate	](#12-add-agent-user-into-agent-force-service-agent-and-activate)
-
-[13. Add site logo	](#13-add-site-logo)
-
-[14. Activate Einstein Copilot	](#14-activate-einstein-copilot)
-
-[15. Create Trusted URLS	](#15-create-trusted-urls)
-
-[16. Create CORS	](#16-create-cors)
-
-[17. Assign Contact,vehicle and opportunity Record Page as Org Default.](#17-assign-contact-vehicle-opportunity-record-page-as-org-default)
-
-[18. Create a New Version of Omni-Channel Flow.](#18-create-a-new-version-of-omni-channel-flow)
-
-[19. Add External Id into Contact as well snowflake after Self Registration contact creation.](#19-Add-External-Id-into-Contact-as-well-snowflake-after-Self-Registration-contact-creation)
-
-[20.Create warranty contract document for vehicle record created via Self Registration form and upload into S3.](#20-Create-warranty-contract-document-for-vehicle-record-created-via-Self-Registration-form-and-upload-into-S3)
-
-[21.Publish Calculated Insights After Self Registration.](#21-Publish-Calculated-Insights-After-Self-Registration)
-
-[22.Connected App Configuration.](#22-Connected-App-Configuration)
-
-[23.Named Credentials.](#23-Named-Credentials)
-
-[24.Enable Oauth and OpenID Connect Settings](#24-Enable-Oauth-and-OpenID-Connect-Settings)
-
-[25.Assign AutoFolio Guest Buyer Profile.  ](#25-Assign-AutoFolio-Guest-Buyer-Profile)
-
-[26.Assign AutoFolio Buyer Group ](#26-Assign-AutoFolio-Buyer-Group)
-
-[27.Assign Buyer Group For Self Registration ](#27-Assign-Buyer-Group-For-Self-Registration)
-
-[28.If Strikethrough price is not populating on UI for any of the products then perform below steps ](#28-If-Strikethrough-price-is-not-populating-on-UI-for-any-of-the-products-then-perform-below-steps)
-
-[29.Experience Site Product UI Configuration](#29-Experience-Site-Product-UI-Configuration)
-
-[30.Experience Site Product Price as Display 1 Price Configuration  ](#30-Experience-Site-Product-Price-as-Display-1-Price-Configuration)
-
+30 steps process
 
 ### 1. Refresh Snowflake Data Streams (5 min)
 | Step  | Action and Details  |  Images |
@@ -553,24 +425,17 @@ Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAu
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- | 
 |Assign Buyer Group For Self Registration |-Scroll down to self-registration section </br>-Select Profile as ‘Autofolio community user’ </br>-Account record type as ‘Business Type’ </br>-Permission group set ‘Commerce_shopper’ </br>-Default buyer as ‘Autofolio Buyer Group’ </br>-Click Save|   <img width="239" alt="Assign Buyer Group For Self Registration1" src="https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Finish%20Configuration%20Image/Assign%20Buyer%20Group%20For%20Self%20Registration1.png">|
-
-### 29.Configure Segment (5 min)
-| Step  | Action and Details  |  Images |
-| ----- | ----- | ----- |
 |Configure Segment|-Go to data cloud </br>-Search for Segments And Click on hyperlink of each segment one by one </br>-click on save</br>-The segment count should be greater than 0. </br>-click on done</br>-Click on the Publish now button. |  ![Segment](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Finish%20Configuration%20Image/Segment.png) |
 
-### 30.If Strikethrough price is not populating on UI for any of the products then perform below steps (10 min)
+
+### 29.If Strikethrough price is not populating on UI for any of the products then perform below steps (10 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 |If Strikethrough price is not populating on UI for any of the products then perform below steps|-Go to App launcher>> Enter Commerce and click on it>>Select AutoFolio >>  </br>-click on the product where strikethrough price is not present on UI (eg: Electra Model 3.2 - 2025)>> Scroll down </br>-Click on Go to Global product Record>> Once you landed on Product record page then click on Related tab </br>-Search for Pricebook>> click on edit button of Standard Pricebook (do not change any values)>> click on save.</br>-Go back to Store again>> on the left hand side >> click on Website Design>>Select product from dropdown>> click on publish button </br>- Once its successfully published then>> Go back to Store again>> on the left hand side >> Scroll down >> Expand Setting </br>-click on search >>click on update button>> Select full update>> then click on Update button. </br>-Refresh the page after 10 to 15 min and see Automatic update status mark as completed or not , if not then wait to complete it.</br>-Go back to Site url>>hard refresh it >> click on product tab>>see the price is coming or not </br>-if price is still not coming then>> Go to setup>> enter all sites under quick find box>> click on All sites </br>- Click on Builder for AutoFolio Site, click on publish button>> wait for 10 to 15 min for successful publishing the site</br>- Go back to Site url>> hard refresh it >>click on product tab>> see the price is coming or not. |    |
 | |-**To proceed for testing kindly change below fields manually**</br>-We are using John Smith contact for testing purpose whose email id ends with dataclouddemo.com And Address, Email </br>-phone number, please add phone extension as well don't add plus sign please see eg(eg: 19045737373, 1 is here as usa phone number extension), |  |
-
-### 31.Experience Site Product UI Configuration (5 min)
-| Step  | Action and Details  |  Images |
-| ----- | ----- | ----- |
 |Experience Site Product UI Configuration |-Go to App Launcher>>Enter All Sites and click on it. </br>-For  Autofolio site click on builder </br>-click on preview>>click product>>click on back to builder again </br>-search for product images then click on it( result grid) </br>-Under Grid layout there is Number of Columns on Desktop – Select More Column Spacing – Select None Row Spacing- Select None.</br>-Publish the Site  |   |
 
-### 32.Experience Site Product Price as Display 1 Price Configuration (15 min)
+### 30.Experience Site Product Price as Display 1 Price Configuration (15 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 | Experience Site Product Price as Display 1 Price Configuration |-Go to App Launcher>>Enter All sites in quick find box>> click on it </br>-For  Autofolio site click on builder</br>-click on preview>>click product>>Click on any of Electra product </br>-click on back to builder again>>There are some pricing details present click on it </br>-Under Setting scroll down >> Pricing type as Display 1 Price </br>-Click on Publish button. |   |
@@ -585,19 +450,7 @@ Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAu
   
  ## 7. Mulesoft Configuration For Real Time Telemetric Data
 </summary>
-
-## Table of Contents
-[1. Create Ingestion API in Data Cloud ](#1-Create-Ingestion-API-in-Data-Cloud)
-
-[2. Upload the schema file(used ‘Order’ in the yaml file format	](#4-Upload-the-schema-file-used-order-in-the-yaml-file-format)
-
-[3. Create a Data Stream for Ingestion API with Selected Schema Object that going to use](#5-Create-a-Data-Stream-for-Ingestion-API-with-Selected-Schema-Object-that-going-to-use)
-
-[4. Configure the mapping with Primary key](#1-Configure-the-mapping-with-Primary-key)
-
-[5. Configure the Mule with Salesforce Streaming Insert Object connector](#1-Configure-the-Mule-with-Salesforce-Streaming-Insert-Object-connector)
-
-[6. Flow to insert the data form Mule to Salesforce Data Cloud via Ingestion API.](#1-Flow-to-insert-the-data-form-Mule-to-Salesforce-Data-Cloud-via-Ingestion-API)
+6 steps process
 
 **Use Case: Integrate Salesforce with MuleSoft to ingest the Data (for Vehicle 360) in Data Cloud via Ingestion API**
 
@@ -643,9 +496,7 @@ Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAu
 
 ## 8. Mulesoft Configuration For Vehicle Issue
 </summary>
-
-## Table of Contents
-[1. Mule Configuration ](#1-Mule-Configuration)
+1 steps process
 
 **IMP NOTE:** You may skip the MuleSoft section if it is not applicable to your use case or if you do not have Mulesoft licenses. However, if you plan to use MuleSoft.
 
@@ -670,18 +521,7 @@ Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAu
   
 ## 9. Configure Salesforce Tableau Next
 </summary>
-
-## Table of Contents
-
-[1. Enable tableau next	](#1-enable-tableau-next)
-
-[2. Create WorkSpace ](#2-create-workspace)
-
-[3. Create semantic model	](#3-Create-semantic-model)
-
-[4. Create Visualization](#4-create-visualization)
-
-[5. Create Dashboard	](#5-Create-dashboard)
+5 steps process
 
 **Note:**To support the Automotive app, you can either create a new Salesforce Org or use an existing one, provided it includes the following features and licenses:
 **Important Note:** Existing Trailheads playgrounds cannot be used Enable/Execute below steps in the Org.
