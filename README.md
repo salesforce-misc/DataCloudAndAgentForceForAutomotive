@@ -509,6 +509,7 @@ Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAu
 |Change logout URL |-Go to setup </br>-Search for All Sites </br>-For Autofolio click on Workspaces And click on Administration </br>-Click on login and registration page </br>-go to Logout Page URL add the Domain URL as (https://Domain_Url/Autofolio/) </br>-**Steps to get Domain URL-** Go to setup search for domains click on Domains and copy the **Site.com URL** |   |
 |Remove the Embedded Messaging from Content Section  |-Go to setup </br>-Search for All Sites </br>-For Autofolio Click on Builder  </br>-Go to Product Page and Left Side Click on **Page structure**  </br>-Under Content Section Remove the **Embedded Messaging Component** |   |
 |Remove the Trusted Site  |-Go to setup </br>-Search for All Sites </br>-For Autofolio Click on Builder </br>-Go to Seatings-->Security and Privacy  </br>-Under Trusted Sites for Scripts </br>-Delete the **Trusted Cookie and Publish** |   |
+|Profile Menu Setting|-Go to App Launcher>>Enter All sites in quick find box>> click on it </br>-For  Autofolio site click on builder </br>-Click on Profile Menu(profile icon) >> Under Setting expand Authenticated User Menu>>For Default Menu , select Default User Profile Menu </br>-Publish the Site|  |
 </details>
 <details><summary>
   
