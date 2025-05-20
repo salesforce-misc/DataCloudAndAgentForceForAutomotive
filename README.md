@@ -522,7 +522,7 @@ Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAu
 </summary>
 5 steps process
 
-**Note:**To support the Automotive app, you can either create a new Salesforce Org or use an existing one, provided it includes the following features and licenses:
+**Note:** To support the Automotive app, you can either create a new Salesforce Org or use an existing one, provided it includes the following features and licenses:
 **Important Note:** Existing Trailheads playgrounds cannot be used Enable/Execute below steps in the Org.
 
 ### 1. Enable Tableau Next Beta (5 min)
