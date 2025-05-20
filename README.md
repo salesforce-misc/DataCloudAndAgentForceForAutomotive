@@ -456,6 +456,8 @@ Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAu
 
 **Note: Please check first 4 steps already performed in the org or not. if already present (ingestion API already present) then start with step 5, if not present then start with step 1 and use the attached schema file while creating Ingestion API.**
 
+</br>Real_Time_Telemetric_Data: https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Mulesoft%20Yaml/Real_Time_Telemetric_Data.yaml </br>
+
 ### 1. Create Ingestion API in Data Cloud.  (10 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
