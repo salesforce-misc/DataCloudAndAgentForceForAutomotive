@@ -28,7 +28,7 @@ public class ClsAutomotiveSelfRegisterDataProvider {
             
             
             // Retrieve the Contact associated with this User
-            Contact associatedContact = [SELECT Id,AccountId,Name, MailingLatitude, MailingLongitude, MailingStreet, MailingCity, MailingState, MailingPostalCode,Last_Check_in_Date__c
+            Contact associatedContact = [SELECT Id,AccountId,Name, MailingLatitude, MailingLongitude, MailingStreet, MailingCity, MailingState, MailingPostalCode,Last_Check_in_Date__c,Phone,MobilePhone
                                          FROM Contact  WHERE Id = :communityUser.ContactId LIMIT 1];
             
             
@@ -40,6 +40,7 @@ public class ClsAutomotiveSelfRegisterDataProvider {
             associatedContact.MailingLatitude=37.8052631;
             associatedContact.MailingLongitude=-122.2700501;
             associatedContact.Last_Check_in_Date__c = Date.today();
+            associatedContact.MobilePhone = associatedContact.Phone;
             
             
             // Get the Account
@@ -60,8 +61,8 @@ public class ClsAutomotiveSelfRegisterDataProvider {
             //Create Opportunity
             String oppName = 'TMZ Dealership -' +associatedContact.Name ;
             Opportunity opp = new Opportunity(Name = oppName,StageName='Negotiation',CloseDate= Date.today().addYears(2),Amount=3500,Type='Add-On Business',
-                                              Test_Drive_Date__c= Date.today(),Test_Drive_Status__c='Yes',After_Completing_a_Test_Drive_status__c='Yes',Engagement_Level__c='High',ForecastCategoryName='Commit',
-                                              Number_of_Past_Interactions__c='10',Customer_Response_to_Past_Interactions__c='Positive',Recency_of_Interactions__c='1 week ago',Car_Model__c='Electra Model 3.1',
+                                              Test_Drive_Date__c= Date.today().addMonths(1),After_Completing_a_Test_Drive_status__c='No',ForecastCategoryName='Commit',
+                                              Number_of_Past_Interactions__c='10',Recency_of_Interactions__c='1 week ago',Car_Model__c='Electra Model 3.1 -2025',
                                               AccountId= associatedContact.AccountId,Primary_Contact__c= associatedContact.Id);
             
             if(opp != null){
@@ -82,7 +83,8 @@ public class ClsAutomotiveSelfRegisterDataProvider {
             // Create Asset with the Product Id
             Asset assets = new Asset(Name =  assetName,Product2Id= prod.Id,SerialNumber = '56789XYZ',Status = 'Purchased',
                                      PurchaseDate = Date.today(),Type_of_use__c = 'Personal',Service_Perks_Available__c = 'Free Oil Change (every 12 months), Free Tire Rotation (every 12 months)',
-                                     Last_Service_Date__c = Date.newInstance(2025, 2, 18),AccountId = associatedContact.AccountId,ContactId =associatedContact.Id);
+                                     Last_Service_Date__c = Date.newInstance(2025, 2, 18),AccountId = associatedContact.AccountId,ContactId =associatedContact.Id,
+                                    Asset_Warranty_Status__c = 'In Warranty');
             if(assets != null){
                 Insert assets;
             }
@@ -92,6 +94,9 @@ public class ClsAutomotiveSelfRegisterDataProvider {
             Asset ast=[Select id,name,Product2Id,VehicleId from  Asset where name = :assetName limit 1];
             system.debug('recently fetched asset:'+ast);
             
+            //fetch unit of measure
+            UnitOfMeasure unitMesure = [Select id,name from UnitOfMeasure where name ='Miles' limit 1];
+              system.debug('unitMesure:'+unitMesure);
             
             //Query Vehcile for all the Vin Assigned
             for(Vehicle veh:[SELECT Id, Name, AssetId,VehicleIdentificationNumber FROM Vehicle where VehicleIdentificationNumber!=null]){
@@ -107,10 +112,10 @@ public class ClsAutomotiveSelfRegisterDataProvider {
             
             //Create Vehicle and Assign the Vin number and assign Asset Id= Asset and Vehicle Defination queried from Above query
             Vehicle vehicleRecentlyCreatedList =  new Vehicle(Name = 'Electra Model 3.1 - 2025',CurrentOwnerId = associatedContact.AccountId,Status = 'At Dealer Location',
-                                                              VehicleIdentificationNumber = vinMetadata.VIN__c, AssetId=  ast.Id,VehicleDefinitionId = vehicleDefinationDetails.Id,
+                                                              VehicleIdentificationNumber = vinMetadata.VIN__c, AssetId=  ast.Id,VehicleDefinitionId = vehicleDefinationDetails.Id,OdometerReadingUomId =unitMesure.id,
                                                               ChassisNumber= calulatedChassisNumber,EngineNumber=calculatedEngineNumber,MarketPrice=34699,MarketPriceSource='National Automobile Dealers Association',
                                                               ExteriorColor='Transparent - Black',InteriorColor='Black',LastOdometerReading=8000.00,IsTelematicsServiceActive=TRUE,LocationStreet='D-80',LocationCity='New York',LocationState='New York',
-                                                              LocationPostalCode='1232',LocationCountry='US',FrontDriver__c = false,FrontPassenger__c = false,RearDriver__c = false,RearPassenger__c = false,
+                                                              LocationPostalCode='1232',LocationCountry='US',FrontDriver__c = false,FrontPassenger__c = false,RearDriver__c = false,RearPassenger__c = false,Connected_Car__c ='Active',
                                                               Description__c='Built for families who love the outdoors, this is a versatile SUV with all-wheel drive capabilities. It comfortably seats 5 people and offers a panoramic sunroof for a premium touch. With its robust safety features and spacious interiors, this vehicle is ideal for road trips and everyday commuting alike.');
             
             if(vehicleRecentlyCreatedList != null){
