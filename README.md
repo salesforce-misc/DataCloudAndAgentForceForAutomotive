@@ -262,7 +262,7 @@ create or replace TABLE <<database_name>>.<<schema_name>>.THIRD_PARTY_SURVEY (
 );
 
 Load data in the below csv file into Third_Party_Survey_Data table:
-Third Party Survey Data- [[https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/tree/main/Snowflake%20Data](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/tree/main/Snowflake%20Data)](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/tree/main/Snowflake%20Data )]
+Third Party Survey Data- [https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/tree/main/Snowflake%20Data](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/tree/main/Snowflake%20Data)]
 ```
 ### 4a. Create ML Model (20 min)
 | Step | Action and Details  |  Images |
