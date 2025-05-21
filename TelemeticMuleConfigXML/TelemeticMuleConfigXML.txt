@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:sdc="http://www.mulesoft.org/schema/mule/sdc"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/sdc http://www.mulesoft.org/schema/mule/sdc/current/mule-sdc.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<sdc:sdc-config name="Salesforce_Data_Cloud_config" doc:name="Salesforce Data Cloud config" doc:id="d9d15676-8d1c-4287-90f6-c2c70c3c6579" >
+		<sdc:oauth-user-pass-connection clientId="3MVG9Fob0S.D_AiRh9gYFB5bzVzyp9DLWp2QTLR4j5lHXk5nBL3w25Bfxz.icLTNtsWO_K.PdjCuqpABQgB1X" clientSecret="826F7248DC29486AA6EF88EE1B7E321B96DE3381E199E0C0B8FE5C07B2F75C51" username="epic.34a84655e4ed@orgfarm.com.autcloud12" password="orgfarm1234" audienceUrl="https://test.salesforce.com" />
+	</sdc:sdc-config>
+	<flow name="telemetricdataorg9Flow" doc:id="1848fb20-b84b-4912-9378-11426e171cc7" >
+		<scheduler doc:name="Scheduler" doc:id="59fe6d44-281e-4b86-b02f-f40520a69637" >
+			<scheduling-strategy >
+				<fixed-frequency timeUnit="MINUTES"/>
+			</scheduling-strategy>
+		</scheduler>
+		<ee:transform doc:name="Transform Message" doc:id="0ecb93a4-e747-4584-b07a-eed941d34b96" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+var vinNumber = ["1A9416080TA288340","JF1SG65633H720182","1J8GA591X8L585418","1FMZK05125GA34650","4S4BP61C367326807","2B4GP44G31R110618","2C3LA53G68H187062","1C6RR6KT8FS501438","1G4GA5ER9CF217432","1G1AF5F56A7188155","3C8FY68814T224319","3TMJU4GN1BM116390","JN8AZ1MW0CW208397","5XYPGDA5XGG002192","3D7KU28D14G161500","1FAHP34N47W213682","3TMLU4EN2AM049034","1FTFW1EF4CFC35658","1N6AA06A64N571239","3B7KF23W9VM516994","KNAFU4A2XC5622597","2G1WG5EKXB1312050","3VWRK69M02M053790","1FDXE40S3XHA03474","5XYKU4A72FG653951","3GNDA63XX8S643669","2GKFLWE51C6247763","1GCFG15X861182048","JTJHF10UX10182895","5XYKT3A63EG529108"]
+var status = ["Active", "Normal", "Critical", "Warning","Done"]
+var airBagStatus = ["Active", "Critical"]
+var latitudeData = ["37.787396", "37.777773", "37.791263", "37.797480", "37.785754", "37.786006"]
+var longitudeData = ["-122.403324", "-122.426442", "-122.415680", "-122.408679", "-122.414068", "-122.411320"]
+var randomSpeed = (min,max) ->(round(random()*(max-min+1)+min))
+var batteryLevel =(min,max) -> (floor(random()*(max-min+1)+min))
+var randomInRange = (min, max) -> (random() * (max - min)) + min
+var randomTirePressure = (min, max) -> randomInt(max - min) + min
+var randomTemperature = (min, max) -> round(random() * (max - min) + min)
+var randomVoltage = (min, max) -> round(random() * (max - min) + min)
+var randomStatus = () -> status[randomInt(sizeOf(status))]
+var randomStatusForAirBag = () -> airBagStatus[randomInt(sizeOf(airBagStatus))]
+var randomlatitudeData = () -> latitudeData[randomInt(sizeOf(latitudeData))]
+var randomlongitudeData = () -> longitudeData[randomInt(sizeOf(longitudeData))]
+var randomVIN = () -> vinNumber[randomInt(sizeOf(vinNumber))]
+var VIN1 = 217
+var VIN2 = 229
+var VIN3 = 269
+var VIN4 = 289 
+---
+	(1 to 200)map(index)->{
+	eventname:uuid(),
+	timestamp: now() as DateTime,
+	VIN: randomVIN(),
+	latitude: randomlatitudeData(),
+	longitude: randomlongitudeData(),
+	speed: randomSpeed(20,120),
+	rpm: randomTirePressure(2000,6000),
+	oilpressure:randomInRange(3.5,3.5),
+	engine_temperature: randomTemperature(70, 100),
+	coolant_temperature: randomTemperature(60, 90),
+	battery_voltage: randomVoltage(11.5, 14.5),
+	battery_soc_level: batteryLevel(10,100),
+	fuel_level: randomTemperature(60, 100),
+	tire_pressure_fl: randomTirePressure(30, 32),
+	tire_pressure_fr: randomTirePressure(30, 32),
+	tire_pressure_rl: randomTirePressure(30, 32),
+	tire_pressure_rr: randomTirePressure(30, 32),
+	brake_fluid_level:randomTemperature(78, 80),
+	esp_status:randomStatus(),
+	ABS_status:randomStatus(),
+	airbag_status: if(index <= 195) "Active" else "Critical",
+	odometer:randomTirePressure(10000,300000),
+	//odometer: if(payload.VIN__c == randomVIN) ,
+	brake_pad_wear_rr: randomTirePressure(45, 90),
+	brake_pad_wear_rl: randomTirePressure(12, 15),
+	brake_pad_wear_fr: randomTirePressure(12, 15),
+	brake_pad_wear_fl: randomTirePressure(12, 15)
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="ee06a3ef-9e08-4188-b672-e5f6930c046b" message="#[payload]"/>
+		<ee:transform doc:name="Transform Message" doc:id="ba359887-4cfd-44ac-9364-4cd3dcfcfb77" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	"data":payload
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="16414e17-328c-4abe-b403-ff0db8c31ad6" message="#[payload]"/>
+		<sdc:insert-objects doc:name="Streaming - Insert Objects" doc:id="7f800e78-6fb6-4352-8cbf-06cafad7422d" config-ref="Salesforce_Data_Cloud_config" sourceNameUriParam="Real_Time_Telemetric_data" objectNameUriParam="vehicle_telemetric"/>
+		<logger level="INFO" doc:name="Logger" doc:id="123af623-96a7-473e-b0de-4cf69216be7c" message="#[payload]"/>
+	</flow>
+</mule>
