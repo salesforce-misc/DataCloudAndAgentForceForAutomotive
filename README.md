@@ -562,3 +562,45 @@ Third Party Survey Data- [https://github.com/salesforce-misc/DataCloudAndAgentFo
 |Dashboard 1: Vehicle Portfolio Insights|-⦁	Add below fields on Rows: Vehicle Name, Contact,Latitute, Longitute, Gear Box Type, Fuel Level, RPM, Tire size, Front Rim Size, Engine Temp, Brake Pad Wear, Oil Pressure, Brake Pad Wear, Air Bag, Battery SOC, Battery Voltage.| ![](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Automotive%20Tableau%20Next%20Images/Dashboard%201%20Vehicle%20Portfolio%20Insights.png)|
 |Add Viz: Vehicle Time Line Events|⦁	Add below fields on Rows: Odometer Reading, Timestamp,Fule Level, Airbag Status, ABS Status.|  ![](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Automotive%20Tableau%20Next%20Images/Add%20Viz%20Vehicle%20Time%20Line%20Event.png) |
 
+ ## Behind the Scenes - how is the agent powered?
+</summary>
+Curious to see the all the possible utterances  and how they are powered by the Agent. Here is a list of all the possible coversations, the corresponding topics and the components that power them. </br></br>
+There are one contacts populated with all the relevant information to drive these conversations - John Smith. You can login to experience cloud as either of these contacts to have these full agent conversations.
+
+$${\color{blue} Using \space the \space Agent \space to \space find \space good \space car \space for \space the \space family \space and \space book \space appointment }$$
+
+   | Sl. No. | Utterance | Behind the Scene | Topic | Components |
+   | ----- | ----- | ----- | ----- | ----- |
+   | 1. | What’s a good car for a family of 5? | Uses LLM to find the Products  That Best Suits Customer's Requirment, reads unstructurd data via a custom retriever as the Product description is from in-line unstructured data (i.e. column in a table), prompt builder. | Vehicle Suggestions | a. Prompt Action </br>- Vehicle Recommenadation. </br></br> b. Retriver </br>- Product Retriver |
+   |2.| Are there any deals on this car ? | This is where we use real-time browsing behavior and Real Time Data graphs to determine the Vehicle the user is looking at We also then Make use of Flows and Apex classes and return contextual responses | Vehicle Pricing and Deals |a). Flow Action </br>call RT DG for CURRENT product</br>Promotion - Get Promotion </br></br>b). Data Graph</br>Web_Engagement_RT_Profile</br>c). Apex Class</br>DSPGetRTDGData</br>parseJSON </br></br>d).Connected App</br>Data Cloud API</br>e).Named Credentials</br>DataCloudNew | 
+  |3.| What’s the price of this car ? | This is where we use real-time browsing behavior and Real Time Data graphs to determine the Vehicle the user is looking at We also then Make use of Flows and Apex classes and return contextual responses | Vehicle Pricing and Deals |a). Flow Action </br>call RT DG for CURRENT product</br>Data Cloud - Vehicle Prices
+ </br></br>b). Data Graph</br>Web_Engagement_RT_Profile</br>c). Apex Class</br>DSPGetRTDGData</br>parseJSON</br>ClsGetProductPrice </br></br>d).Connected App</br>Data Cloud API</br>e).Named Credentials</br>DataCloudNew |
+
+ |4.| Any issues with this car? | This is where we use real-time browsing behavior and Real Time Data graphs to determine the Vehicle the user is looking at We also then Make use of Flows and Apex classes and return contextual responses | Vehicle Issues |a). Flow Action </br>call RT DG for CURRENT product</br>Data Cloud- Vehicle Complaints</br></br>b). Data Graph</br>Web_Engagement_RT_Profile</br>c). Apex Class</br>DSPGetRTDGData</br>parseJSON</br>Vehicle Complaints</br>d) Ingestion Api</br>CustomLabel:-VehicleIssueMuleApi</br>Remote Site Settings:-MuleSoftVehicleIssue </br></br>e).Connected App</br>Data Cloud API</br>f).Named Credentials</br>DataCloudNew |
+
+|5.| I want to test drive | This is where we use real-time browsing behavior and Real Time Data graphs to determine the Vehicle the user is looking at, we then Fire Platform event That is caught in Experience site to show the LWC Flyout and return contextual responses | Test Drives Management |a). Flow Action </br>call RT DG for CURRENT product</br>Data Cloud- Invoke Appointment Flyout(Guest)</br></br>b). Data Graph</br>Web_Engagement_RT_Profile</br>c). Apex Class</br>DSPGetRTDGData</br>parseJSON</br>DisplayLeadForm</br>appointment/br>EmailHandler</br>d).AppointmentforGuest__e</br></br>e) LWC</br>embeddedMessaging </br>f).Connected App</br>GuestUserCometD</br>Data Cloud API</br>g).Named Credentials</br>GuestCometD </br>DataCloudNew |
+
+|6.|Can I test drive at home?| Reads unstructured data from PDFs that has been ingested into Data Cloud where it is chunked, vectorized and indexed for easy retrieval | Test Drives Management |a). Prompt Action</br>- Generate FAQ From Automotive Industry |
+
+|7.|What is the wait time for delivery?| Reads unstructured data from PDFs that has been ingested into Data Cloud where it is chunked, vectorized and indexed for easy retrieval | Vehicle Delivery Wait Time |a). Prompt Action</br>- Generate FAQ From Automotive Industry |
+
+|8.|How long will it take me to go home?| Based on User's Current Location Determined by telemetric Data and the Users Mailing Address, we Determing the Time it will Take to travel also Show Map with the Geocodes Mapped | Travel Time & Charging Station Assistance |a). Flow Action</br>- Data Cloud - Calculate Time</br></br>b). Apex Class</br>clsMapController </br>clsCalculateTime</br>c).Platform Event</br>HomeMapFlyOut__e </br>d) LWC</br>lwcMapFlyout  </br>e)Named Credentials</br>Calculate Distance|
+
+|9.|Find the nearest charging station?| Based on User's Current Location Determined by telemetric Data and the Charging Station Geocode, and Retrun the Charging Station Details also Show Map with the Geocodes Mapped | Travel Time & Charging Station Assistance |a). Flow Action</br>- Get Charging Station
+</br></br>b). Apex Class</br>clsMapController </br>c).Platform Event</br>HomeMapFlyOut__e </br>d) LWC</br>lwcMapFlyout|
+
+|10.|Lock Doors, Unlock Doors, Start the Car, Stop the Car|Based on user's Command We Simulate the Action/command and Update the Primary Vehicle of the User in Vehicle 360| Vehicle Command Management |a). Flow Action</br>- GetSimulatorResult</br>b). Apex Class</br>GetSimulatorResult|
+
+|11.|I’m experiencing brake squeaks, please check my brake pads | Based on the Telemetric Data We Prompt the User about their Break Pads Information and Show Flyout Experience| Vehicle Maintenance & Service |a). Flow Action</br>- Data Cloud - Maintenance Appointment</br>Data Cloud - Appoinment Creation>b). Apex Class</br> clsAppoinmentController </br>appointment</br>EmailHandler</br>c).Platform Event</br>TestDriveAppoinmentFlyout__e </br>d) LWC</br>appointmentFlyout |
+
+|12.|Why is the check engine light blue? | Reads unstructured data from PDFs that has been ingested into Data Cloud where it is chunked, vectorized and indexed for easy retrieval| Vehicle Maintenance & Service |a). Flow Action</br>Data Cloud - Appoinment Creation>b). Apex Class</br> clsAppoinmentController </br>appointment</br>EmailHandler</br>c).Platform Event</br>TestDriveAppoinmentFlyout__e </br>d) LWC</br>appointmentFlyout </br>e). Prompt Action</br>Generate FAQ From Automotive Industry |
+
+|13.|Why is my battery showing 30%? | Reads unstructured data from PDFs that has been ingested into Data Cloud where it is chunked, vectorized and indexed for easy retrieval | Vehicle Maintenance & Service |a). Flow Action</br>Data Cloud - Appoinment Creation>b). Apex Class</br> clsAppoinmentController </br>appointment</br>EmailHandler</br>c).Platform Event</br>TestDriveAppoinmentFlyout__e </br>d) LWC</br>appointmentFlyout </br>e). Prompt Action</br>Generate FAQ From Automotive Industry |
+
+|14.|Can you help with roadside assistance? | Show Conceptual Responses based on telemetric data | Free Service Eligibility & Roadside Assistance |a). Flow Action</br>Data Cloud - RoadSideAssistance |
+
+|15.| Can I get a free service? | Reads User's Warranty Contracts Document unstructured data from PDFs that has been ingested into Data Cloud where it is chunked, vectorized and indexed for easy retrieval, Use Prompt Builder to Read the Unstructured data and return the relevant response | Free Service Eligibility & Roadside Assistance |a). Flow Action</br>Data Cloud-Free Service Eligiblity</br></br>b). Apex Class</br>clsWarrantyDocumentController </br></br>c). Prompt Action</br>Return_Warranty_Info |
+
+|16.| When is my battery health check due ? | Reads User Data and Determine when they have battery health check due and prompt the response and show the Flyout experience | Vehicle Maintenance & Service |a). Flow Action</br>Data Cloud - Oil Maintainance</br>Data Cloud - Appoinment Creation</br></br>b). Apex Class</br>clsAppoinmentController </br>appointment</br>EmailHandler </br></br>c). Platform Event</br>TestDriveAppoinmentFlyout__e </br>d) LWC</br>appointmentFlyout  |
+
+</details>
