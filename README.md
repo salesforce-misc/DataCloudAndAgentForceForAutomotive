@@ -93,7 +93,7 @@ the org, follow the steps below to create data streams.
  ### 1a. Create Data Stream for Snowflake (10 mins)
   | Step | Action and Details | Images |
   | ----- | ----- | ----- |
-  | Create Data Stream for Snowflake from data kit | - Click on Data Stream Click on New </br>- Select Installed Data Kits & Package Click on Next</br>-Select Snowflake Bundle</br>- Select connection as ‘SnowflakeDataFederation’ .</br>- Select Database as ‘INFOSYS_DEMO’.</br>-Select ‘PUBLIC’ on schema> On Available Object Select ‘THIRD_PARTY_SURVEY ’. | ![Create Data Stream for Snowflake from data kit1](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Data%20Cloud%20Configuration/Create%20Data%20Stream%20for%20Snowflake%20from%20data%20kit/Create%20Data%20Stream%20for%20Snowflake%20from%20data%20kit1.png)|
+  | Create Data Stream for Snowflake from data kit | - Click on Data Stream Click on New </br>- Select Installed Data Kits & Package Click on Next</br>-Select Snowflake Bundle</br>- Select connection as ‘SnowflakeDataFederation’ .</br>- Select Snowflake Bundle and click Next.</br>- Under Data Streams choose "THIRD_PARTY_SURVEY".</br>- Review the Data Stream fields and click Next </br>- Click Deploy to create the Data Streams| ![Create Data Stream for Snowflake from data kit1](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Data%20Cloud%20Configuration/Create%20Data%20Stream%20for%20Snowflake%20from%20data%20kit/Create%20Data%20Stream%20for%20Snowflake%20from%20data%20kit1.png)|
 
   ### 1b. Create Ingestion API for Mule Data Streams from Data Kit 
 | Step | Action and Details | Images |
