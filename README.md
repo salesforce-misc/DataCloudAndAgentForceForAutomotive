@@ -561,7 +561,9 @@ Third Party Survey Data- [https://github.com/salesforce-misc/DataCloudAndAgentFo
 | Create Dashboard|-Go to autofolio</br> ⦁	Click on Add > Dashboard> New Dashboard |    |
 |Dashboard 1: Vehicle Portfolio Insights|-⦁	Add below fields on Rows: Vehicle Name, Contact,Latitute, Longitute, Gear Box Type, Fuel Level, RPM, Tire size, Front Rim Size, Engine Temp, Brake Pad Wear, Oil Pressure, Brake Pad Wear, Air Bag, Battery SOC, Battery Voltage.| ![](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Automotive%20Tableau%20Next%20Images/Dashboard%201%20Vehicle%20Portfolio%20Insights.png)|
 |Add Viz: Vehicle Time Line Events|⦁	Add below fields on Rows: Odometer Reading, Timestamp,Fule Level, Airbag Status, ABS Status.|  ![](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Automotive%20Tableau%20Next%20Images/Add%20Viz%20Vehicle%20Time%20Line%20Event.png) |
-
+</details>
+<details><summary>
+  
  ## Behind the Scenes - how is the agent powered?
 </summary>
 Curious to see the all the possible utterances  and how they are powered by the Agent. Here is a list of all the possible coversations, the corresponding topics and the components that power them. </br></br>
