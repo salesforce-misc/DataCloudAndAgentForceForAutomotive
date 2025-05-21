@@ -383,7 +383,9 @@ Third Party Survey Data- [https://github.com/salesforce-misc/DataCloudAndAgentFo
 
 ### 6. Configure Self Registration
 
-### 6a. Add External Id into Contact as well snowflake after Self Registration contact creation (20 min)
+### $${\color{blue} \space Below \space Steps from 6a to 6c \space only \space need \space to \space perform \space after \space Creating \space self \space registrating \space user \space created. }$$
+
+### 6a. Add External Id into Contact as well snowflake after Self Registration contact creation (20 min) 
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 **Scenario 1: When Existing Ext Id value present in snowflake and user want to use it**
