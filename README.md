@@ -488,6 +488,7 @@ Third Party Survey Data- [https://github.com/salesforce-misc/DataCloudAndAgentFo
 |**c.** **Mule Streaming Insert Objects Connected** |- Click on plus sign and then select Connection as Oauth Username and Password and then</br> fill the required details then click on test connection and then user Source API Name as “Real_Time_Telemetric_data” and Object Name as “vehicle_telemetric” and Body as “payload”|   |
 
 **Below is the configuration XML file so directly creating new project in Mule Anypoint and copy paste the configuration XML then update the credentials for Salesforce Data Cloud (Streaming Insert Object) connector. (Don’t forget to add the Data Cloud Insert Object Connector from Exchange)**
+</br> XML File- https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/TelemeticMuleConfigXML/TelemeticMuleConfigXML.txt </br>
 
 </details>
 <details><summary>
