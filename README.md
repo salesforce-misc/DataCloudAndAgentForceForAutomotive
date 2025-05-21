@@ -260,11 +260,11 @@ create or replace TABLE <<database_name>>.<<schema_name>>.THIRD_PARTY_SURVEY (
   IS_INTERESTED_IN_OUTDOOR_ACTIVITIES VARCHAR(10), 
   IS_INTERESTED_IN_ROOF_RACK VARCHAR(10) 
 );
+```
 
 | Step | Action and Details  |  Images |
 | ----- | ----- | ----- |
 | Load data into Third_Party_Survey_Data table | - Load data in the below csv file into Third_Party_Survey_Data table: [Third_Party_Survey_Data csv](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Snowflake%20Data/SurveyResponse_Automotive.csv.csv)  |  |
-
 ```
 ### 4a. Create ML Model (20 min)
 | Step | Action and Details  |  Images |
