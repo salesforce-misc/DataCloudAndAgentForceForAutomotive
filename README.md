@@ -589,8 +589,8 @@ $${\color{blue} Using \space the \space Agent \space to \space find \space good 
 
 $${\color{blue} For \space logged \space In \space User }$$ There are one contacts populated with all the relevant information to drive these conversations - John Smith. You can login to experience cloud as either of these contacts to have these full agent conversations.
 
-| Sl. No. | Utterance |  Agent Response | Behind the Scene | Topic | Components |
-| ----- | ----- | ----- | ----- | ----- | ----- |
+ | Sl. No. | Utterance | Behind the Scene | Topic | Components |
+   | ----- | ----- | ----- | ----- | ----- |
 |1.|How long will it take me to go home?| Based on User's Current Location Determined by telemetric Data and the Users Mailing Address, we Determing the Time it will Take to travel also Show Map with the Geocodes Mapped | Travel Time & Charging Station Assistance |a). Flow Action</br>- Data Cloud - Calculate Time</br></br>b). Apex Class</br>clsMapController </br>clsCalculateTime</br>c).Platform Event</br>HomeMapFlyOut__e </br>d) LWC</br>lwcMapFlyout  </br>e)Named Credentials</br>Calculate Distance|
 |2.|Find the nearest charging station?| Based on User's Current Location Determined by telemetric Data and the Charging Station Geocode, and Retrun the Charging Station Details also Show Map with the Geocodes Mapped | Travel Time & Charging Station Assistance |a). Flow Action</br>- Get Charging Station</br></br>b). Apex Class</br>clsMapController </br>c).Platform Event</br>HomeMapFlyOut__e </br>d) LWC</br>lwcMapFlyout|
 |3.|Lock Doors, Unlock Doors, Start the Car, Stop the Car|Based on user's Command We Simulate the Action/command and Update the Primary Vehicle of the User in Vehicle 360| Vehicle Command Management |a). Flow Action</br>- GetSimulatorResult</br>b). Apex Class</br>GetSimulatorResult|
