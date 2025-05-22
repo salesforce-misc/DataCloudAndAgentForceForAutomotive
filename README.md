@@ -242,6 +242,7 @@ The Data Kit is installed as a part of the Package installation. Once the Data i
 ### 2. Setup Data in Amazon S3 (20 mins)
 | Step | Action and Details  |  Images |
 | ----- | ----- | ----- |
+**Note: If Amazon S3 is using exisiting connection and data is already present then skip this step, this is for new connection**
 | Setup Data in Amazon S3 | - Log into Management Console and proceed to [S3 service](https://s3.console.aws.amazon.com/s3/home) and create a new bucket (give it an appropriate name).</br>  ***NOTE*****:** if you already have a bucket, you don’t need to create another bucket. Download the following files to your computer:</br>- Automotive FAQ PDF  csv [https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/tree/main/AWS%20Unstructure%20Data](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/tree/main/AWS%20Unstructure%20Data)]</br>- Upload these files to the appropriate S3 bucket.  |  |
 
 ### 3. Setup Data in Snowflake (15 mins) $${\color{blue} Snowflake \space Optional: \space Please \space note \space that \space some \space functionality \space in \space the \space C360 \space will \space no\space longer \space function\space as \space expected \space if \space not \space installed. }$$
