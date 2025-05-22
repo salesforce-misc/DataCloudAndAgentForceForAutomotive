@@ -61,9 +61,9 @@ public class ClsAutomotiveSelfRegisterDataProvider {
             //Create Opportunity
             String oppName = 'TMZ Dealership -' +associatedContact.Name ;
             Opportunity opp = new Opportunity(Name = oppName,StageName='Negotiation',CloseDate= Date.today().addYears(2),Amount=3500,Type='Add-On Business',
-                                              Test_Drive_Date__c= Date.today().addMonths(1),After_Completing_a_Test_Drive_status__c='No',ForecastCategoryName='Commit',
+                                              Test_Drive_Date__c= Date.today().addMonths(1),After_Completing_a_Test_Drive_status__c='Yes',ForecastCategoryName='Commit',
                                               Number_of_Past_Interactions__c='10',Recency_of_Interactions__c='1 week ago',Car_Model__c='Electra Model 3.1 -2025',
-                                              AccountId= associatedContact.AccountId,Primary_Contact__c= associatedContact.Id);
+                                              AccountId= associatedContact.AccountId,Primary_Contact__c= associatedContact.Id,Test_Drive_Status__c ='Yes');
             
             if(opp != null){
                 insert opp;
