@@ -486,7 +486,6 @@ Third Party Survey Data- [https://github.com/salesforce-misc/DataCloudAndAgentFo
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 | Configure the mapping with Primary key | |   ![MuleSoft configuration For Real-Time Telematics Data5](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data%20Images/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data5.png)![MuleSoft configuration For Real-Time Telematics Data6](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data%20Images/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data6.png)![MuleSoft configuration For Real-Time Telematics Data8](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data%20Images/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data8.png)![MuleSoft configuration For Real-Time Telematics Data9](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data%20Images/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data9.png)| 
-| Configure the Mule with Salesforce Streaming Insert Object connector  | |  | 
 
 ### 5. Flow to insert the data form Mule to Salesforce Data Cloud via Ingestion API. (30 min)
 | Step  | Action and Details  |  Images |
