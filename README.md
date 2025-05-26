@@ -434,7 +434,6 @@ Third Party Survey Data- [https://github.com/salesforce-misc/DataCloudAndAgentFo
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- | 
 |Assign Buyer Group For Self Registration |-Scroll down to self-registration section </br>-Select Profile as ‘Autofolio community user’ </br>-Account record type as ‘Business Type’ </br>-Permission group set ‘Commerce_shopper’ </br>-Default buyer as ‘Autofolio Buyer Group’ </br>-Click Save|   <img width="239" alt="Assign Buyer Group For Self Registration1" src="https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Finish%20Configuration%20Image/Assign%20Buyer%20Group%20For%20Self%20Registration1.png">|
-|Configure Segment|-Go to data cloud </br>-Search for Segments And Click on hyperlink of each segment one by one </br>-click on save</br>-The segment count should be greater than 0. </br>-click on done</br>-Click on the Publish now button. |  ![Segment](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Finish%20Configuration%20Image/Segment.png) |
 
 ### 11.If Strikethrough price is not populating on UI for any of the products then perform below steps (10 min)
 | Step  | Action and Details  |  Images |
