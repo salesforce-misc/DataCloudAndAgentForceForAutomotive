@@ -487,19 +487,15 @@ Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAu
 | ----- | ----- | ----- | 
 |Assign Buyer Group For Self Registration |-Scroll down to self-registration section </br>-Select Profile as ‘Autofolio community user’ </br>-Account record type as ‘Business Type’ </br>-Permission group set ‘Commerce_shopper’ </br>-Default buyer as ‘Autofolio Buyer Group’ </br>-Click Save|   <img width="239" alt="Assign Buyer Group For Self Registration1" src="https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Finish%20Configuration%20Image/Assign%20Buyer%20Group%20For%20Self%20Registration1.png">|
 
-### 28.Configure Segment (5 min)
-| Step  | Action and Details  |  Images |
-| ----- | ----- | ----- |
-|Configure Segment|-Go to data cloud </br>-Search for Segments And Click on hyperlink of each segment one by one </br>-click on save</br>-The segment count should be greater than 0. </br>-click on done</br>-Click on the Publish now button. |  ![Segment](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Finish%20Configuration%20Image/Segment.png) |
 
-### 29.If Strikethrough price is not populating on UI for any of the products then perform below steps (10 min)
+### 28.If Strikethrough price is not populating on UI for any of the products then perform below steps (10 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 |If Strikethrough price is not populating on UI for any of the products then perform below steps|-Go to App launcher>> Enter Commerce and click on it>>Select AutoFolio >>  </br>-click on the product where strikethrough price is not present on UI (eg: Electra Model 3.2 - 2025)>> Scroll down </br>-Click on Go to Global product Record>> Once you landed on Product record page then click on Related tab </br>-Search for Pricebook>> click on edit button of Standard Pricebook (do not change any values)>> click on save.</br>-Go back to Store again>> on the left hand side >> click on Website Design>>Select product from dropdown>> click on publish button </br>- Once its successfully published then>> Go back to Store again>> on the left hand side >> Scroll down >> Expand Setting </br>-click on search >>click on update button>> Select full update>> then click on Update button. </br>-Refresh the page after 10 to 15 min and see Automatic update status mark as completed or not , if not then wait to complete it.</br>-Go back to Site url>>hard refresh it >> click on product tab>>see the price is coming or not </br>-if price is still not coming then>> Go to setup>> enter all sites under quick find box>> click on All sites </br>- Click on Builder for AutoFolio Site, click on publish button>> wait for 10 to 15 min for successful publishing the site</br>- Go back to Site url>> hard refresh it >>click on product tab>> see the price is coming or not. |    |
 | |-**To proceed for testing kindly change below fields manually**</br>-We are using John Smith contact for testing purpose whose email id ends with dataclouddemo.com And Address, Email </br>-phone number, please add phone extension as well don't add plus sign please see eg(eg: 19045737373, 1 is here as usa phone number extension), |  |
 |Experience Site Product UI Configuration |-Go to App Launcher>>Enter All Sites and click on it. </br>-For  Autofolio site click on builder </br>-click on preview>>click product>>click on back to builder again </br>-search for product images then click on it( result grid) </br>-Under Grid layout there is Number of Columns on Desktop – Select More Column Spacing – Select None Row Spacing- Select None.</br>-Publish the Site  |   |
 
-### 30.Experience Site Product Price as Display 1 Price Configuration (15 min)
+### 29.Experience Site Product Price as Display 1 Price Configuration (15 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 | Experience Site Product Price as Display 1 Price Configuration |-Go to App Launcher>>Enter All sites in quick find box>> click on it </br>-For  Autofolio site click on builder</br>-click on preview>>click product>>Click on any of Electra product </br>-click on back to builder again>>There are some pricing details present click on it </br>-Under Setting scroll down >> Pricing type as Display 1 Price </br>-Click on Publish button. |   |
