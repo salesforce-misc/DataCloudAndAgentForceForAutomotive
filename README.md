@@ -550,6 +550,7 @@ Third Party Survey Data- [https://github.com/salesforce-misc/DataCloudAndAgentFo
 
 ## 10. After Creating Self Registration User
 </summary>
+
 ### $${\color{blue} \space Below \space Steps \space from \space 6a \space to \space 6c \space only \space need \space to \space perform \space after \space Creating \space self- \space registration \space user }$$
 
 ### 1a. Add External Id into Contact as well snowflake after Self Registration contact creation (20 min) 
