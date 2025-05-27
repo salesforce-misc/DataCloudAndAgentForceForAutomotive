@@ -433,18 +433,6 @@ Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAu
  ## 7. Mulesoft Configuration For Real Time Telemetric Data
 </summary>
 
-## Table of Contents
-[1. Create Ingestion API in Data Cloud ](#1-Create-Ingestion-API-in-Data-Cloud)
-
-[2. Upload the schema file(used ‘Order’ in the yaml file format	](#4-Upload-the-schema-file-used-order-in-the-yaml-file-format)
-
-[3. Create a Data Stream for Ingestion API with Selected Schema Object that going to use](#5-Create-a-Data-Stream-for-Ingestion-API-with-Selected-Schema-Object-that-going-to-use)
-
-[4. Configure the mapping with Primary key](#1-Configure-the-mapping-with-Primary-key)
-
-[5. Configure the Mule with Salesforce Streaming Insert Object connector](#1-Configure-the-Mule-with-Salesforce-Streaming-Insert-Object-connector)
-
-[6. Flow to insert the data form Mule to Salesforce Data Cloud via Ingestion API.](#1-Flow-to-insert-the-data-form-Mule-to-Salesforce-Data-Cloud-via-Ingestion-API)
 
 **Use Case: Integrate Salesforce with MuleSoft to ingest the Data (for Vehicle 360) in Data Cloud via Ingestion API**
 
@@ -458,17 +446,17 @@ Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAu
 ### 2. Upload the schema file(used ‘Order’ in the yaml file format. (10 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-|  |-Upload the schema file(used ‘Order’ in the yaml file format |  ![MuleSoft configuration For Real-Time Telematics Data2](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data%20Images/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data2.png)|
+|  |-Upload the schema file(used ‘Order’ in the yaml file format |  ![MuleSoft configuration For Real-Time Telematics Data2](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data%20Images/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data2.png) ![MuleSoft configuration For Real-Time Telematics Data3](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data%20Images/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data3.png)|
 
 ### 3. Create a Data Stream for Ingestion API with Selected Schema Object that going to use. (10 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| |-Create a Data Stream for Ingestion API with Selected Schema Object that going to use. |  ![MuleSoft configuration For Real-Time Telematics Data3](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data%20Images/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data3.png)|
+| |-Create a Data Stream for Ingestion API with Selected Schema Object that going to use. | ![MuleSoft configuration For Real-Time Telematics Data5](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data%20Images/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data5.png) |
 
 ### 4. Configure the mapping with Primary key. (10 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-|  |-Configure the mapping with Primary key. |   ![MuleSoft configuration For Real-Time Telematics Data5](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data%20Images/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data5.png)![MuleSoft configuration For Real-Time Telematics Data6](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data%20Images/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data6.png)![MuleSoft configuration For Real-Time Telematics Data8](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data%20Images/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data8.png)![MuleSoft configuration For Real-Time Telematics Data9](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data%20Images/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data9.png)| 
+|  |-Configure the mapping with Primary key. |   ![MuleSoft configuration For Real-Time Telematics Data6](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data%20Images/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data6.png)![MuleSoft configuration For Real-Time Telematics Data8](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data%20Images/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data8.png)![MuleSoft configuration For Real-Time Telematics Data9](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data%20Images/MuleSoft%20configuration%20For%20Real-Time%20Telematics%20Data9.png)| 
 
 ### 5. Configure the Mule with Salesforce Streaming Insert Object connector. (5 min) 
 | Step  | Action and Details  |  Images |
