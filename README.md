@@ -572,6 +572,28 @@ Third Party Survey Data- [https://github.com/salesforce-misc/DataCloudAndAgentFo
 |Publish Segment|-Go to App launcher</br>Go to App launcher</br>-Go to Segments</br>-open **Drivers who drove into the dealers** </br>-Click on Downwards Arrow And click on publish now.</br>-Repeat the Same Step for the Segment **Drivers visited the dealership**| ![](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Finish%20Configuration%20Image/Segment1.jpg) ![](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Finish%20Configuration%20Image/Segment2.png)|
 </details>
 <details><summary>
+
+## Miscellaneous 
+</summary>
+
+### 1.If Strikethrough price is not populating on UI for any of the products then perform below steps (10 min)
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+|If Strikethrough price is not populating on UI for any of the products then perform below steps|-Go to App launcher>> Enter Commerce and click on it>>Select AutoFolio >>  </br>-click on the product where strikethrough price is not present on UI (eg: Electra Model 3.2 - 2025)>> Scroll down </br>-Click on Go to Global product Record>> Once you landed on Product record page then click on Related tab </br>-Search for Pricebook>> click on edit button of Standard Pricebook (do not change any values)>> click on save.</br>-Go back to Store again>> on the left hand side >> click on Website Design>>Select product from dropdown>> click on publish button </br>- Once its successfully published then>> Go back to Store again>> on the left hand side >> Scroll down >> Expand Setting </br>-click on search >>click on update button>> Select full update>> then click on Update button. </br>-Refresh the page after 10 to 15 min and see Automatic update status mark as completed or not , if not then wait to complete it.</br>-Go back to Site url>>hard refresh it >> click on product tab>>see the price is coming or not </br>-if price is still not coming then>> Go to setup>> enter all sites under quick find box>> click on All sites </br>- Click on Builder for AutoFolio Site, click on publish button>> wait for 10 to 15 min for successful publishing the site</br>- Go back to Site url>> hard refresh it >>click on product tab>> see the price is coming or not. |    |
+
+### 2. Testing Guideline
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+| |-**To proceed for testing kindly change below fields manually**</br>-We are using John Smith contact for testing purpose whose email id ends with dataclouddemo.com And Address, Email </br>-phone number, please add phone extension as well don't add plus sign please see eg(eg: 19045737373, 1 is here as usa phone number extension), |  |
+|Experience Site Product UI Configuration |-Go to App Launcher>>Enter All Sites and click on it. </br>-For  Autofolio site click on builder </br>-click on preview>>click product>>click on back to builder again </br>-search for product images then click on it( result grid) </br>-Under Grid layout there is Number of Columns on Desktop – Select More Column Spacing – Select None Row Spacing- Select None.</br>-Publish the Site  |   |
+
+### 3. Enable Product Tab On Experience site for new users
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+| Enable Product tab on exp site After login(Excluding self registration user and apart from John Smith and Guest user) |-Go to setup>>user>>open user>> click on permission set assignment>>click on edit permission >>select Buyer from Available permission set and click on Add>>click on save </br>-Go to Contact's associated account record and click on as enable as buyer button>> click on Enable </br>-Go to Commerce Store AutoFolio>>Click on settings on left side and expand it >>Click on “Buyer Access” tab on the menu. </br>-Under store access go to buyer group section and click on AutoFolio Buyer group.  </br>-Go to related tab and click on assign from buyer group member and Select Contact's associated account  and save. | ![](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Finish%20Configuration%20Image/Assign%20AutoFolio%20Buyer%20Group1.png) ![](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Finish%20Configuration%20Image/Assign%20AutoFolio%20Buyer%20Group2.png)  |
+
+</details>
+<details><summary>
   
  ## Behind the Scenes - how is the agent powered?
 </summary>
