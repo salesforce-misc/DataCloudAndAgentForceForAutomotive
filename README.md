@@ -272,7 +272,7 @@ Third Party Survey Data- [https://github.com/salesforce-misc/DataCloudAndAgentFo
 ```
 ### 4a. Create ML Model (20 min) 
 
-**Note:Note: Before Creating ML Model, Go to Data Cloud>> Data Stream>> Opportunity>> Click on Refresh Now Button and Wait till it get into success status Go to Data Explorer>>Under Object select Data Model Object >> Then Select Opportunity>>Verify your Data their You can modify columns as well by click on Edit Columns**
+**Note: Before Creating ML Model, Go to Data Cloud>> Data Stream>> Opportunity>> Click on Refresh Now Button and Wait till it get into success status Go to Data Explorer>>Under Object select Data Model Object >> Then Select Opportunity>>Verify your Data their You can modify columns as well by click on Edit Columns.**
 
 | Step | Action and Details  |  Images |
 | ----- | ----- | ----- |
