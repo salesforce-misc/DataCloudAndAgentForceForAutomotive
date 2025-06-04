@@ -606,7 +606,7 @@ $${ Using \space the \space Agent \space to \space find \space good \space car \
 |6.|Can I test drive at home?| Reads unstructured data from PDFs that has been ingested into Data Cloud where it is chunked, vectorized and indexed for easy retrieval | Test Drives Management |a). Prompt Action</br>- Generate FAQ From Automotive Industry |
 |7.|What is the wait time for delivery?| Reads unstructured data from PDFs that has been ingested into Data Cloud where it is chunked, vectorized and indexed for easy retrieval | Vehicle Delivery Wait Time |a). Prompt Action</br>- Generate FAQ From Automotive Industry |
 
-$${ For \space logged \space In \space User }$$ There are one contacts populated with all the relevant information to drive these conversations - John Smith. You can login to experience cloud as either of these contacts to have these full agent conversations.
+$${ For \space logged \space In \space User }$$ There is one contact populated with all the relevant information to drive these conversations - John Smith. You can login to experience cloud as this contact to have these  agent conversations.
 
  | Sl. No. | Utterance | Behind the Scene | Topic | Components |
    | ----- | ----- | ----- | ----- | ----- |
@@ -620,7 +620,7 @@ $${ For \space logged \space In \space User }$$ There are one contacts populated
 |8.| Can I get a free service? | Reads User's Warranty Contracts Document unstructured data from PDFs that has been ingested into Data Cloud where it is chunked, vectorized and indexed for easy retrieval, Use Prompt Builder to Read the Unstructured data and return the relevant response | Free Service Eligibility & Roadside Assistance |a). Flow Action</br>Data Cloud-Free Service Eligiblity</br></br>b). Apex Class</br>clsWarrantyDocumentController </br></br>c). Prompt Action</br>Return_Warranty_Info |
 |9.| When is my battery health check due ? | Reads User Data and Determine when they have battery health check due and prompt the response and show the Flyout experience | Vehicle Maintenance & Service |a). Flow Action</br>Data Cloud - Oil Maintainance</br>Data Cloud - Appoinment Creation</br></br>b). Apex Class</br>clsAppoinmentController </br>appointment</br>EmailHandler </br></br>c). Platform Event</br>TestDriveAppoinmentFlyout__e </br>d) LWC</br>appointmentFlyout  |
 
-$${ For \space Copilot }$$ There is one contact populated with all relevant information to drive these conversations – John Smith, You can go to contact record page of these contacts to have full copilot conversations.
+$${ For \space Copilot }$$ There is one contact populated with all relevant information to drive these conversations – John Smith, You can go to the contact record page of this contact to have all the copilot conversations.
 
  | Sl. No. | Utterance | Behind the Scene | Topic | Components |
 | ----- | ----- | ----- | ----- | ----- |
