@@ -3,7 +3,7 @@
     <contactEmail>xxxxx@example.com</contactEmail>
     <label>GuestUserCometD</label>
     <oauthConfig>
-        <callbackUrl>https://dpa00000onw0emah.my.salesforce.com/services/authcallback/GuestUserAuth</callbackUrl>
+        <callbackUrl>https://test.salesforce.com</callbackUrl>
         <consumerKey></consumerKey>
         <isAdminApproved>true</isAdminApproved>
         <isClientCredentialEnabled>true</isClientCredentialEnabled>
