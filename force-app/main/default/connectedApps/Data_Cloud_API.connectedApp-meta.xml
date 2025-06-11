@@ -3,7 +3,7 @@
     <contactEmail>xxxxx@example.com</contactEmail>
     <label>Data Cloud API</label>
     <oauthConfig>
-        <callbackUrl>https://dpa00000onw0emah.my.salesforce.com/services/authcallback/Data_Cloud_Auth</callbackUrl>
+        <callbackUrl>https://test.salesforce.com</callbackUrl>
         <consumerKey></consumerKey>
         <isAdminApproved>false</isAdminApproved>
         <isClientCredentialEnabled>false</isClientCredentialEnabled>
