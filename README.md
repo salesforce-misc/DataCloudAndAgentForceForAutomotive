@@ -250,7 +250,7 @@ the org, follow the steps below to create data streams.
 ### 3. Setup Data in Snowflake (15 min)
 | Step | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| Setup Data in Snowflake | - Login to the Snowflake database and schema created for the tables used in the demo and execute the before steps. </br>-Create Table for Third Party Survey and Load data into Table.</br>-Login to the Snowflake Database/Schema that is connected to Data Cloud and run the below DDL script to create THIRD_PARTY_SURVEY table.   |  ![](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Configure%20Amazon%20and%20Snowflake%20and%20ML%20Images/Snowflake1.png)|
+| Setup Data in Snowflake | - Login to the Snowflake database and schema created for the tables used in the demo and execute the before steps. </br>-Create Table for Third Party Survey and Load data into Table.</br>-Login to the Snowflake Database/Schema that is connected to Data Cloud and run the below DDL script to create THIRD_PARTY_SURVEY table.   |  ![](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Configure%20Amazon%20and%20Snowflake%20and%20ML%20Images/Snowflake1.png?raw=true)|
 ```
 create or replace TABLE <<database_name>>.<<schema_name>>.THIRD_PARTY_SURVEY ( 
 
