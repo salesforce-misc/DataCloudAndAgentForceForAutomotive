@@ -69,8 +69,8 @@
 ### 1. Install Automotive Base Package (10 min)
  | Step | Action and Details | Images |
   | ----- | ----- | ----- |
-  | Install Automotive Base Package | - Click on this Package Installation [Link ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tPa000000p7lp)</br>- Sign-in to the Org with your credentials.</br>- Choose Install for Admins Only option</br>- Choose “Rename conflicting components in package” and click the Install button.</br>- Wait until installation is completed, you will receive a confirmation on logged in user’s email | <img width="184" alt="Install AutoFolio Base Package1" src="https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Salesforce%20Package%20Installation/Install%20AutoFolio%20Base%20Package1.png">|
-| Verify Package installation | - Click Setup</br>- Search for package</br>- Search for 'SFAutomotiveDataKitsPackage' is installed  | ![Verify the package is installed](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Salesforce%20Package%20Installation/Verify%20the%20package%20is%20installed.png)|
+  | Install Automotive Base Package | - Click on this Package Installation [Link ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tPa000000p7lp)</br>- Sign-in to the Org with your credentials.</br>- Choose Install for Admins Only option</br>- Choose “Rename conflicting components in package” and click the Install button.</br>- Wait until installation is completed, you will receive a confirmation on logged in user’s email | <img width="184" alt="Install AutoFolio Base Package1" src="https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Salesforce%20Package%20Installation/Install%20AutoFolio%20Base%20Package1.png?raw=true">|
+| Verify Package installation | - Click Setup</br>- Search for package</br>- Search for 'SFAutomotiveDataKitsPackage' is installed  | ![Verify the package is installed](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Salesforce%20Package%20Installation/Verify%20the%20package%20is%20installed.png?raw=true)|
 </details>
 
 <details><summary>
