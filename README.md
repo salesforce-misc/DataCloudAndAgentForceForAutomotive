@@ -245,7 +245,7 @@ the org, follow the steps below to create data streams.
 ### 2. Setup Data in Amazon S3 (20 min)
 | Step | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| Setup Data in Amazon S3 | - Log into Management Console and proceed to [S3 service](https://s3.console.aws.amazon.com/s3/home) and create a new bucket (give it an appropriate name).</br>  ***NOTE*****:** if you already have a bucket, you don’t need to create another bucket. Download the following files to your computer:</br>- Automotive FAQ PDF  csv [https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/tree/master/AWS%20Unstructure%20Data](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/tree/master/AWS%20Unstructure%20Data )]</br>- Upload these files to the appropriate S3 bucket.  |  |
+| Setup Data in Amazon S3 | - Log into Management Console and proceed to [S3 service](https://s3.console.aws.amazon.com/s3/home) and create a new bucket (give it an appropriate name).</br>  ***NOTE*****:** if you already have a bucket, you don’t need to create another bucket. Download the following files to your computer:</br>- Automotive FAQ PDF  csv [https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/tree/main/AWS%20Unstructure%20Data](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/tree/main/AWS%20Unstructure%20Data)]</br>- Upload these files to the appropriate S3 bucket.  |  |
 
 ### 3. Setup Data in Snowflake (15 min)
 | Step | Action and Details  |  Images |
@@ -265,7 +265,7 @@ create or replace TABLE <<database_name>>.<<schema_name>>.THIRD_PARTY_SURVEY (
 );
 
 Load data in the below csv file into Third_Party_Survey_Data table:
-Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/tree/master/AWS%20Unstructure%20Data](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/tree/master/Snowflake%20Data)](https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/tree/master/Snowflake%20Data )]
+Third Party Survey Data- [[https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/tree/main/AWS%20Unstructure%20Data](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/tree/main/Snowflake%20Data)](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/tree/main/Snowflake%20Data)]
 ```
 ### 4a. Create ML Model (20 min)
 | Step | Action and Details  |  Images |
@@ -328,7 +328,7 @@ Third Party Survey Data- [[https://git.soma.salesforce.com/gdevadoss/DataCloudAu
 ### 4c. Change the layout of the Login page (5 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-| Change the layout of the Login page. |- Go to Setup, in the Quick Find Box, enter Digital Experiences, and then select All Sites </br>- Against the site ‘AutoFolio’’, click on Builder</br>- From the Page dropdown, search for Login, and then select Login </br>-Remove the site logo and add a Text Box component. Enter the text as "AutoFolio’", make it bold and center</br>- Publish the changes  | <img width="233" alt="Change the layout of the Login page1" src="https://git.soma.salesforce.com/gdevadoss/DataCloudAutomotiveDemo/blob/master/Finish%20Configuration%20Image/Change%20the%20layout%20of%20the%20Login%20page1.png"> |
+| Change the layout of the Login page. |- Go to Setup, in the Quick Find Box, enter Digital Experiences, and then select All Sites </br>- Against the site ‘AutoFolio’’, click on Builder</br>- From the Page dropdown, search for Login, and then select Login </br>-Remove the site logo and add a Text Box component. Enter the text as "AutoFolio’", make it bold and center</br>- Publish the changes  | <img width="233" alt="Change the layout of the Login page1" src="https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Finish%20Configuration%20Image/Change%20the%20layout%20of%20the%20Login%20page1.png?raw=true"> |
 
 ### 4d. Change the layout of the Forget Password page. (5 min)
 | Step  | Action and Details  |  Images |
