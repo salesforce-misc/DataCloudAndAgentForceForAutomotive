@@ -545,7 +545,7 @@ public class ObjectAndFieldLevelPermissionAuto {
                     // Insert the Permission Set Assignment
                     Insert permSetAssign;
                 }
-                System.setPassword(usr.Id,'A$tr0ngPW');                
+              //System.setPassword(usr.Id,'A$tr0ngPW');                
             }
         } catch (Exception e) {
             System.debug('Exception: ' + e.getMessage());
