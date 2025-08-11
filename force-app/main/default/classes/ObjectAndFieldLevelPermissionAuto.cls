@@ -377,7 +377,7 @@ public class ObjectAndFieldLevelPermissionAuto {
                 map<string,string> mapOfPSwithAgentUser = new map<string,string>();
                 
                 User agentUser = [SELECT Id FROM User WHERE FirstName='Agent' AND LastName ='User' LIMIT 1];
-                List<PermissionSet> permSet = [SELECT Id,Name FROM PermissionSet Where Name IN ('AgentforceServiceAgentUser', 'Automotive_Service_Agent', 'CopilotSalesforceUser','GenieUserEnhancedSecurity')];//3
+                List<PermissionSet> permSet = [SELECT Id,Name FROM PermissionSet Where Name IN ('GenieAdmin','CommerceUser','AutomatedActionsUser','EinsteinGPTServiceRepliesForEmail','GenieUserEnhancedSecurity','AgentforceServiceAgentBase','AgentforceServiceAgentUser','Automotive_Service_Agent','CopilotSalesforceUser')];
                 List<PermissionSetLicense> pslicense= [SELECT DeveloperName,Id,MasterLabel FROM PermissionSetLicense Where MasterLabel ='Agentforce Service Agent User' LIMIT 1];
                 List<PermissionSetAssignment> listOfPSA = [SELECT Id,AssigneeId,PermissionSetId FROM PermissionSetAssignment WHERE AssigneeId=:agentUser.Id and PermissionSetId IN:permSet];
                 if(listOfPSA.size()>0){
