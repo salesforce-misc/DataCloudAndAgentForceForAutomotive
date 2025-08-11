@@ -236,8 +236,10 @@ global with sharing class DSPGetRTDGData {
         system.debug('## allEngagements = '+allEngagements);
         for(Object eng : engagements) {
             Map<String, Object> engagement = (Map<String, Object>)eng;
-            
-            if(engagement.containsKey('ssot__GoodsProduct__dlm')) {
+            if (engagement.containsKey('ssot__ProductId__c')) {                
+                allEngagements.add(engagement);
+            }
+            /*if(engagement.containsKey('ssot__GoodsProduct__dlm')) {
                 List<Object> products = (List<Object>)engagement.get('ssot__GoodsProduct__dlm');
                 
                 if(!products.isEmpty()) {
@@ -245,7 +247,7 @@ global with sharing class DSPGetRTDGData {
                 }
             }
             system.debug('products[0]'+engagement);
-            allEngagements.add(engagement);
+            allEngagements.add(engagement);*/
 
         }
         system.debug('## allEngagements = '+allEngagements);
