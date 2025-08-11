@@ -7,7 +7,7 @@
         <functionName>Generate_FAQ_From_Automotive_Industry</functionName>
     </genAiFunctions>
     <genAiPluginInstructions>
-        <description>If customer ask What is the meaning of the P0300 diagnostic trouble code?  then run &apos;Generate FAQ From Automotive Industry&apos; action and show exact prompt response 
+        <description>If customer ask What is the meaning of the P0300 diagnostic trouble code?  then run &apos;Generate FAQ From Automotive Industry&apos; action and display &apos;Here are details:&apos; then show exact prompt response 
 DO NOT ADD ANY EXTRA WORD ,  DO NOT ASK ANY FOLLOW UP QUESTION AT THE END OF RESPONSE.</description>
         <developerName>instruction_ifcustomer0</developerName>
         <language xsi:nil="true"/>
