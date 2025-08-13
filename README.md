@@ -518,11 +518,11 @@ Third Party Survey Data- [[https://github.com/salesforce-misc/DataCloudAndAgentF
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 | Enable Tableau Next Beta | 
-- Goto Setup
+- Goto Setup <br/>
 - In the Quick Find box, type Users and click Users, Search for Orgfarm Epic user </br>
-- Click the Full Name of the user
+- Click the Full Name of the user</br>
 - On the user's detail page, scroll down to the Permission Set Assignments section </br>
-- Click the Edit Assignments button
+- Click the Edit Assignments button</br>
 - Choose Tablue Next Admin Permission set and Assign, Click Save </br>
 -From Setup, enter ‘Tableau Next’ in the Quick Find box. </br>-Enable Tableau Next Beta. | ![](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Automotive%20Tableau%20Next%20Images/Enable%20Tableau.png?raw=true)   |
 
