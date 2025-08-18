@@ -563,8 +563,9 @@ Third Party Survey Data- [[https://github.com/salesforce-misc/DataCloudAndAgentF
 ### 7. Create Tabs for Dashboard (30 min)
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
-|Create lighning page|-Go to Setup, Enter Lightning App Builder and click on it<br/>-Click on New, Select App Page and click on Next<br/> Enter Label as Service & Lead Insights and click on next<br/> Select Two Region and click on Done<br/>Click on New, Select App Page and click on Next<br/> Enter Label as Vehicle Insights & Portfolio and click on next<br/> Select Two Region and click on Done| |
-|Create tabs |-Go to Setup and enter tabs and click on it<br/> Scroll down to Lightning page tabs and click on New button,Select lighning page as Service & Lead Insights and Select Tab Style and Click on Save, Refer Screenshot<br/> Created another lightning page tab with name as Vehice Insights & Portfolio and select lighning component as Vehicle Insights & Portfolio ||
+|Create lighning page for Service & Lead Insights|-Go to Setup, Enter Lightning App Builder and click on it<br/>-Click on New, Select App Page and click on Next<br/> Enter Label as Service & Lead Insights and click on next<br/> Select Two Region and click on Done<br/>-Once page open then search component as Tableau View and drag and drop on first region<br/>-Enter Url as of Lead Intelligence Dashboard with the below format https://Domain/tableau/dashboard/Lead_Intelligence/view?embed=yes and Hei<br/>-Click on New, Select App Page and click on Next<br/> Enter Label as Vehicle Insights & Portfolio and click on next<br/> Select Two Region and click on Done| |
+|Create tabs and Add into automotive setup |-Go to Setup and enter tabs and click on it<br/> Scroll down to Lightning page tabs and click on New button,Select lighning page as Service & Lead Insights and Select Tab Style and Click on Save, Refer Screenshot<br/> Created another lightning page tab with name as Vehice Insights & Portfolio and select lighning component as Vehicle Insights & Portfolio<br/> Go to App launcher and open Automotive app <br/> On Right hand side besides More there is pencil icon and click on Add more Item and select above two tabs and save it ||
+
 </details>
 <details><summary>
 
