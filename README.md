@@ -556,7 +556,7 @@ Third Party Survey Data- [[https://github.com/salesforce-misc/DataCloudAndAgentF
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 |Create Semantic Model: Vehicle Model|⦁	Go to workspace Autofolio</br>⦁	Click on Add > New Semantic Model and Name it Vehicle Model</br>⦁	Add the Data Objects: Vehicle and save it<br/> Add other data model object, refer screenshot and Join them by click on Join Object and Once widow get open then click on + icon and click on Add button , click on apply| |
-|Create Logical Views in Vehicle Model|-Click on New and select Logical view and provide name as Logical View </br>-Select Data Model Object Vehicle<br/>-Click on plus icon of Vehicle, click on Create Union<br/>-Select Data Model Object as Vehicle Defination and click on Save<br/>||
+|Create Logical Views in Vehicle Model|-Click on New and select Logical view and provide name as Auto Vehicle View </br>-Select Data Model Object Vehicle<br/>-Click on plus icon of Vehicle, click on Create Union<br/>-Select Data Model Object as Vehicle Defination and click on Save<br/>-Hover on Create Uninon and click on + icon , Click on Add to Uninon<br/>-Select DMO as Product and Save it<br/>-Hover on Create Uninon and click on + icon , Click on Add to Uninon<br/>-Select DMO as Asset and Save it<br/>||
 </details>
 <details><summary>
 
