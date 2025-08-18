@@ -564,7 +564,7 @@ Third Party Survey Data- [[https://github.com/salesforce-misc/DataCloudAndAgentF
 | Step  | Action and Details  |  Images |
 | ----- | ----- | ----- |
 |Create lighning page|-Go to Setup, Enter Lightning App Builder and click on it<br/>-Click on New, Select App Page and click on Next<br/> Enter Label as Service & Lead Insights and click on next<br/> Select Two Region and click on Done<br/>Click on New, Select App Page and click on Next<br/> Enter Label as Vehicle Insights & Portfolio and click on next<br/> Select Two Region and click on Done| |
-|C|||
+|Create tabs |-Go to Setup and enter tabs and click on it<br/> Scroll down to Lightning page tabs and click on New button,Select lighning page as Service & Lead Insights and Select Tab Style and Click on Save, Refer Screenshot<br/> Created another lightning page tab with name as Vehice Insights & Portfolio and select lighning component as Vehicle Insights & Portfolio ||
 </details>
 <details><summary>
 
