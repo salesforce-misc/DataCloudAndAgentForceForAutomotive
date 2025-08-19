@@ -613,6 +613,10 @@ Third Party Survey Data- [[https://github.com/salesforce-misc/DataCloudAndAgentF
 | ----- | ----- | ----- |
 | Enable Product tab on exp site After login(Excluding self registration user and apart from John Smith and Guest user) |-Go to setup>>user>>open user>> click on permission set assignment>>click on edit permission >>select Buyer from Available permission set and click on Add>>click on save </br>-Go to Contact's associated account record and click on as enable as buyer button>> click on Enable </br>-Go to Commerce Store AutoFolio>>Click on settings on left side and expand it >>Click on “Buyer Access” tab on the menu. </br>-Under store access go to buyer group section and click on AutoFolio Buyer group.  </br>-Go to related tab and click on assign from buyer group member and Select Contact's associated account  and save. | ![](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Finish%20Configuration%20Image/BuyerG1.png?raw=true) ![](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Finish%20Configuration%20Image/BuyerG2.png?raw=true) ![](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Finish%20Configuration%20Image/BuyerG3.png?raw=true) ![](https://github.com/salesforce-misc/DataCloudAndAgentForceForAutomotive/blob/main/Finish%20Configuration%20Image/BuyerG4.png?raw=true) |
 
+### 4. If Email not received from Marketing cloud then perform below step 
+| Step  | Action and Details  |  Images |
+| ----- | ----- | ----- |
+|Marketing Cloud Clear Records|-Login with Marketing cloud<br/>-Go to Audience Builder, click on Contact Builder<br/>-Click on Data Extension>> Click on Automotive Journey Api Data<br/> Click on Records and click on clear records button||
 </details>
 <details><summary>
   
