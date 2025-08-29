@@ -145,14 +145,6 @@
         <connector>
             <targetReference>Get_Records_from_Opportunity_Contact</targetReference>
         </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>ssot__Probability__c</field>
-            <operator>NotEqualTo</operator>
-            <value>
-                <numberValue>100.0</numberValue>
-            </value>
-        </filters>
         <object>ssot__Opportunity__dlm</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>DataCloudDataChange</triggerType>
