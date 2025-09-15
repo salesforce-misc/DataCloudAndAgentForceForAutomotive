@@ -53,14 +53,7 @@ public class clsCalculateTime {
             System.debug('Error: ' + res.getStatusCode() + ' - ' + res.getStatus());
         }
         return travelInfoList;
-    }
-    
-        
-   
-            
-    
-  
-   
+    } 
     
     // Inner class to define input parameters
     public class LocationParams {
