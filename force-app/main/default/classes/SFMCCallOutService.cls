@@ -11,15 +11,18 @@ public with sharing class SFMCCallOutService {
             Double Delay = request[0].Delay;
         	
            // Integer PhoneNumber = request[0].PhoneNumber;
+        SFMC_API_Event__mdt ups = SFMC_API_Event__mdt.getInstance('AutomotiveJourneyAPI');
         system.debug('\n EventId ->'+EventId);
-        if(EventId!=null){
-            callSFMCEvent(EventId);
+        if(EventId!=null){            
+            if(ups != NULL && ups.ClientId__c != NULL && ups.ClientSecret__c != NULL && ups.eventKey__c != NULL){
+                callSFMCEvent(EventId);
+            }            
         	Response res = new Response();
             List<Response> responses = new List<Response>(); 
             res.setMessage = 'success';
            	responses.add(res);
-            return responses;} 
-        else{
+            return responses;
+        }else if(ups != NULL && ups.ClientId__c != NULL && ups.ClientSecret__c != NULL && ups.eventKey__c != NULL){
           	String CopilotResponse = callMaintenanceStatusjourney(ContactId, Delay);
             System.debug('Copilotresponse'+CopilotResponse);
         	Response res = new Response();
@@ -30,6 +33,12 @@ public with sharing class SFMCCallOutService {
                System.Debug('response setmsg'+ res.setMessage);
            }
                 return responses;
+        }else{
+            Response res = new Response();
+            List<Response> responses = new List<Response>(); 
+            res.setMessage = 'success';
+           	responses.add(res);
+            return responses;
         }
         
     }
