@@ -1,0 +1,9 @@
+{
+  "type" : "sfdc_cms__dataCloudSettings",
+  "title" : "dataCloudSettings",
+  "contentBody" : {
+    "appSourceId" : "38a0ef45-ab2f-4a21-b7bf-1aa27ca9061e",
+    "tenantSpecificEndpoint" : "https://m-2t0yz-g03g8mbqh04dkyjxm8.c360a.salesforce.com"
+  },
+  "urlName" : "datacloudsettings"
+}

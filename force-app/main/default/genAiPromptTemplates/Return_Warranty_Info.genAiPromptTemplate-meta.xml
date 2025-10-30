@@ -1,266 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
-    <activeVersionIdentifier>7dyBkiV0MDai1u8LgE71J8DdW+f8pCBHaqDDQTOgr5U=_10</activeVersionIdentifier>
+    <activeVersionIdentifier>7dyBkiV0MDai1u8LgE71J8DdW+f8pCBHaqDDQTOgr5U=_12</activeVersionIdentifier>
     <description>This Template will return Vehicle warranty information from unstructured data based on the VIN Number provided</description>
     <developerName>Return_Warranty_Info</developerName>
     <masterLabel>Return Warranty Info</masterLabel>
     <templateVersions>
-        <content>You are a Warranty Expert in Autofolio, here are some documents about Warranty Information about Cars, that Include Car Owner Name, VIN Name and Warranty Coverage and Warranty Inclusion
+        <content>You are a Warranty Expert in Autofolio, here are some documents about Warranty Information {!$EinsteinSearch:Default_Automotive_Warranty_Info_Retriever_1Cx_W0e84b6f5bb.results} about Cars, that Include Car Owner Name, VIN Name and Warranty Coverage and Warranty Inclusion
 
-Your Job is to Match VIN Number {!$Input:VIN} with the and to Only return the 
-in this Format
-Start Date, 
-End Date,
-Warranty Duration, 
-Number of Miles 
-Warranty Offers
-
-DO NOT ADD EXTRA LINE ONLY RETURN THE DATA IN MENTIONED FORMAT
-
-</content>
-        <inputs>
-            <apiName>VIN</apiName>
-            <definition>primitive://String</definition>
-            <masterLabel>VIN</masterLabel>
-            <referenceName>Input:VIN</referenceName>
-            <required>true</required>
-        </inputs>
-        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
-        <status>Published</status>
-        <versionIdentifier>7dyBkiV0MDai1u8LgE71J8DdW+f8pCBHaqDDQTOgr5U=_1</versionIdentifier>
-    </templateVersions>
-    <templateVersions>
-        <content>You are a Warranty Expert in Autofolio, here are some documents about Warranty Information about Cars, that Include Car Owner Name, VIN Name and Warranty Coverage and Warranty Inclusion
-
-Your Job is to Match VIN Number {!$Input:VIN} with the  and to Only return the 
-in this Format
-Start Date(YYYY-MM-DD), 
-End Date(YYYY-MM-DD),
-Warranty Duration, 
-Number of Miles 
-Warranty Offers
-
-DO NOT ADD EXTRA LINE ONLY RETURN THE DATA IN MENTIONED FORMAT
-
-</content>
-        <inputs>
-            <apiName>VIN</apiName>
-            <definition>primitive://String</definition>
-            <masterLabel>VIN</masterLabel>
-            <referenceName>Input:VIN</referenceName>
-            <required>true</required>
-        </inputs>
-        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
-        <status>Published</status>
-        <versionIdentifier>7dyBkiV0MDai1u8LgE71J8DdW+f8pCBHaqDDQTOgr5U=_2</versionIdentifier>
-    </templateVersions>
-    <templateVersions>
-        <content>You are a Warranty Expert in Autofolio, here are some documents about Warranty Information about Cars, that Include Car Owner Name, VIN Name and Warranty Coverage and Warranty Inclusion
-
-Your Job is to Match VIN Number {!$Input:VIN} with the  and to Only return the 
-in this Format
-Start Date(YYYY-MM-DD):, 
-End Date(YYYY-MM-DD):,
-Warranty Duration:, 
-Number of Miles:, 
-Warranty Offers:,
-
-DO NOT ADD EXTRA LINE ONLY RETURN THE DATA IN MENTIONED FORMAT
-
-</content>
-        <inputs>
-            <apiName>VIN</apiName>
-            <definition>primitive://String</definition>
-            <masterLabel>VIN</masterLabel>
-            <referenceName>Input:VIN</referenceName>
-            <required>true</required>
-        </inputs>
-        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
-        <status>Published</status>
-        <versionIdentifier>7dyBkiV0MDai1u8LgE71J8DdW+f8pCBHaqDDQTOgr5U=_3</versionIdentifier>
-    </templateVersions>
-    <templateVersions>
-        <content>You are a Warranty Expert in Autofolio, here are some documents about Warranty Information about Cars, that Include Car Owner Name, VIN Name and Warranty Coverage and Warranty Inclusion
-
-Your Job is to Match VIN Number {!$Input:VIN} with the and to Only return the 
-in this Format, Format Start Date and End Date in (YYYY-MM-DD)
-
-Start Date:, 
-End Date:,
-Warranty Duration:, 
-Number of Miles:, 
-Warranty Offers:,
-
-DO NOT ADD EXTRA LINE ONLY RETURN THE DATA IN MENTIONED FORMAT
-
-</content>
-        <inputs>
-            <apiName>VIN</apiName>
-            <definition>primitive://String</definition>
-            <masterLabel>VIN</masterLabel>
-            <referenceName>Input:VIN</referenceName>
-            <required>true</required>
-        </inputs>
-        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
-        <status>Published</status>
-        <versionIdentifier>7dyBkiV0MDai1u8LgE71J8DdW+f8pCBHaqDDQTOgr5U=_4</versionIdentifier>
-    </templateVersions>
-    <templateVersions>
-        <content>You are a Warranty Expert in Autofolio, here are some documents about Warranty Information about Cars, that Include Car Owner Name, VIN Name and Warranty Coverage and Warranty Inclusion
-
-Your Job is to Match VIN Number {!$Input:VIN} with the  and to Only return this JSON Format, Format Start Date and End Date in (YYYY-MM-DD)
-{
-&quot;Start Date&quot;:, 
-&quot;End Date&quot;:,
-&quot;Warranty Duration&quot;:, 
-&quot;Number of Miles&quot;:, 
-&quot;Warranty Offers&quot;:,
-}
-
-DO NOT ADD EXTRA LINE ONLY RETURN THE DATA IN MENTIONED FORMAT
-
-</content>
-        <inputs>
-            <apiName>VIN</apiName>
-            <definition>primitive://String</definition>
-            <masterLabel>VIN</masterLabel>
-            <referenceName>Input:VIN</referenceName>
-            <required>true</required>
-        </inputs>
-        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
-        <status>Published</status>
-        <versionIdentifier>7dyBkiV0MDai1u8LgE71J8DdW+f8pCBHaqDDQTOgr5U=_5</versionIdentifier>
-    </templateVersions>
-    <templateVersions>
-        <content>You are a Warranty Expert in Autofolio, here are some documents about Warranty Information  about Cars, that Include Car Owner Name, VIN Name and Warranty Coverage and Warranty Inclusion
-
-Your Job is to Match VIN Number {!$Input:VIN} with the and to Only return this JSON Format, Format Start Date and End Date in (YYYY-MM-DD), If the VIN Number Does Not Match Return ONLY the Empty JSON, Do not add Extra Line or content in the same Format
-{
-&quot;Start Date&quot;:, 
-&quot;End Date&quot;:,
-&quot;Warranty Duration&quot;:, 
-&quot;Number of Miles&quot;:, 
-&quot;Warranty Offers&quot;:,
-}
-
-
-DO NOT ADD EXTRA LINE ONLY RETURN THE DATA IN MENTIONED FORMAT
-
-</content>
-        <inputs>
-            <apiName>VIN</apiName>
-            <definition>primitive://String</definition>
-            <masterLabel>VIN</masterLabel>
-            <referenceName>Input:VIN</referenceName>
-            <required>true</required>
-        </inputs>
-        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
-        <status>Published</status>
-        <versionIdentifier>7dyBkiV0MDai1u8LgE71J8DdW+f8pCBHaqDDQTOgr5U=_6</versionIdentifier>
-    </templateVersions>
-    <templateVersions>
-        <content>You are a Warranty Expert in Autofolio, here are some documents about Warranty Information  about Cars, that Include Car Owner Name, VIN Name and Warranty Coverage and Warranty Inclusion
-
-Your Job is to Match VIN Number {!$Input:VIN} with the and to Only return this JSON Format if Vin Number Matches, Format Start Date and End Date in (YYYY-MM-DD).
-
-{
-&quot;Start Date&quot;:, 
-&quot;End Date&quot;:,
-&quot;Warranty Duration&quot;:, 
-&quot;Number of Miles&quot;:, 
-&quot;Warranty Offers&quot;:,
-}
-
-DO NOT ADD EXTRA LINE ONLY RETURN THE DATA IN MENTIONED FORMAT
-
-</content>
-        <inputs>
-            <apiName>VIN</apiName>
-            <definition>primitive://String</definition>
-            <masterLabel>VIN</masterLabel>
-            <referenceName>Input:VIN</referenceName>
-            <required>true</required>
-        </inputs>
-        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
-        <status>Published</status>
-        <versionIdentifier>7dyBkiV0MDai1u8LgE71J8DdW+f8pCBHaqDDQTOgr5U=_7</versionIdentifier>
-    </templateVersions>
-    <templateVersions>
-        <content>You are a Warranty Expert in Autofolio, here are some documents about Warranty Information about Cars, that Include Car Owner Name, VIN Name and Warranty Coverage and Warranty Inclusion
-
-Your Job is to Match VIN Number {!$Input:VIN} with the  and to Only return this JSON Format if Vin Number Matches, Format Start Date and End Date in (YYYY-MM-DD).
-
-{
-&quot;Start Date&quot;:, 
-&quot;End Date&quot;:,
-&quot;Warranty Duration&quot;:, 
-&quot;Number of Miles&quot;:, 
-&quot;Warranty Offers&quot;:,
-}
-
-If No Match found for VIN Number Only Return below JSON format, DO NOT ADD ANYTHING EXTRA
-{
-&quot;Start Date&quot;:&quot;&quot;, 
-&quot;End Date&quot;:&quot;&quot;,
-&quot;Warranty Duration&quot;:&quot;&quot;, 
-&quot;Number of Miles&quot;:&quot;&quot;, 
-&quot;Warranty Offers&quot;:&quot;&quot;,
-}
-
-DO NOT ADD EXTRA LINE ONLY RETURN THE DATA IN MENTIONED FORMAT
-
-</content>
-        <inputs>
-            <apiName>VIN</apiName>
-            <definition>primitive://String</definition>
-            <masterLabel>VIN</masterLabel>
-            <referenceName>Input:VIN</referenceName>
-            <required>true</required>
-        </inputs>
-        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
-        <status>Published</status>
-        <versionIdentifier>7dyBkiV0MDai1u8LgE71J8DdW+f8pCBHaqDDQTOgr5U=_8</versionIdentifier>
-    </templateVersions>
-    <templateVersions>
-        <content>You are a Warranty Expert in Autofolio, here are some documents about Warranty Information  about Cars, that Include Car Owner Name, VIN Name and Warranty Coverage and Warranty Inclusion
-
-Your Job is to Match VIN Number {!$Input:VIN} with the and to Only return this JSON Format if Vin Number Matches, Format Start Date and End Date in (YYYY-MM-DD),Additionally Not add Extra Lines in the Response I want you to Only Out Put the JSON
-
-{
-&quot;Start Date&quot;:, 
-&quot;End Date&quot;:,
-&quot;Warranty Duration&quot;:, 
-&quot;Number of Miles&quot;:, 
-&quot;Warranty Offers&quot;:,
-}
-
-If No Match found for VIN Number Only Return below JSON format, DO NOT ADD ANYTHING EXTRA
-{
-&quot;Start Date&quot;:&quot;&quot;, 
-&quot;End Date&quot;:&quot;&quot;,
-&quot;Warranty Duration&quot;:&quot;&quot;, 
-&quot;Number of Miles&quot;:&quot;&quot;, 
-&quot;Warranty Offers&quot;:&quot;&quot;,
-}
-
-DO NOT ADD EXTRA LINE ONLY RETURN THE DATA IN MENTIONED FORMAT
-
-</content>
-        <inputs>
-            <apiName>VIN</apiName>
-            <definition>primitive://String</definition>
-            <masterLabel>VIN</masterLabel>
-            <referenceName>Input:VIN</referenceName>
-            <required>true</required>
-        </inputs>
-        <primaryModel>sfdc_ai__DefaultOpenAIGPT4Turbo</primaryModel>
-        <status>Published</status>
-        <versionIdentifier>7dyBkiV0MDai1u8LgE71J8DdW+f8pCBHaqDDQTOgr5U=_9</versionIdentifier>
-    </templateVersions>
-    <templateVersions>
-        <content>You are a Warranty Expert in Autofolio, here are some documents about Warranty Information about Cars, that Include Car Owner Name, VIN Name and Warranty Coverage and Warranty Inclusion
-
-Your Job is to Match VIN Number {!$Input:VIN} with the and to Only return this JSON Format if Vin Number Matches, Format Start Date and End Date in (YYYY-MM-DD),Additionally Not add Extra Lines in the Response I want you to Only Out Put the JSON
+Your Job is to Match VIN Number {!$Input:VIN} with the {!$EinsteinSearch:Default_Automotive_Warranty_Info_Retriever_1Cx_W0e84b6f5bb.results} and to Only return this JSON Format if Vin Number Matches, Format Start Date and End Date in (YYYY-MM-DD),Additionally Not add Extra Lines in the Response I want you to Only Out Put the JSON
 
 {
 &quot;Start Date&quot;:, 
@@ -291,7 +38,75 @@ DO NOT ADD EXTRA LINE ONLY RETURN THE DATA IN MENTIONED FORMAT
         </inputs>
         <primaryModel>sfdc_ai__DefaultOpenAIGPT4Turbo</primaryModel>
         <status>Published</status>
-        <versionIdentifier>7dyBkiV0MDai1u8LgE71J8DdW+f8pCBHaqDDQTOgr5U=_10</versionIdentifier>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/Default_Automotive_Warranty_Info_Retriever_1Cx_W0e84b6f5bb</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:VIN}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://List&lt;String&gt;</definition>
+                <isRequired>false</isRequired>
+                <parameterName>outputFieldNames</parameterName>
+                <valueExpression>[&quot;Chunk&quot;]</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:Default_Automotive_Warranty_Info_Retriever_1Cx_W0e84b6f5bb</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>7dyBkiV0MDai1u8LgE71J8DdW+f8pCBHaqDDQTOgr5U=_11</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>You are a Warranty Expert in Autofolio, here are some documents about Warranty Information {!$EinsteinSearch:Default_Automotive_Warranty_Info_Retriever_1Cx_W0e84b6f5bb.results} about Cars, that Include Car Owner Name, VIN Name and Warranty Coverage and Warranty Inclusion
+
+Your Job is to Match VIN Number {!$Input:VIN} with the {!$EinsteinSearch:Default_Automotive_Warranty_Info_Retriever_1Cx_W0e84b6f5bb.results} and to Only return this JSON Format if Vin Number Matches, Format Start Date and End Date in (YYYY-MM-DD),Additionally Not add Extra Lines in the Response I want you to Only Out Put the JSON
+
+{
+&quot;Start Date&quot;:, 
+&quot;End Date&quot;:,
+&quot;Warranty Duration&quot;:, 
+&quot;Number of Miles&quot;:, 
+&quot;Warranty Offers&quot;:
+}
+
+If No Match found for VIN Number Only Return below JSON format, DO NOT ADD ANYTHING EXTRA
+{
+&quot;Start Date&quot;:&quot;&quot;, 
+&quot;End Date&quot;:&quot;&quot;,
+&quot;Warranty Duration&quot;:&quot;&quot;, 
+&quot;Number of Miles&quot;:&quot;&quot;, 
+&quot;Warranty Offers&quot;:&quot;&quot;
+}
+
+DO NOT ADD EXTRA LINE ONLY RETURN THE DATA IN MENTIONED FORMAT
+
+</content>
+        <inputs>
+            <apiName>VIN</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>VIN</masterLabel>
+            <referenceName>Input:VIN</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultGPT4Omni</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/Default_Automotive_Warranty_Info_Retriever_1Cx_W0e84b6f5bb</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:VIN}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://List&lt;String&gt;</definition>
+                <isRequired>false</isRequired>
+                <parameterName>outputFieldNames</parameterName>
+                <valueExpression>[&quot;Chunk&quot;]</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:Default_Automotive_Warranty_Info_Retriever_1Cx_W0e84b6f5bb</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>7dyBkiV0MDai1u8LgE71J8DdW+f8pCBHaqDDQTOgr5U=_12</versionIdentifier>
     </templateVersions>
     <type>einstein_gpt__flex</type>
     <visibility>Global</visibility>

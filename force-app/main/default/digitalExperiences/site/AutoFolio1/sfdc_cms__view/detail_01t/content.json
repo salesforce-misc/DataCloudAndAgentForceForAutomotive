@@ -115,7 +115,7 @@
                 "lastLowestPriceLabel" : "",
                 "lastLowestPriceLabelColor" : "rgb(112, 114, 117)",
                 "lastLowestPriceLabelSize" : "small",
-                "pricingType" : "2_TIER",
+                "pricingType" : "1_TIER",
                 "product" : "{!Product.Details}",
                 "productPricing" : "{!Product.Pricing}",
                 "productSellingModelPriceType" : "",

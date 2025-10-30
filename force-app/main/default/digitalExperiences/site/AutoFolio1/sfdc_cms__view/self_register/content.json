@@ -88,7 +88,7 @@
       "type" : "component"
     },
     "dataProviders" : [ ],
-    "themeLayoutType" : "External",
+    "themeLayoutType" : "Inner",
     "viewType" : "self-register"
   },
   "urlName" : "register"

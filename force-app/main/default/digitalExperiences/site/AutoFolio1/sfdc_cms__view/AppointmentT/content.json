@@ -1,0 +1,32 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "AppointmentT",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "AppointmentT",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "cb63b782-c76b-403d-bc3b-a31f4de61340",
+          "type" : "component"
+        } ],
+        "id" : "ce3cddf8-5a47-4c37-9e78-f063ca85b0c8",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "c:sitebgImage",
+      "id" : "96eb41ef-77c1-4d83-81f6-05136c42f122",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-appointmentt"
+  },
+  "urlName" : "appointmentt"
+}

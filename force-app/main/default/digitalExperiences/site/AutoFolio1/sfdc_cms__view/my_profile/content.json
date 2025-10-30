@@ -141,9 +141,7 @@
                 "iconPadding" : 0,
                 "indicatorType" : "none",
                 "layout" : "reel",
-                "moveBySlides" : 1,
                 "primaryNavigation" : "arrows",
-                "slideGap" : "medium",
                 "slidesPerPage" : 4,
                 "width" : 100
               },
@@ -151,14 +149,11 @@
                 "children" : [ {
                   "attributes" : {
                     "addToCartButtonLabel" : "Add To Cart",
-                    "addToCartButtonSize" : "standard",
-                    "addToCartButtonStyle" : "tertiary",
                     "cardBorderColor" : "rgb(255, 255, 255, 0)",
                     "cardBorderRadius" : 0,
                     "cardBorderWeight" : 1,
                     "cardImageBorderColor" : "rgb(217, 223, 231)",
                     "cardImageSize" : "cover",
-                    "cardTextAlign" : "left",
                     "combinePromosThreshold" : "1",
                     "imageAspectRatio" : "1",
                     "imageHoverAction" : "zoom",
@@ -170,13 +165,11 @@
                     "secondaryPriceFontSize" : "small",
                     "secondaryPriceTextColor" : "#707275",
                     "secondaryPriceTextStyle" : "{\"strike\":true}",
-                    "showAddToCartButton" : false,
                     "showProductImage" : true,
                     "showSku" : false,
                     "showWishlistIcon" : true,
                     "skuLabel" : "SKU:",
-                    "unavailablePriceLabel" : "Price Unavailable",
-                    "unavailableProductLabel" : "Item Unavailable"
+                    "unavailablePriceLabel" : "Price Unavailable"
                   },
                   "definition" : "commerce_builder:productCard",
                   "id" : "2034ebd5-1a15-4deb-ae35-e28a020a6acf",
@@ -261,7 +254,11 @@
       "id" : "ecfa6e14-dcd6-4b62-8d0a-44758ca11d8f",
       "type" : "component"
     },
-    "dataProviders" : [ ],
+    "dataProviders" : [ {
+      "definition" : "sfdc_cms__commerceMyProfileDataProvider",
+      "sfdcExpressionKey" : "MyProfile",
+      "attributes" : { }
+    } ],
     "themeLayoutType" : "MyAccount",
     "viewType" : "my-profile"
   },

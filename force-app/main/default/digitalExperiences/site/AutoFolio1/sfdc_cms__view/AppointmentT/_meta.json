@@ -1,0 +1,5 @@
+{
+  "apiName" : "AppointmentT",
+  "type" : "sfdc_cms__view",
+  "path" : "views"
+}
