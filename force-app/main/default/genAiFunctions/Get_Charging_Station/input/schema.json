@@ -1,5 +1,5 @@
 {
-  "required" : [ "InutType", "contactId" ],
+  "required" : [ "InutType", "contactId", "messagingSessionId" ],
   "unevaluatedProperties" : false,
   "properties" : {
     "InutType" : {
@@ -12,6 +12,13 @@
     "contactId" : {
       "title" : "contactId",
       "description" : "ContactId Of the Customer",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "messagingSessionId" : {
+      "title" : "messagingSessionId",
+      "description" : "Get the Id of Messaging Session from Context Variables",
       "lightning:type" : "lightning__textType",
       "lightning:isPII" : false,
       "copilotAction:isUserInput" : false

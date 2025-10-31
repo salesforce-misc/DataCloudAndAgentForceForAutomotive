@@ -1,36 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPlanner xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>Deliver personalized customer interactions with an autonomous AI agent. Agentforce Service Agent intelligently supports your customers with common inquiries and escalates complex issues.</description>
-    <genAiFunctions>
-        <genAiFunctionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</genAiFunctionName>
-    </genAiFunctions>
-    <genAiPlugins>
-        <genAiPluginName>Free_Service_Eligibility_Roadside_Assistance</genAiPluginName>
-    </genAiPlugins>
-    <genAiPlugins>
-        <genAiPluginName>Test_Drives_Management</genAiPluginName>
-    </genAiPlugins>
-    <genAiPlugins>
-        <genAiPluginName>Travel_Time_Charging_Station_Assistance</genAiPluginName>
-    </genAiPlugins>
-    <genAiPlugins>
-        <genAiPluginName>Vehicle_Command_Management</genAiPluginName>
-    </genAiPlugins>
-    <genAiPlugins>
-        <genAiPluginName>Vehicle_Delivery_Wait_Time</genAiPluginName>
-    </genAiPlugins>
-    <genAiPlugins> 
-        <genAiPluginName>Vehicle_Issues</genAiPluginName>
-    </genAiPlugins>
-    <genAiPlugins>
-        <genAiPluginName>Vehicle_Maintenance_Service</genAiPluginName>
-    </genAiPlugins>
-    <genAiPlugins>
-        <genAiPluginName>Vehicle_Pricing_and_Deals</genAiPluginName>
-    </genAiPlugins>
-    <genAiPlugins>
-        <genAiPluginName>Vehicle_Suggestions</genAiPluginName>
-    </genAiPlugins>
     <masterLabel>Agentforce Service Agent</masterLabel>
     <plannerType>AiCopilot__ReAct</plannerType>
 </GenAiPlanner>

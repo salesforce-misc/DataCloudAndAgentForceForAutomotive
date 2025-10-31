@@ -1,5 +1,5 @@
 {
-  "required" : [ "accountName", "contactId", "inputType" ],
+  "required" : [ "contactId", "inputType", "messagingSessionId" ],
   "unevaluatedProperties" : false,
   "properties" : {
     "ServiceDate" : {
@@ -14,7 +14,7 @@
       "description" : "Account Name",
       "lightning:type" : "lightning__textType",
       "lightning:isPII" : false,
-      "copilotAction:isUserInput" : true
+      "copilotAction:isUserInput" : false
     },
     "contactId" : {
       "title" : "contactId",
@@ -29,6 +29,13 @@
       "lightning:type" : "lightning__textType",
       "lightning:isPII" : false,
       "copilotAction:isUserInput" : true
+    },
+    "messagingSessionId" : {
+      "title" : "messagingSessionId",
+      "description" : "Get the Id of Messaging Session from Context Variables",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
     }
   },
   "lightning:type" : "lightning__objectType"

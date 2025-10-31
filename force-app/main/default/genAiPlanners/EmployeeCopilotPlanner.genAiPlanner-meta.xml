@@ -4,7 +4,7 @@
     <genAiFunctions>
         <genAiFunctionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</genAiFunctionName>
     </genAiFunctions>
-     <genAiPlugins>
+    <genAiPlugins>
         <genAiPluginName>Oil_Perks_Availablity</genAiPluginName>
     </genAiPlugins>
     <genAiPlugins>
@@ -25,7 +25,6 @@
     <genAiPlugins>
         <genAiPluginName>Vehicle_Warranty</genAiPluginName>
     </genAiPlugins>
-
     <masterLabel>EmployeeCopilotPlanner</masterLabel>
     <plannerType>AiCopilot__ReAct</plannerType>
 </GenAiPlanner>
