@@ -1,0 +1,36 @@
+{
+  "required" : [ "contactId", "inputType" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "ServiceDate" : {
+      "title" : "ServiceDate",
+      "description" : "Service Date for Battery Health Check up, Only when Service Date is Given instructions",
+      "lightning:type" : "lightning__dateType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "accountName" : {
+      "title" : "accountName",
+      "description" : "Account Name",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "contactId" : {
+      "title" : "contactId",
+      "description" : "ContactId of the Customer",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "inputType" : {
+      "title" : "inputType",
+      "description" : "Input Type for creating Service appointment and Case",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType",
+  "lightning:textIndexed" : true
+}

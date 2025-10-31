@@ -1,0 +1,22 @@
+{
+  "required" : [ "InutType", "contactId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "InutType" : {
+      "title" : "InutType",
+      "description" : "Input Type for Charging",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "contactId" : {
+      "title" : "contactId",
+      "description" : "ContactId Of the Customer",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType",
+  "lightning:textIndexed" : true
+}
