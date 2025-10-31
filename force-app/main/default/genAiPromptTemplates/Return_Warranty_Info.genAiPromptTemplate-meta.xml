@@ -3,63 +3,11 @@
     <activeVersionIdentifier>7dyBkiV0MDai1u8LgE71J8DdW+f8pCBHaqDDQTOgr5U=_12</activeVersionIdentifier>
     <description>This Template will return Vehicle warranty information from unstructured data based on the VIN Number provided</description>
     <developerName>Return_Warranty_Info</developerName>
-    <masterLabel>Return Warranty Info</masterLabel>
+    <masterLabel>Return Warranty Info</masterLabel>    
     <templateVersions>
         <content>You are a Warranty Expert in Autofolio, here are some documents about Warranty Information {!$EinsteinSearch:Default_Automotive_Warranty_Info_Retriever_1Cx_W0e84b6f5bb.results} about Cars, that Include Car Owner Name, VIN Name and Warranty Coverage and Warranty Inclusion
 
-Your Job is to Match VIN Number {!$Input:VIN} with the {!$EinsteinSearch:Default_Automotive_Warranty_Info_Retriever_1Cx_W0e84b6f5bb.results} and to Only return this JSON Format if Vin Number Matches, Format Start Date and End Date in (YYYY-MM-DD),Additionally Not add Extra Lines in the Response I want you to Only Out Put the JSON
-
-{
-&quot;Start Date&quot;:, 
-&quot;End Date&quot;:,
-&quot;Warranty Duration&quot;:, 
-&quot;Number of Miles&quot;:, 
-&quot;Warranty Offers&quot;:
-}
-
-If No Match found for VIN Number Only Return below JSON format, DO NOT ADD ANYTHING EXTRA
-{
-&quot;Start Date&quot;:&quot;&quot;, 
-&quot;End Date&quot;:&quot;&quot;,
-&quot;Warranty Duration&quot;:&quot;&quot;, 
-&quot;Number of Miles&quot;:&quot;&quot;, 
-&quot;Warranty Offers&quot;:&quot;&quot;
-}
-
-DO NOT ADD EXTRA LINE ONLY RETURN THE DATA IN MENTIONED FORMAT
-
-</content>
-        <inputs>
-            <apiName>VIN</apiName>
-            <definition>primitive://String</definition>
-            <masterLabel>VIN</masterLabel>
-            <referenceName>Input:VIN</referenceName>
-            <required>true</required>
-        </inputs>
-        <primaryModel>sfdc_ai__DefaultOpenAIGPT4Turbo</primaryModel>
-        <status>Published</status>
-        <templateDataProviders>
-            <definition>invocable://getEinsteinRetrieverResults/Default_Automotive_Warranty_Info_Retriever_1Cx_W0e84b6f5bb</definition>
-            <parameters>
-                <definition>primitive://String</definition>
-                <isRequired>true</isRequired>
-                <parameterName>searchText</parameterName>
-                <valueExpression>{!$Input:VIN}</valueExpression>
-            </parameters>
-            <parameters>
-                <definition>primitive://List&lt;String&gt;</definition>
-                <isRequired>false</isRequired>
-                <parameterName>outputFieldNames</parameterName>
-                <valueExpression>[&quot;Chunk&quot;]</valueExpression>
-            </parameters>
-            <referenceName>EinsteinSearch:Default_Automotive_Warranty_Info_Retriever_1Cx_W0e84b6f5bb</referenceName>
-        </templateDataProviders>
-        <versionIdentifier>7dyBkiV0MDai1u8LgE71J8DdW+f8pCBHaqDDQTOgr5U=_11</versionIdentifier>
-    </templateVersions>
-    <templateVersions>
-        <content>You are a Warranty Expert in Autofolio, here are some documents about Warranty Information {!$EinsteinSearch:Default_Automotive_Warranty_Info_Retriever_1Cx_W0e84b6f5bb.results} about Cars, that Include Car Owner Name, VIN Name and Warranty Coverage and Warranty Inclusion
-
-Your Job is to Match VIN Number {!$Input:VIN} with the {!$EinsteinSearch:Default_Automotive_Warranty_Info_Retriever_1Cx_W0e84b6f5bb.results} and to Only return this JSON Format if Vin Number Matches, Format Start Date and End Date in (YYYY-MM-DD),Additionally Not add Extra Lines in the Response I want you to Only Out Put the JSON
+Your Job is to Match VIN Number {!$Input:VIN} with the  and to Only return this JSON Format if Vin Number Matches, Format Start Date and End Date in (YYYY-MM-DD),Additionally Not add Extra Lines in the Response I want you to Only Out Put the JSON
 
 {
 &quot;Start Date&quot;:, 
@@ -90,22 +38,6 @@ DO NOT ADD EXTRA LINE ONLY RETURN THE DATA IN MENTIONED FORMAT
         </inputs>
         <primaryModel>sfdc_ai__DefaultGPT4Omni</primaryModel>
         <status>Published</status>
-        <templateDataProviders>
-            <definition>invocable://getEinsteinRetrieverResults/Default_Automotive_Warranty_Info_Retriever_1Cx_W0e84b6f5bb</definition>
-            <parameters>
-                <definition>primitive://String</definition>
-                <isRequired>true</isRequired>
-                <parameterName>searchText</parameterName>
-                <valueExpression>{!$Input:VIN}</valueExpression>
-            </parameters>
-            <parameters>
-                <definition>primitive://List&lt;String&gt;</definition>
-                <isRequired>false</isRequired>
-                <parameterName>outputFieldNames</parameterName>
-                <valueExpression>[&quot;Chunk&quot;]</valueExpression>
-            </parameters>
-            <referenceName>EinsteinSearch:Default_Automotive_Warranty_Info_Retriever_1Cx_W0e84b6f5bb</referenceName>
-        </templateDataProviders>
         <versionIdentifier>7dyBkiV0MDai1u8LgE71J8DdW+f8pCBHaqDDQTOgr5U=_12</versionIdentifier>
     </templateVersions>
     <type>einstein_gpt__flex</type>
