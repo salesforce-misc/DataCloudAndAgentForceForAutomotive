@@ -5,7 +5,7 @@
     <developerName>Return_Warranty_Info</developerName>
     <masterLabel>Return Warranty Info</masterLabel>    
     <templateVersions>
-        <content>You are a Warranty Expert in Autofolio, here are some documents about Warranty Information {!$EinsteinSearch:Default_Automotive_Warranty_Info_Retriever_1Cx_W0e84b6f5bb.results} about Cars, that Include Car Owner Name, VIN Name and Warranty Coverage and Warranty Inclusion
+        <content>You are a Warranty Expert in Autofolio, here are some documents about Warranty Information  about Cars, that Include Car Owner Name, VIN Name and Warranty Coverage and Warranty Inclusion
 
 Your Job is to Match VIN Number {!$Input:VIN} with the  and to Only return this JSON Format if Vin Number Matches, Format Start Date and End Date in (YYYY-MM-DD),Additionally Not add Extra Lines in the Response I want you to Only Out Put the JSON
 
